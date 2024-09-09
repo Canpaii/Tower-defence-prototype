@@ -1,0 +1,94 @@
+{
+    "name": "Inputs",
+    "maps": [
+        {
+            "name": "Camera",
+            "id": "27e9ec32-ab69-4f02-b1e2-ca8ae5e508c2",
+            "actions": [
+                {
+                    "name": "Rotate right",
+                    "type": "Button",
+                    "id": "aa4eb5c5-f587-4276-b8d4-0fbac5627e72",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate left",
+                    "type": "Button",
+                    "id": "2a3ad5b3-2e65-4645-9125-a6594047e40d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Zoom In",
+                    "type": "Button",
+                    "id": "8823fc34-596f-4bfe-86b8-54eee29d9146",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Zoom Out",
+                    "type": "Button",
+                    "id": "11b2620d-0164-496c-bddc-70d093dbaba4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "17f9d3a5-e93a-4a4c-9e90-3302e3225928",
+                    "path": "<Keyboard>/d",
+                    "interactions": "Hold(duration=1.401298E-45,pressPoint=1.401298E-45)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96cbdf7d-c6f4-4ae9-ac7a-40d18c85f9c0",
+                    "path": "<Keyboard>/a",
+                    "interactions": "Hold(duration=1.401298E-45,pressPoint=1.401298E-45)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate left",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e6611452-02af-4f5f-af21-601df8f373cb",
+                    "path": "<Mouse>/forwardButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom In",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "89bc7434-1e8d-4875-87c9-e7a2d0eb37de",
+                    "path": "<Mouse>/backButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom Out",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
