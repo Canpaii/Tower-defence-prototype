@@ -20,15 +20,29 @@ public class BuildingPlacement : MonoBehaviour
     {
         if(currentPlacingTower != null)
         {
-           
             Ray camray = playerCamera.ScreenPointToRay(Input.mousePosition);
+            buildingLevelUp.SetActive(false);
+            
             if (currentTowerData.towerType == TowerData.TowerType.OilRig)
             {
                 if (Physics.Raycast(camray, out RaycastHit hitInfo, 150f, oilGrid))
                 {
                     currentPlacingTower.transform.position = hitInfo.collider.gameObject.transform.position + new Vector3(0, yOffset, 0);
                     currentPlacingTower.SetActive(true);
+                    
+                    if(Input.GetMouseButtonDown(0))
+                    {   
+                        PlaceTower();
+                    }
                 }
+                else
+                {
+                    if(Input.GetMouseButtonDown(0))
+                    {   
+                        DeselectTower();
+                    }
+                }
+                
             }
             else if (currentTowerData.towerType == TowerData.TowerType.Tower)
             {  
@@ -36,19 +50,21 @@ public class BuildingPlacement : MonoBehaviour
                 {
                     currentPlacingTower.transform.position = hitInfo.collider.gameObject.transform.position + new Vector3(0, yOffset, 0);
                     currentPlacingTower.SetActive(true);
+                    
+                    if(Input.GetMouseButtonDown(0))
+                    {   
+                        PlaceTower();
+                    }
+                }
+                else
+                {
+                    if(Input.GetMouseButtonDown(0)) 
+                    {   
+                        DeselectTower();
+                    }
                 }
             }
             
-            buildingLevelUp.SetActive(false);
-            
-            if(Input.GetMouseButtonDown(0))
-            {   
-                Instantiate(currentTowerData.towerPrefab, currentPlacingTower.transform.position, quaternion.identity);
-                Destroy(currentPlacingTower);
-                currentPlacingTower = null;
-                buildingLevelUp.SetActive(true);
-            }
-
              if(Input.GetMouseButtonDown(1))
             {
                 Destroy(currentPlacingTower);
@@ -63,4 +79,20 @@ public class BuildingPlacement : MonoBehaviour
         currentPlacingTower.SetActive(false);
         currentTowerData = towerData;
     }
+    #region Tower Selection
+    void DeselectTower()
+    {
+        Destroy(currentPlacingTower);
+        currentPlacingTower = null;
+        buildingLevelUp.SetActive(true);
+    }
+
+    void PlaceTower()
+    {
+        Instantiate(currentTowerData.towerPrefab, currentPlacingTower.transform.position, quaternion.identity);
+        Destroy(currentPlacingTower);
+        currentPlacingTower = null;
+        buildingLevelUp.SetActive(true);
+    }
+    #endregion
 }
