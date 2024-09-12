@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    public List<GameObject> tanks = new List<GameObject>();
+    public GameObject[] tanks;
     private List<GameObject> tanksLeftLane = new List<GameObject>();
     private List<GameObject> tanksRightLane = new List<GameObject>();
     
@@ -19,11 +19,13 @@ public class EnemyManager : MonoBehaviour
             if (coinflip == 0)
             {
                tanksLeftLane.Add(tank);
+               tank.GetComponent<EnemyMovement>().tankLeft = true;
             }
 
             if (coinflip == 1)
             {
                 tanksRightLane.Add(tank);
+                tank.GetComponent<EnemyMovement>().tankRight = true;
             }
         }
     }
