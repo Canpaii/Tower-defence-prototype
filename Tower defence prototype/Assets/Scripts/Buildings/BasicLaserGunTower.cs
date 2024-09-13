@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class BasicLaserGunTower : MonoBehaviour
+public class BasicLaserGunTower : TowerBehaviour
 {
     [SerializeField] private Transform laserTower;
     [SerializeField] private Transform rotatingGunHolder;
     [SerializeField] private Transform guns;
     [SerializeField] private Transform gunLeftShootPoint, gunRightShootPoint;
-    [SerializeField] private Transform enemy;
     
     [SerializeField] private float rotationSmooth;
     [SerializeField] private float attackWaitTime;
@@ -19,29 +18,17 @@ public class BasicLaserGunTower : MonoBehaviour
     private bool rightShot = false;
     
     public GameObject bulletPrefab;
-    public float range;
-    void Start()
-    {
-        GameObject enemyHolder = GameObject.FindGameObjectWithTag("Enemy");
-        enemy = enemyHolder.transform;
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
-       RangeCalc();
-    }
-
-    void RangeCalc()
-    {
+        enemy = FindEnemy();
         
-        float distance = Vector3.Distance(laserTower.position, enemy.position);
-
-        if (distance < range)
+        if (enemy != null)
         {
             RotateGunHolder();
             RotateGun();
-            
+                               
             Shoot();
         }
     }
@@ -51,7 +38,9 @@ public class BasicLaserGunTower : MonoBehaviour
         timer += Time.deltaTime;
         if (!leftShot && timer > attackWaitTime)
         {
-            Instantiate(bulletPrefab, gunLeftShootPoint.position, gunLeftShootPoint.rotation);
+            GameObject currentBullet = Instantiate(bulletPrefab, gunLeftShootPoint.position, gunLeftShootPoint.rotation);
+            
+            currentBullet.GetComponent<LaserBullet>().target = enemy;
             
             leftShot = true;
             rightShot = false;
@@ -59,7 +48,9 @@ public class BasicLaserGunTower : MonoBehaviour
         }
         else if (!rightShot && timer > attackWaitTime)
         {
-            Instantiate(bulletPrefab, gunRightShootPoint.position, gunRightShootPoint.rotation);
+            GameObject currentBullet = Instantiate(bulletPrefab, gunRightShootPoint.position, gunRightShootPoint.rotation);
+            
+            currentBullet.GetComponent<LaserBullet>().target = enemy;
             
             leftShot = false;
             rightShot = true;

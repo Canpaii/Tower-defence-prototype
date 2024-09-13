@@ -27,16 +27,15 @@ public class BuildingLevelUp : MonoBehaviour
             {
 
                 print("Click");
-                if (Physics.Raycast(camray, out RaycastHit hitInfo, 100f, tower))
+                if (Physics.Raycast(camray, out RaycastHit hitInfo, 200f, tower))
                 {
                     TowerBehaviour tower = hitInfo.collider.gameObject.GetComponent<TowerBehaviour>();
                     print("Tower hit");
                     if (tower != null)
                     {
-                        
                         if(activeTower != null && activeTower.levelUpUI.activeSelf)
                         {
-                            activeTower.levelUpUI.SetActive(false);
+                            activeTower.levelUpUI.SetActive(true);
                         }
 
                         tower.levelUpUI.SetActive(true);
@@ -47,8 +46,6 @@ public class BuildingLevelUp : MonoBehaviour
                         print("Tower is null");
                     }
                 }
-
-                
             }
         }
         if (Input.GetMouseButtonDown(1))

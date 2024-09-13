@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,18 +6,18 @@ using UnityEngine;
 public class LaserBullet : MonoBehaviour
 {
     [SerializeField] private float force;
+    public int damage;
     public Transform target;
-    public float speed; 
     public float rotateSpeed;
     private float timer;
     public float homingDuration;
     private Rigidbody rb; 
-
+    
     
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-       // target = ;
+        Destroy(gameObject, 5);
     }
     private void LateUpdate()
     {   
@@ -34,5 +35,16 @@ public class LaserBullet : MonoBehaviour
             rb.velocity = transform.forward * force;
         }  
         
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.tag == "Enemy")
+        {
+            other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+            print("Hit");
+            
+            Destroy(gameObject);
+        }
     }
 }
