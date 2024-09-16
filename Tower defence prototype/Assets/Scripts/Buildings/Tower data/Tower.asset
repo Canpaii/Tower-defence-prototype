@@ -17,3 +17,4 @@ MonoBehaviour:
     type: 3}
   towerBlueprintPrefab: {fileID: 2731821386308479032, guid: f588a7a662cb2684baf7f01aabf02811,
     type: 3}
+  cost: 250

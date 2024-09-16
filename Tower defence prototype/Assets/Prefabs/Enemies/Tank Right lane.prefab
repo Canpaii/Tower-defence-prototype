@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ee892c0dafa664bb1bf62fed280b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
   tankLeft: 0
   tankRight: 1
 --- !u!114 &4561703768526388248
@@ -136,7 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f3362c04762df4583de1ea02cd71c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 88
+  maxHealth: 90
+  currencyOnDeath: 25
   healthSlider: {fileID: 2734756030081294755}
 --- !u!54 &4909440786227895403
 Rigidbody:

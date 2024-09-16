@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4995535226696699244}
   - component: {fileID: 5262957724927198833}
   - component: {fileID: 5044810323925598083}
-  - component: {fileID: 6017149573711772967}
+  - component: {fileID: 3371110859882235068}
   m_Layer: 10
   m_Name: Oil rig
   m_TagString: Untagged
@@ -107,7 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6017149573711772967
+--- !u!114 &3371110859882235068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,11 +116,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2216557535192434876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6646eb8fcf73554c8d49d4e111605f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a1d3ed0d72b77e45bd1c69a29f86bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelUpUI: {fileID: 5002169155342963358}
-  placed: 0
+  enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  radius: 0
+  levelUpUI: {fileID: 0}
+  enemyManager: {fileID: 0}
+  enemy: {fileID: 0}
+  harvestAmount: 7
 --- !u!1 &5002169155342963358
 GameObject:
   m_ObjectHideFlags: 0

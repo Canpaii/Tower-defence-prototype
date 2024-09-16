@@ -11,11 +11,7 @@ public class BuildingLevelUp : MonoBehaviour
     [SerializeField] LayerMask tower;
 
     private TowerBehaviour activeTower;
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {   

@@ -8,6 +8,7 @@ public class TowerData : ScriptableObject
    public TowerType towerType;
    public GameObject towerPrefab;
    public GameObject towerBlueprintPrefab;
+   public int cost;
    
    public enum TowerType
    {

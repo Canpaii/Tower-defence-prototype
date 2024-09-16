@@ -11,20 +11,36 @@ public class EnemyMovement : MonoBehaviour
 
     private int wavePointIndex = 0;
 
-    public bool tankLeft;
-    public bool tankRight;
+    public bool left;
+    public bool right;
+
+    public bool airShip;
     // Update is called once per frame
     private void Start()
     {
-        if (tankLeft)
+        if (left)
         {
-            target = WayPointLeftSide.wayPointsLeft[0];
+            if (airShip)
+            {
+                target = AirWaypointLeft.airWayPointsLeft[0];
+            }
+            else
+            {
+                target = WayPointLeftSide.wayPointsLeft[0];
+            }
+            
         }
-        else if (tankRight)
+        else if (right)
         {
-            target = WayPointsRightSide.wayPointsRight[0];
+            if (airShip)
+            {
+                target = AirWaypointRight.airWayPointsRight[0];
+            }
+            else
+            {
+                target = WayPointsRightSide.wayPointsRight[0];
+            }
         }
-        
     }
 
     void Update()
@@ -49,11 +65,11 @@ public class EnemyMovement : MonoBehaviour
     void GetNextPoint()
     {
         wavePointIndex++;
-        if (tankLeft)
+        if (left)
         {
             target = WayPointLeftSide.wayPointsLeft[wavePointIndex];
         }
-        else if (tankRight)
+        else if (right)
         {
             target = WayPointsRightSide.wayPointsRight[wavePointIndex];
         }

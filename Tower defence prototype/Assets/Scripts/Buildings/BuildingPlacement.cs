@@ -5,12 +5,17 @@ using UnityEngine;
 
 public class BuildingPlacement : MonoBehaviour
 {
+    [SerializeField] private GameObject buildingLevelUpPrefab; 
+    [SerializeField] private Camera playerCamera; 
+    [SerializeField] private LayerMask grid; 
+    [SerializeField] private LayerMask oilGrid;
     [SerializeField] private float yOffset;
+
+    public EnemyManager enemyManager;
     public GameObject currentPlacingTower;
     public GameObject buildingLevelUp;
-    [SerializeField] private Camera playerCamera;
-    [SerializeField] private LayerMask grid;
-    [SerializeField] private LayerMask oilGrid;
+    private int buildingCost;
+    
     
     private TowerData currentTowerData;
     
@@ -21,7 +26,9 @@ public class BuildingPlacement : MonoBehaviour
         if(currentPlacingTower != null)
         {
             Ray camray = playerCamera.ScreenPointToRay(Input.mousePosition);
-            buildingLevelUp.SetActive(false);
+            
+            // set false so it wont immediatly open lvl up ui
+            buildingLevelUp.SetActive(false); 
             
             if (currentTowerData.towerType == TowerData.TowerType.OilRig)
             {
@@ -78,6 +85,7 @@ public class BuildingPlacement : MonoBehaviour
         currentPlacingTower = Instantiate(towerData.towerBlueprintPrefab, Vector3.zero, quaternion.identity);
         currentPlacingTower.SetActive(false);
         currentTowerData = towerData;
+        buildingCost = towerData.cost;
     }
     #region Tower Selection
     void DeselectTower()
@@ -89,10 +97,28 @@ public class BuildingPlacement : MonoBehaviour
 
     void PlaceTower()
     {
-        Instantiate(currentTowerData.towerPrefab, currentPlacingTower.transform.position, quaternion.identity);
-        Destroy(currentPlacingTower);
-        currentPlacingTower = null;
-        buildingLevelUp.SetActive(true);
+        // if you dont have enough money dont place the tower
+        if (Currency.Instance.currency >= buildingCost) 
+        { 
+             Currency.Instance.SubtractCurrency(buildingCost);
+            
+             // place tower on cursor and clear currentplacingtower gameOBject
+             GameObject placingTower = Instantiate(currentTowerData.towerPrefab, currentPlacingTower.transform.position, quaternion.identity);
+             
+             placingTower.GetComponent<TowerBehaviour>().enemyManager = enemyManager;
+             
+             Destroy(currentPlacingTower);
+             
+             currentPlacingTower = null;
+             buildingLevelUp.SetActive(true);
+        }
+        else
+        {
+            print ("You do not have enough money to place this tower.");
+            
+            Destroy(currentPlacingTower);
+            currentPlacingTower = null;
+        }
     }
     #endregion
 }

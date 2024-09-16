@@ -33,7 +33,12 @@ public class LaserBullet : MonoBehaviour
             rb.angularVelocity = -amountToRotate * rotateSpeed;
 
             rb.velocity = transform.forward * force;
-        }  
+        }
+
+        if (!target)
+        {
+            Destroy(gameObject);
+        }
         
     }
 

@@ -7,9 +7,10 @@ public class TowerBehaviour : MonoBehaviour
 {
     [SerializeField] private LayerMask enemyLayerMask;
     [SerializeField] private float radius;
-    public GameObject levelUpUI;
     
-    private GameObject[] towers;
+    public GameObject levelUpUI;
+    public EnemyManager enemyManager;
+    
     public Transform enemy;
    public Transform FindEnemy()
    {
@@ -33,6 +34,6 @@ public class TowerBehaviour : MonoBehaviour
            closestTarget = null;
            
        }
-           return closestTarget;
+       return closestTarget;
     }
 }
