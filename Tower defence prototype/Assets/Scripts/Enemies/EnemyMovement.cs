@@ -6,27 +6,34 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    private Transform target;
+    public float speed;
+    public float speedHolder;
+    public float rayLength;
+    public float rotationSmooth;
 
-    private int wavePointIndex = 0;
+    public Transform wayPoints;
+    public Quaternion targetRotation;
+
+    public int wavePointIndex = 0;
 
     public bool left;
     public bool right;
+    public bool shouldRotate;
 
     public bool airShip;
     // Update is called once per frame
-    private void Start()
+    public virtual  void Start()
     {
+        speedHolder = speed; 
         if (left)
         {
             if (airShip)
             {
-                target = AirWaypointLeft.airWayPointsLeft[0];
+                wayPoints = AirWaypointLeft.airWayPointsLeft[0];
             }
             else
             {
-                target = WayPointLeftSide.wayPointsLeft[0];
+                wayPoints = WayPointLeftSide.wayPointsLeft[0];
             }
             
         }
@@ -34,44 +41,37 @@ public class EnemyMovement : MonoBehaviour
         {
             if (airShip)
             {
-                target = AirWaypointRight.airWayPointsRight[0];
+                wayPoints = AirWaypointRight.airWayPointsRight[0];
             }
             else
             {
-                target = WayPointsRightSide.wayPointsRight[0];
+                wayPoints = WayPointsRightSide.wayPointsRight[0];
             }
         }
+        
+        // if (shouldRotate)
+        // {
+        //     transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSmooth);
+        //
+        //     // Check if the rotation is close enough to the target to stop rotating
+        //     if (Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
+        //     {
+        //         transform.rotation = targetRotation;
+        //         shouldRotate = false;
+        //     }
+        // }
     }
 
-    void Update()
+    virtual public void Update()
     {
-        Vector3 dir = target.position - transform.position;
+        Vector3 dir = wayPoints.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
-
-        if (Vector3.Distance(transform.position, target.position) <= 0.2f)
-        {
-            if (wavePointIndex >= WayPointLeftSide.wayPointsLeft.Length - 1 || wavePointIndex >= WayPointsRightSide.wayPointsRight.Length - 1 )
-            {
-                transform.position = transform.position;
-                speed = 0;
-            }
-            else
-            {
-                GetNextPoint();
-            }
-        }
+        
     }
-
-    void GetNextPoint()
-    {
-        wavePointIndex++;
-        if (left)
-        {
-            target = WayPointLeftSide.wayPointsLeft[wavePointIndex];
-        }
-        else if (right)
-        {
-            target = WayPointsRightSide.wayPointsRight[wavePointIndex];
-        }
-    }
+    
+    // public void OnTriggerEnter(Collider other) // Set target rotation when entering trigger
+    // {
+    //     targetRotation = other.transform.rotation;
+    //     shouldRotate = true;
+    // }
 }

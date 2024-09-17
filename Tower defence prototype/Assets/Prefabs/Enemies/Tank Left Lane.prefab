@@ -292,9 +292,9 @@ GameObject:
   - component: {fileID: 7810178399839485758}
   - component: {fileID: 3453967066773852506}
   - component: {fileID: 2810049563872457566}
-  - component: {fileID: 1212430863944421798}
   - component: {fileID: -3291283489456248618}
   - component: {fileID: 5006654581892904369}
+  - component: {fileID: -3850994626510596720}
   m_Layer: 12
   m_Name: Tank Left Lane
   m_TagString: Enemy
@@ -383,27 +383,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1212430863944421798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6270667068622170349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25ee892c0dafa664bb1bf62fed280b33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  tankLeft: 1
-  tankRight: 0
 --- !u!114 &-3291283489456248618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +431,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &-3850994626510596720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270667068622170349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8801028853b0a1a449143fc3ea8a241e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  speedHolder: 0
+  rayLength: 3
+  rotationSmooth: 0.1
+  wayPoints: {fileID: 0}
+  targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  wavePointIndex: 0
+  left: 1
+  right: 0
+  shouldRotate: 0
+  airShip: 0
+  tank:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!1 &6642848037138841014
 GameObject:
   m_ObjectHideFlags: 0

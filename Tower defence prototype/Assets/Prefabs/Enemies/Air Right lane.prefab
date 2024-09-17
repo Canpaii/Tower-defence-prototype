@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7748775211181671435}
   - component: {fileID: 2388028497399545178}
   - component: {fileID: 4559417232768299119}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 6462807079640373153}
   - component: {fileID: 6146417381653479014}
   - component: {fileID: 9175710533898918217}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2877785827029514195}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,10 +225,10 @@ GameObject:
   - component: {fileID: 8301866215262748417}
   - component: {fileID: 1618676545516376658}
   - component: {fileID: 3966570846088008636}
-  - component: {fileID: 1344244739600738163}
   - component: {fileID: 2662757082572195492}
   - component: {fileID: 4822256131777053238}
-  m_Layer: 12
+  - component: {fileID: -4095484694225087522}
+  m_Layer: 13
   m_Name: Air Right lane
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -316,28 +316,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1344244739600738163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2587245180889064386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25ee892c0dafa664bb1bf62fed280b33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  left: 0
-  right: 0
-  airShip: 0
 --- !u!114 &2662757082572195492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,6 +364,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &-4095484694225087522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2587245180889064386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8a10e39013b3344975761fee591bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  speedHolder: 0
+  rayLength: 3
+  rotationSmooth: 0
+  wayPoints: {fileID: 0}
+  targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  wavePointIndex: 0
+  left: 0
+  right: 1
+  shouldRotate: 0
+  airShip: 1
+  airCraft:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!1 &4879031507514261711
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +401,7 @@ GameObject:
   - component: {fileID: 4681048128217779585}
   - component: {fileID: 5179133178792337379}
   - component: {fileID: 7331144394713230415}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +504,7 @@ GameObject:
   - component: {fileID: 7991845687689301678}
   - component: {fileID: 2440155799124637789}
   - component: {fileID: 8702983878435869746}
-  m_Layer: 5
+  m_Layer: 13
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
