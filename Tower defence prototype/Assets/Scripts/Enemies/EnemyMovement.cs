@@ -9,16 +9,15 @@ public class EnemyMovement : MonoBehaviour
     public float speed;
     public float speedHolder;
     public float rayLength;
-    public float rotationSmooth;
+    public float rotationSpeed;
 
     public Transform wayPoints;
-    public Quaternion targetRotation;
+    
 
-    public int wavePointIndex = 0;
+    public int wayPointIndex = 0;
 
     public bool left;
     public bool right;
-    public bool shouldRotate;
 
     public bool airShip;
     // Update is called once per frame
@@ -62,10 +61,26 @@ public class EnemyMovement : MonoBehaviour
         // }
     }
 
-    virtual public void Update()
+    public virtual void Update()
     {
-        Vector3 dir = wayPoints.position - transform.position;
-        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+        Vector3 direction = (wayPoints.position - transform.position).normalized;
+        transform.position = Vector3.MoveTowards(transform.position, wayPoints.position, speed * Time.deltaTime);
+
+        // Rotate smoothly towards the target waypoint
+        Quaternion targetRotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+        // Check if the enemy has reached the waypoint
+        // if (Vector3.Distance(transform.position, wayPoints.position) < 0.1f)
+        // {
+        //     currentWaypointIndex++;
+        //
+        //     // If there are more waypoints, set the next target
+        //     if (currentWaypointIndex < wayPoints.Length)
+        //     {
+        //         wayPoints = wayPoints[currentWaypointIndex];
+        //     }
+        // }
         
     }
     

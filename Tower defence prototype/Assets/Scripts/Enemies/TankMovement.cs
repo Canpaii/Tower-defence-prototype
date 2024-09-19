@@ -14,12 +14,7 @@ public class TankMovement : EnemyMovement
         
         if (Vector3.Distance(transform.position, wayPoints.position) <= 0.2f)
         {
-            if (wavePointIndex >= AirWaypointLeft.airWayPointsLeft.Length - 1)
-            {
-                transform.position = transform.position;
-                speed = 0;
-            }
-            else if (wavePointIndex >= AirWaypointRight.airWayPointsRight.Length - 1 )
+            if (wayPointIndex >= AirWaypointLeft.airWayPointsLeft.Length || wayPointIndex >= AirWaypointRight.airWayPointsRight.Length)
             {
                 transform.position = transform.position;
                 speed = 0;
@@ -39,16 +34,16 @@ public class TankMovement : EnemyMovement
             speed = speedHolder;
         }
     }
-    public void GetNextPoint()
+    void GetNextPoint()
     {
-        wavePointIndex++;
+        wayPointIndex++;
         if (left)
         {
-            wayPoints = WayPointLeftSide.wayPointsLeft[wavePointIndex];
+            wayPoints = WayPointLeftSide.wayPointsLeft[wayPointIndex];
         }
         else if (right)
         {
-            wayPoints = WayPointsRightSide.wayPointsRight[wavePointIndex];
+            wayPoints = WayPointsRightSide.wayPointsRight[wayPointIndex];
         }
     }
     

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tower
   m_EditorClassIdentifier: 
   towerType: 0
-  towerPrefab: {fileID: 8026066932115897628, guid: 936c3e0efe9336d4e94a6d4afa642100,
+  towerPrefab: {fileID: 4059461511245251, guid: ad1363f9dbe4a8847a089d3ed017e26b,
     type: 3}
   towerBlueprintPrefab: {fileID: 2731821386308479032, guid: f588a7a662cb2684baf7f01aabf02811,
     type: 3}

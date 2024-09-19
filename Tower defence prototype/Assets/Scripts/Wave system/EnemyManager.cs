@@ -87,7 +87,7 @@ public class EnemyManager : MonoBehaviour
                 }
             }
             
-            Instantiate(enemyWave.enemyPrefab, spawnPoint.position, Quaternion.identity);
+            Instantiate(enemyWave.enemyPrefab, spawnPoint.position, spawnPoint.rotation);
 
             // Add delay between spawns if necessary
             yield return new WaitForSeconds(1f);  // Adjust spawn delay as needed

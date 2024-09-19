@@ -103,7 +103,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -166,13 +166,11 @@ MonoBehaviour:
   speed: 5
   speedHolder: 0
   rayLength: 3
-  rotationSmooth: 0
+  rotationSpeed: 10
   wayPoints: {fileID: 0}
-  targetRotation: {x: 0, y: 0, z: 0, w: 0}
-  wavePointIndex: 0
+  wayPointIndex: 0
   left: 0
   right: 1
-  shouldRotate: 0
   airShip: 0
   tank:
     serializedVersion: 2
@@ -188,7 +186,7 @@ GameObject:
   - component: {fileID: 6887767240746882552}
   - component: {fileID: 2734756030081294755}
   - component: {fileID: 6609974700968656745}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +290,7 @@ GameObject:
   - component: {fileID: 2208296320930659747}
   - component: {fileID: 4385006505026592181}
   - component: {fileID: 5223384870485864148}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +391,7 @@ GameObject:
   - component: {fileID: 8391351227994717302}
   - component: {fileID: 583056348930446541}
   - component: {fileID: 6242589685616471696}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +466,7 @@ GameObject:
   - component: {fileID: 4373270806894789612}
   - component: {fileID: 8931322246119857411}
   - component: {fileID: 421655604117386621}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1388662137964136467}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}

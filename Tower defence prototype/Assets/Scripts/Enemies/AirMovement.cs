@@ -11,7 +11,7 @@ public class AirMovement : EnemyMovement
         
         if (Vector3.Distance(transform.position, wayPoints.position) <= 0.2f)
         {
-            if (wavePointIndex >= AirWaypointLeft.airWayPointsLeft.Length - 1 || wavePointIndex >= AirWaypointRight.airWayPointsRight.Length - 1 )
+            if (wayPointIndex >= AirWaypointLeft.airWayPointsLeft.Length  || wayPointIndex >= AirWaypointRight.airWayPointsRight.Length )
             {
                 transform.position = transform.position;
                 speed = 0;
@@ -34,14 +34,14 @@ public class AirMovement : EnemyMovement
     
     public void GetNextPoint()
     {
-        wavePointIndex++;
+        wayPointIndex++;
         if (left)
         {
-            wayPoints = AirWaypointLeft.airWayPointsLeft[wavePointIndex];
+            wayPoints = AirWaypointLeft.airWayPointsLeft[wayPointIndex];
         }
         else if (right)
         {
-            wayPoints = AirWaypointRight.airWayPointsRight[wavePointIndex];
+            wayPoints = AirWaypointRight.airWayPointsRight[wayPointIndex];
         }
     }
    

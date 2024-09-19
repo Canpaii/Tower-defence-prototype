@@ -12,6 +12,8 @@ public class BasicLaserGunTower : TowerBehaviour
     
     [SerializeField] private float rotationSmooth;
     [SerializeField] private float attackWaitTime;
+    
+    [SerializeField] private int damage;
     private float timer;
     
     private bool leftShot = false;
@@ -41,6 +43,7 @@ public class BasicLaserGunTower : TowerBehaviour
             GameObject currentBullet = Instantiate(bulletPrefab, gunLeftShootPoint.position, gunLeftShootPoint.rotation);
             
             currentBullet.GetComponent<LaserBullet>().target = enemy;
+            currentBullet.GetComponent<LaserBullet>().damage = damage;
             
             leftShot = true;
             rightShot = false;
@@ -51,6 +54,7 @@ public class BasicLaserGunTower : TowerBehaviour
             GameObject currentBullet = Instantiate(bulletPrefab, gunRightShootPoint.position, gunRightShootPoint.rotation);
             
             currentBullet.GetComponent<LaserBullet>().target = enemy;
+            currentBullet.GetComponent<LaserBullet>().damage = damage;
             
             leftShot = false;
             rightShot = true;

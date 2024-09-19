@@ -14,7 +14,7 @@ public class TowerBehaviour : MonoBehaviour
     public Transform enemy;
    public Transform FindEnemy()
    {
-       Collider[] nearbyEnemies = Physics.OverlapSphere(transform.position, radius, enemyLayerMask);
+       Collider[] nearbyEnemies = Physics.OverlapSphere(transform.position, radius, enemyLayerMask );
        Transform closestTarget = null;
        float maxDistance = radius;
        

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 977529553303339650}
   - component: {fileID: 2292386364004472930}
   - component: {fileID: 235164529016717751}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 103873058544367840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.37, y: 0.37, z: 0.37}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2060262213484393193}
@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: 160, y: 20}
+  m_AnchoredPosition: {x: 1.26, y: -1}
+  m_SizeDelta: {x: 80, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2292386364004472930
 MonoBehaviour:
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 7039423148849449989}
   - component: {fileID: 6462406281885593678}
   - component: {fileID: 4837862706475058042}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 2}
-  m_SizeDelta: {x: 0.5, y: 1}
+  m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7039423148849449989
 Canvas:
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 2060262213484393193}
   - component: {fileID: 4121311883960174816}
   - component: {fileID: 329161886585909884}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,6 +280,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5263129300804703407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8530739151427797451}
+  m_Layer: 12
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8530739151427797451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5263129300804703407}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4521183234554166541}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6270667068622170349
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,6 +326,7 @@ GameObject:
   - component: {fileID: -3291283489456248618}
   - component: {fileID: 5006654581892904369}
   - component: {fileID: -3850994626510596720}
+  - component: {fileID: -4743237310921767861}
   m_Layer: 12
   m_Name: Tank Left Lane
   m_TagString: Enemy
@@ -316,6 +348,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3489004684332875861}
+  - {fileID: 8530739151427797451}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7810178399839485758
@@ -383,7 +416,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -446,17 +479,41 @@ MonoBehaviour:
   speed: 5
   speedHolder: 0
   rayLength: 3
-  rotationSmooth: 0.1
+  rotationSpeed: 10
   wayPoints: {fileID: 0}
-  targetRotation: {x: 0, y: 0, z: 0, w: 0}
-  wavePointIndex: 0
+  wayPointIndex: 0
   left: 1
   right: 0
-  shouldRotate: 0
   airShip: 0
   tank:
     serializedVersion: 2
     m_Bits: 4096
+--- !u!114 &-4743237310921767861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270667068622170349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86246bbd816819a41b9e92795816af78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 15
+  hitableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  laserTower: {fileID: 0}
+  rotatingGunHolder: {fileID: 0}
+  guns: {fileID: 0}
+  gunLeftShootPoint: {fileID: 8530739151427797451}
+  gunRightShootPoint: {fileID: 0}
+  rotationSmooth: 0.5
+  attackWaitTime: 0.2
+  damage: 2
+  bulletPrefab: {fileID: 7598174382105631414, guid: 28d8092273ac25747ab8bdafa9208b2d,
+    type: 3}
 --- !u!1 &6642848037138841014
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2397881034547262814}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +561,7 @@ GameObject:
   - component: {fileID: 3828575245625505817}
   - component: {fileID: 5068103458875773854}
   - component: {fileID: 6054382144053807762}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}

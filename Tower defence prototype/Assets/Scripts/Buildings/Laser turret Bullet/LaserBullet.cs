@@ -44,7 +44,7 @@ public class LaserBullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag == "Enemy")
+        if (other.transform.CompareTag("Enemy"))
         {
             other.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
             print("Hit");

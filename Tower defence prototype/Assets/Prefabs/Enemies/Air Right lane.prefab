@@ -316,7 +316,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f3362c04762df4583de1ea02cd71c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 90
+  maxHealth: 75
   currencyOnDeath: 25
   healthSlider: {fileID: 5179133178792337379}
 --- !u!54 &4822256131777053238
@@ -379,13 +379,11 @@ MonoBehaviour:
   speed: 8
   speedHolder: 0
   rayLength: 3
-  rotationSmooth: 0
+  rotationSpeed: 3
   wayPoints: {fileID: 0}
-  targetRotation: {x: 0, y: 0, z: 0, w: 0}
-  wavePointIndex: 0
+  wayPointIndex: 0
   left: 0
   right: 1
-  shouldRotate: 0
   airShip: 1
   airCraft:
     serializedVersion: 2
