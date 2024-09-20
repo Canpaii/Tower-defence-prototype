@@ -61,6 +61,7 @@ public class BuildingPlacement : MonoBehaviour
                     if(Input.GetMouseButtonDown(0))
                     {   
                         PlaceTower();
+                        hitInfo.collider.gameObject.SetActive(false);
                     }
                 }
                 else

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4561703768526388248}
   - component: {fileID: 4909440786227895403}
   - component: {fileID: -2967665007702370150}
+  - component: {fileID: -4357368623932403245}
   m_Layer: 12
   m_Name: Tank Right lane
   m_TagString: Enemy
@@ -36,6 +37,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7783064037982092878}
+  - {fileID: 4039618789038363660}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6792233709667181032
@@ -175,6 +177,32 @@ MonoBehaviour:
   tank:
     serializedVersion: 2
     m_Bits: 4096
+--- !u!114 &-4357368623932403245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27033090974801733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86246bbd816819a41b9e92795816af78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 15
+  hitableLayer:
+    serializedVersion: 2
+    m_Bits: 33792
+  laserTower: {fileID: 0}
+  rotatingGunHolder: {fileID: 0}
+  guns: {fileID: 0}
+  gunLeftShootPoint: {fileID: 4039618789038363660}
+  gunRightShootPoint: {fileID: 0}
+  rotationSmooth: 0.5
+  attackWaitTime: 2.5
+  damage: 14
+  bulletPrefab: {fileID: 4208400491822282058, guid: 919bfec52a7d2dc45b044f0139597399,
+    type: 3}
 --- !u!1 &1956751814733623052
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +558,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6436874245480407006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4039618789038363660}
+  m_Layer: 12
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4039618789038363660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6436874245480407006}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.0300001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 656105573018855085}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6634037373840009171
 GameObject:
   m_ObjectHideFlags: 0

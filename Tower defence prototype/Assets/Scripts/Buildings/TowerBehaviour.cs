@@ -7,6 +7,7 @@ public class TowerBehaviour : MonoBehaviour
 {
     [SerializeField] private LayerMask enemyLayerMask;
     [SerializeField] private float radius;
+    private GameObject grid; // the exact grid this gameObject is on can be used later for selling this building
     
     public GameObject levelUpUI;
     public EnemyManager enemyManager;

@@ -6,7 +6,7 @@ using UnityEditor.Timeline;
 using UnityEngine;
 
 [System.Serializable]
-public class EnemyWave 
+public struct EnemyWave 
 { 
     public GameObject enemyPrefab;
     public bool airCraft;
@@ -14,7 +14,7 @@ public class EnemyWave
 }
 
 [System.Serializable]
-public class Waves 
+public struct Waves 
 {
     public EnemyWave[] enemies;  
 }

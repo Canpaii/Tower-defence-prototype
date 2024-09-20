@@ -8,6 +8,7 @@ public class BaseHP : MonoBehaviour
 {
     public float maxHealth;
     private float currentHealth;
+    public bool mainBase;
     
     public TMP_Text healthText;
     void Start()
@@ -18,8 +19,11 @@ public class BaseHP : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        
-        UpdateHealth(currentHealth);
+
+        if (mainBase)
+        {
+            UpdateHealth(currentHealth);
+        }
         
         print("The Base took" + damage + " damage");
         if (currentHealth <= 0)

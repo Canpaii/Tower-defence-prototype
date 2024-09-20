@@ -15,14 +15,13 @@ public class EnemyAttack : MonoBehaviour
     
     [SerializeField] private float rotationSmooth;
     [SerializeField] private float attackWaitTime;
-    
-    [SerializeField] private int damage;
-    private float timer;
+   
+    [SerializeField] private float timer;
     
     
     public GameObject bulletPrefab;
     
-    private Transform target;
+    [SerializeField] Transform target;
     void Update()
     {
         target = FindBuilding();
@@ -42,15 +41,14 @@ public class EnemyAttack : MonoBehaviour
         if (timer > attackWaitTime)
         {
             GameObject currentBullet = Instantiate(bulletPrefab, gunLeftShootPoint.position, gunLeftShootPoint.rotation);
-            currentBullet.GetComponent<LaserBullet>().target = target; 
-           
-           
+            currentBullet.GetComponent<TankBullet>().target = target; 
+            
             timer = 0;
         }
     }
     #region FindBuilding
 
-     public Transform FindBuilding() // find the closest target in an area around you
+     public Transform FindBuilding() // find the closest target in an area around the object
         {
             Collider[] nearbyBuildings = Physics.OverlapSphere(transform.position, radius, hitableLayer );
             Transform closestTarget = null;

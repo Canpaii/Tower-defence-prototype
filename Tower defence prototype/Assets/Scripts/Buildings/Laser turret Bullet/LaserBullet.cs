@@ -19,6 +19,15 @@ public class LaserBullet : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Destroy(gameObject, 5);
     }
+
+    private void Update()
+    {
+        if (!target)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void LateUpdate()
     {   
         timer += Time.deltaTime;

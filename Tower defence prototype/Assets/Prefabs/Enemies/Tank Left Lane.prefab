@@ -503,16 +503,16 @@ MonoBehaviour:
   radius: 15
   hitableLayer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 33792
   laserTower: {fileID: 0}
   rotatingGunHolder: {fileID: 0}
   guns: {fileID: 0}
   gunLeftShootPoint: {fileID: 8530739151427797451}
   gunRightShootPoint: {fileID: 0}
   rotationSmooth: 0.5
-  attackWaitTime: 0.2
-  damage: 2
-  bulletPrefab: {fileID: 7598174382105631414, guid: 28d8092273ac25747ab8bdafa9208b2d,
+  attackWaitTime: 2.5
+  damage: 14
+  bulletPrefab: {fileID: 4208400491822282058, guid: 919bfec52a7d2dc45b044f0139597399,
     type: 3}
 --- !u!1 &6642848037138841014
 GameObject:

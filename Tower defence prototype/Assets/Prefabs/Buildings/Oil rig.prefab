@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5262957724927198833}
   - component: {fileID: 5044810323925598083}
   - component: {fileID: 3371110859882235068}
+  - component: {fileID: -5294262793852266572}
   m_Layer: 10
   m_Name: Oil rig
-  m_TagString: Untagged
+  m_TagString: Hitable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +128,21 @@ MonoBehaviour:
   enemyManager: {fileID: 0}
   enemy: {fileID: 0}
   harvestAmount: 7
+--- !u!114 &-5294262793852266572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2216557535192434876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3909682b589784189b08e7021d88de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 35
+  mainBase: 0
+  healthText: {fileID: 0}
 --- !u!1 &5002169155342963358
 GameObject:
   m_ObjectHideFlags: 0
