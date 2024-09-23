@@ -7,7 +7,7 @@ public class BasicLaserGunTower : TowerBehaviour
 {
     [SerializeField] private Transform laserTower;
     [SerializeField] private Transform rotatingGunHolder;
-    [SerializeField] private Transform guns;
+    [SerializeField] private Transform[] guns;
     [SerializeField] private Transform gunLeftShootPoint, gunRightShootPoint;
     
     [SerializeField] private float rotationSmooth;
@@ -74,9 +74,12 @@ public class BasicLaserGunTower : TowerBehaviour
 
     void RotateGun()
     {
-        Vector3 direction = enemy.position - guns.position;
-        Quaternion rotation = Quaternion.LookRotation(direction);
-        guns.rotation = Quaternion.Slerp(guns.rotation, rotation, rotationSmooth);
+        for (int i = 0; i < guns.Length; i++)
+        {
+            Vector3 direction = enemy.position - guns[i].position;
+            Quaternion rotation = Quaternion.LookRotation(direction);
+            guns[i].rotation = Quaternion.Slerp(guns[i].rotation, rotation, rotationSmooth);
+        }
     } 
     #endregion
 }

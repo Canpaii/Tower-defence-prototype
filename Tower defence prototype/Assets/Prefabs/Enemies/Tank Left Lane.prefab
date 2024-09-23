@@ -488,6 +488,10 @@ MonoBehaviour:
   tank:
     serializedVersion: 2
     m_Bits: 4096
+  baseWaypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &-4743237310921767861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,9 +515,10 @@ MonoBehaviour:
   gunRightShootPoint: {fileID: 0}
   rotationSmooth: 0.5
   attackWaitTime: 2.5
-  damage: 14
+  timer: 0
   bulletPrefab: {fileID: 4208400491822282058, guid: 919bfec52a7d2dc45b044f0139597399,
     type: 3}
+  target: {fileID: 0}
 --- !u!1 &6642848037138841014
 GameObject:
   m_ObjectHideFlags: 0

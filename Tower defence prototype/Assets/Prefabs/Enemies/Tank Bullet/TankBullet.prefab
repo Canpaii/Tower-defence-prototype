@@ -156,7 +156,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b0704d0fe39afd348b3dcaf9a7034bf5, type: 2}
+  - {fileID: 2100000, guid: a03469c49e8ac5946879cfbeedc37a26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -199,9 +199,9 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.19177341, g: 1, b: 0, a: 1}
-      key1: {r: 0.08805036, g: 0.5283019, b: 0, a: 1}
-      key2: {r: 0.19215688, g: 1, b: 0, a: 0}
+      key0: {r: 1, g: 0, b: 0.08038187, a: 1}
+      key1: {r: 0.5294118, g: 0.04768071, b: 0, a: 1}
+      key2: {r: 1, g: 0.07469355, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -223,7 +223,7 @@ TrailRenderer:
       atime5: 0
       atime6: 0
       atime7: 0
-      m_Mode: 2
+      m_Mode: 0
       m_ColorSpace: 0
       m_NumColorKeys: 3
       m_NumAlphaKeys: 2
@@ -254,5 +254,3 @@ MonoBehaviour:
   force: 40
   damage: 14
   target: {fileID: 0}
-  rotateSpeed: 0
-  homingDuration: 0

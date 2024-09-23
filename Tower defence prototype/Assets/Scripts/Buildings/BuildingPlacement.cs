@@ -61,7 +61,7 @@ public class BuildingPlacement : MonoBehaviour
                     if(Input.GetMouseButtonDown(0))
                     {   
                         PlaceTower();
-                        hitInfo.collider.gameObject.SetActive(false);
+                        hitInfo.collider.gameObject.SetActive(false); // give the tower a reference to the grid its on so you can sell the tower later and bring back the tile
                     }
                 }
                 else

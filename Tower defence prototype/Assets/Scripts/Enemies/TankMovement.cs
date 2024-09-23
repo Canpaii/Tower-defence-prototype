@@ -8,6 +8,8 @@ public class TankMovement : EnemyMovement
 {
     [SerializeField] LayerMask tank;
     
+    
+    private int baseWaypointIndex;
     public override void Update()
     {
         base.Update();
