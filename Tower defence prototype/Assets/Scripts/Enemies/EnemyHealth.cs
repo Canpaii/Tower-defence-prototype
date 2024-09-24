@@ -12,9 +12,11 @@ public class EnemyHealth : MonoBehaviour
     public int currencyOnDeath;
     
     public Slider healthSlider;
+    private EnemyCounter _enemyCounter;
     void Start()
     {
         currentHealth = maxHealth;
+        _enemyCounter = WinconditionManager.instance.counter;
     }
 
     public void TakeDamage(float damage)
@@ -37,6 +39,7 @@ public class EnemyHealth : MonoBehaviour
     public void DIE()
     {
         // doe nog wat coole dingetjes ofzo
+        _enemyCounter.UpdateEnemiesKilled();
         Currency.Instance.AddCurrency(currencyOnDeath);
         
         Destroy(gameObject);

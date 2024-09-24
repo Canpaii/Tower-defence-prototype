@@ -7,10 +7,11 @@ using TMPro;
 public class BaseHP : MonoBehaviour
 {
     public float maxHealth;
-    private float currentHealth;
+    [SerializeField] private float currentHealth;
     public bool mainBase;
     
     public TMP_Text healthText;
+    public GameObject loseScreen;
     void Start()
     {
         currentHealth = maxHealth;
@@ -38,9 +39,10 @@ public class BaseHP : MonoBehaviour
     }
     public void DIE()
     {
-        // doe nog wat coole dingetjes ofzo
-        
-        //lose screen
+        if (mainBase)
+        {
+            loseScreen.SetActive(true);
+        }
         
         Destroy(gameObject);
     }

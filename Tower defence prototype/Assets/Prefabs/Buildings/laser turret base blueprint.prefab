@@ -933,11 +933,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3437492991393312061}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae869815fa2512b408915c27382944d2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 660472488126064421}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae869815fa2512b408915c27382944d2, type: 3}
 --- !u!4 &5002151137316147301 stripped
 Transform:
@@ -945,43 +941,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4819287598620407694}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5629751702182415071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae869815fa2512b408915c27382944d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 4819287598620407694}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &660472488126064421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5629751702182415071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66c94d3196d9e5448adde8332bcda088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyLayerMask:
-    serializedVersion: 2
-    m_Bits: 12288
-  radius: 11
-  levelUpUI: {fileID: 0}
-  enemyManager: {fileID: 0}
-  enemy: {fileID: 0}
-  laserTower: {fileID: 5002151137316147301}
-  rotatingGunHolder: {fileID: 1829401592374244203}
-  guns:
-  - {fileID: 1873583194930662670}
-  - {fileID: 1074741180007202870}
-  gunLeftShootPoint: {fileID: 8952548074830507240}
-  gunRightShootPoint: {fileID: 5612340273937106303}
-  rotationSmooth: 0.5
-  attackWaitTime: 0.2
-  damage: 4
-  bulletPrefab: {fileID: 7598174382105631414, guid: 28d8092273ac25747ab8bdafa9208b2d,
-    type: 3}
 --- !u!1001 &8175742215142838557
 PrefabInstance:
   m_ObjectHideFlags: 0

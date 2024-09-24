@@ -140,9 +140,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3909682b589784189b08e7021d88de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 35
+  maxHealth: 16
   mainBase: 0
   healthText: {fileID: 0}
+  loseScreen: {fileID: 0}
 --- !u!1 &5002169155342963358
 GameObject:
   m_ObjectHideFlags: 0
