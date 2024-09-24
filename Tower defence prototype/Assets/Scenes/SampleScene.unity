@@ -337,7 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 11638698}
   m_Layer: 11
-  m_Name: Point 4 tank left lane
+  m_Name: Point 4 air left lane
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -816,7 +816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 37562790}
   m_Layer: 11
-  m_Name: stanby 2 tank right
+  m_Name: stanby 2 air right
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4320,7 +4320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.48338526, y: 0.000000010261399, z: -0.0000000056661693, w: 0.87540776}
+  m_LocalRotation: {x: 0.48338524, y: -0.00000002803465, z: 0.000000015480257, w: 0.87540776}
   m_LocalPosition: {x: 0, y: 92.5, z: -58.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5275,7 +5275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 381800549}
   m_Layer: 11
-  m_Name: Point 3 tank right
+  m_Name: Point 3 air right
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5306,7 +5306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390332403}
   m_Layer: 11
-  m_Name: Point 5 tank left lane
+  m_Name: Point 5 air left lane
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5969,7 +5969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 423328549}
   m_Layer: 11
-  m_Name: point 5 tank right lane
+  m_Name: point 5 air right lane
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6452,7 +6452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458117714}
   m_Layer: 11
-  m_Name: Point 2 tank right lane
+  m_Name: Point 2 air right lane
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6649,7 +6649,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 483392290}
-  - component: {fileID: 483392291}
   m_Layer: 0
   m_Name: WaypointsRightLaneTank
   m_TagString: Untagged
@@ -6677,18 +6676,6 @@ Transform:
   - {fileID: 2016644840}
   m_Father: {fileID: 1561457362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &483392291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483392289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e05dbe81a551045ae1a3f5cf91f59e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &485419313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7016213968065631388, guid: 738fc3cb37cde484c8addfa412a0301b,
@@ -7613,7 +7600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 584444672}
   m_Layer: 11
-  m_Name: Point 6 tank right lane
+  m_Name: Point 6 air right lane
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9197,7 +9184,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 737226749}
-  - component: {fileID: 737226750}
   m_Layer: 0
   m_Name: WaypointsRightLaneTank
   m_TagString: Untagged
@@ -9228,18 +9214,6 @@ Transform:
   - {fileID: 37562790}
   m_Father: {fileID: 160326002}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &737226750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737226748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a653164b18dc2349833e569ecbde068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &743799439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8768530490398501111, guid: 1846af59efb63a341b7eb1562224b85e,
@@ -9983,48 +9957,44 @@ MonoBehaviour:
   gameStarted: 0
   waves:
   - enemies:
-    - enemyPrefab: {fileID: 5135217025687882283, guid: 6d4d04af0aca4c44d95ee26457267ce5,
+    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
         type: 3}
-      airCraft: 1
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+  - enemies:
+    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+  - enemies:
+    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
+        type: 3}
+      airCraft: 0
       isLeftLane: 1
     - enemyPrefab: {fileID: 2587245180889064386, guid: 7a33098c8b11f7145a5c160ec89b9fb2,
         type: 3}
       airCraft: 1
       isLeftLane: 0
-  - enemies:
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
+    - enemyPrefab: {fileID: 5135217025687882283, guid: 6d4d04af0aca4c44d95ee26457267ce5,
         type: 3}
-      airCraft: 0
+      airCraft: 1
       isLeftLane: 1
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-  - enemies:
-    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
     - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
         type: 3}
       airCraft: 0
@@ -10039,7 +10009,7 @@ MonoBehaviour:
   rightLaneSpawnPoint: {fileID: 1785433079}
   leftLaneSpawnPointAir: {fileID: 751166581}
   rightLaneSpawnPointAir: {fileID: 1031772711}
-  countdown: 5
+  countdown: 3
   spawnDelay: 1
   timeBetweenWaves: 10
 --- !u!1001 &803776501
@@ -10684,7 +10654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 858494999}
   m_Layer: 11
-  m_Name: standby 2 tank left
+  m_Name: standby 2 air left
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -11830,7 +11800,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 938833873}
-  - component: {fileID: 938833874}
   m_Layer: 0
   m_Name: WaypointsLeftLaneTank
   m_TagString: Untagged
@@ -11860,18 +11829,6 @@ Transform:
   - {fileID: 1255694138}
   m_Father: {fileID: 1561457362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &938833874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938833872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f05f4b0b2791084419021efe286a59f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &941458407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7016213968065631388, guid: 738fc3cb37cde484c8addfa412a0301b,
@@ -12036,7 +11993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 968161653}
   m_Layer: 11
-  m_Name: point 6 tank left lane
+  m_Name: point 6 air left lane
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -13806,7 +13763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1099400592}
   m_Layer: 11
-  m_Name: Point 1 tank left lane
+  m_Name: Point 1 air left lane
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -15352,7 +15309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1228099381}
   m_Layer: 11
-  m_Name: Point 2 tank left lane
+  m_Name: Point 2 air left lane
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -16081,7 +16038,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1292324554}
-  - component: {fileID: 1292324555}
   m_Layer: 0
   m_Name: WaypointsLeftLaneTank
   m_TagString: Untagged
@@ -16114,18 +16070,6 @@ Transform:
   - {fileID: 858494999}
   m_Father: {fileID: 160326002}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1292324555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292324553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf9e59ef7c7336b4fbb82589a9a62667, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1297032139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7016213968065631388, guid: 738fc3cb37cde484c8addfa412a0301b,
@@ -16407,6 +16351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1341002197}
   - component: {fileID: 1341002198}
+  - component: {fileID: 1341002199}
   m_Layer: 0
   m_Name: WaypointsManager
   m_TagString: Untagged
@@ -16447,6 +16392,11 @@ MonoBehaviour:
   - {fileID: 1952968926}
   - {fileID: 116111027}
   - {fileID: 2016644840}
+  - {fileID: 1085434678}
+  - {fileID: 411416340}
+  - {fileID: 318861135}
+  - {fileID: 318861135}
+  - {fileID: 318861135}
   wayPointsLeft:
   - {fileID: 2080999012}
   - {fileID: 66263254}
@@ -16455,6 +16405,9 @@ MonoBehaviour:
   - {fileID: 2144359519}
   - {fileID: 1193839189}
   - {fileID: 1255694138}
+  - {fileID: 60789572}
+  - {fileID: 693901900}
+  - {fileID: 461169790}
   airWayPointsLeft:
   - {fileID: 1099400592}
   - {fileID: 1228099381}
@@ -16463,26 +16416,33 @@ MonoBehaviour:
   - {fileID: 390332403}
   - {fileID: 968161653}
   - {fileID: 1454387357}
+  - {fileID: 1956409149}
+  - {fileID: 1511950585}
+  - {fileID: 858494999}
   airWayPointsRight:
   - {fileID: 1508833352}
   - {fileID: 458117714}
   - {fileID: 381800549}
   - {fileID: 1914706344}
   - {fileID: 423328549}
-  baseWaypoints:
-  - {fileID: 60789572}
-  - {fileID: 693901900}
-  - {fileID: 461169790}
-  - {fileID: 1085434678}
-  - {fileID: 411416340}
-  - {fileID: 318861135}
-  baseWaypointsAir:
-  - {fileID: 1956409149}
-  - {fileID: 1511950585}
-  - {fileID: 858494999}
   - {fileID: 584444672}
   - {fileID: 2069101270}
   - {fileID: 37562790}
+  - {fileID: 37562790}
+  - {fileID: 37562790}
+--- !u!114 &1341002199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341002196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e69ea62541e4c143a09e3bc34ba039c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: {fileID: 1341002198}
 --- !u!1001 &1341258921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17374,7 +17334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1454387357}
   m_Layer: 11
-  m_Name: Point 7 tank left lane
+  m_Name: Point 7 air left lane
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -17485,7 +17445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1465021428}
   m_Layer: 11
-  m_Name: Point 3 tank left lane
+  m_Name: Point 3 air left lane
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -17831,7 +17791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503378396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.48338526, y: 0.000000010261399, z: -0.0000000056661693, w: 0.87540776}
+  m_LocalRotation: {x: 0.48338524, y: -0.00000002803465, z: 0.000000015480257, w: 0.87540776}
   m_LocalPosition: {x: 0, y: 42.5, z: -58.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -17894,7 +17854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1508833352}
   m_Layer: 11
-  m_Name: Point 1 tank right lane
+  m_Name: Point 1 air right lane
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -17925,7 +17885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1511950585}
   m_Layer: 11
-  m_Name: standby 1 tank left lane
+  m_Name: standby 1 air left lane
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -21828,7 +21788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1914706344}
   m_Layer: 11
-  m_Name: Point 4 tank Right
+  m_Name: Point 4 air Right
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -21914,7 +21874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1956409149}
   m_Layer: 11
-  m_Name: point 8 tank left lane
+  m_Name: point 8 air left lane
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -23115,7 +23075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2069101270}
   m_Layer: 11
-  m_Name: standby 1 tank right
+  m_Name: standby 1 air right
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

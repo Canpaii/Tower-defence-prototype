@@ -8,6 +8,4 @@ public class Waypoints : MonoBehaviour
     public  Transform[] wayPointsLeft;
     public  Transform[] airWayPointsLeft;
     public  Transform[] airWayPointsRight;
-    public  Transform[] baseWaypoints;
-    public  Transform[] baseWaypointsAir;
 }

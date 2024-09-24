@@ -11,10 +11,11 @@ public class AirMovement : EnemyMovement
         
         if (Vector3.Distance(transform.position, wayPoints.position) <= 0.2f)
         {
-            if (wayPointIndex >= AirWaypointLeft.airWayPointsLeft.Length  || wayPointIndex >= AirWaypointRight.airWayPointsRight.Length )
+            if (wayPointIndex >= waypoints.airWayPointsLeft.Length  -1 || wayPointIndex >= waypoints.airWayPointsRight.Length -1 )
             {
                 transform.position = transform.position;
                 speed = 0;
+                Debug.Log("Final waypoint reached.");
             }
             else
             {
@@ -25,6 +26,7 @@ public class AirMovement : EnemyMovement
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, rayLength, airCraft ))
         {
             speed = 0; 
+            Debug.Log("Raycast hit detected. Stopping.");
         }
         else
         {
@@ -37,11 +39,11 @@ public class AirMovement : EnemyMovement
         wayPointIndex++;
         if (left)
         {
-            wayPoints = AirWaypointLeft.airWayPointsLeft[wayPointIndex];
+            wayPoints = waypoints.airWayPointsLeft[wayPointIndex];
         }
         else if (right)
         {
-            wayPoints = AirWaypointRight.airWayPointsRight[wayPointIndex];
+            wayPoints = waypoints.airWayPointsRight[wayPointIndex];
         }
     }
    

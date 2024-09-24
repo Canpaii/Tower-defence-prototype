@@ -8,18 +8,17 @@ public class TankMovement : EnemyMovement
 {
     [SerializeField] LayerMask tank;
     
-    
-    private int baseWaypointIndex;
     public override void Update()
     {
         base.Update();
         
         if (Vector3.Distance(transform.position, wayPoints.position) <= 0.2f)
         {
-            if (wayPointIndex >= AirWaypointLeft.airWayPointsLeft.Length || wayPointIndex >= AirWaypointRight.airWayPointsRight.Length)
+            if (wayPointIndex >= waypoints.wayPointsLeft.Length -1|| wayPointIndex >= waypoints.wayPointsLeft.Length -1)
             {
                 transform.position = transform.position;
                 speed = 0;
+                Debug.Log("Final waypoint reached.");
             }
             else
             {
@@ -30,6 +29,7 @@ public class TankMovement : EnemyMovement
         if (Physics.Raycast(transform.position, transform.forward, rayLength, tank ))
         {
             speed = 0; 
+            Debug.Log("Raycast hit detected. Stopping.");
         }
         else
         {
@@ -41,11 +41,34 @@ public class TankMovement : EnemyMovement
         wayPointIndex++;
         if (left)
         {
-            wayPoints = WayPointLeftSide.wayPointsLeft[wayPointIndex];
+            Debug.Log("Waypoints Left Length: " + waypoints.wayPointsLeft.Length);
+            Debug.Log("Current Waypoint Index: " + wayPointIndex);
+            
+            if (wayPointIndex < waypoints.wayPointsLeft.Length)
+            {
+                wayPoints = waypoints.wayPointsLeft[wayPointIndex];
+            }
+            else
+            {
+                speed = 0;
+                Debug.Log("Final waypoint reached.");
+            }
         }
         else if (right)
         {
-            wayPoints = WayPointsRightSide.wayPointsRight[wayPointIndex];
+            Debug.Log("Waypoints Right Length: " + waypoints.wayPointsRight.Length);
+            Debug.Log("Current Waypoint Index: " + wayPointIndex);
+            
+            if (wayPointIndex < waypoints.wayPointsRight.Length)
+            {
+                 wayPoints = waypoints.wayPointsRight[wayPointIndex];
+            }
+            else
+            {
+                speed = 0;
+                Debug.Log("Final waypoint reached.");
+            }
+           
         }
     }
     
