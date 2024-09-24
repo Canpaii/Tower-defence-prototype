@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 90
-  currencyOnDeath: 25
+  currencyOnDeath: 30
   healthSlider: {fileID: 2734756030081294755}
 --- !u!54 &4909440786227895403
 Rigidbody:
@@ -170,6 +170,7 @@ MonoBehaviour:
   rayLength: 3
   rotationSpeed: 10
   wayPoints: {fileID: 0}
+  waypoints: {fileID: 0}
   wayPointIndex: 0
   left: 0
   right: 1
@@ -200,9 +201,10 @@ MonoBehaviour:
   gunRightShootPoint: {fileID: 0}
   rotationSmooth: 0.5
   attackWaitTime: 2.5
-  damage: 14
+  timer: 0
   bulletPrefab: {fileID: 4208400491822282058, guid: 919bfec52a7d2dc45b044f0139597399,
     type: 3}
+  target: {fileID: 0}
 --- !u!1 &1956751814733623052
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +232,7 @@ RectTransform:
   m_GameObject: {fileID: 1956751814733623052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.37, y: 0.37, z: 0.37}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4373270806894789612}
@@ -239,8 +241,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: 160, y: 20}
+  m_AnchoredPosition: {x: 1.26, y: -1}
+  m_SizeDelta: {x: 80, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2734756030081294755
 MonoBehaviour:

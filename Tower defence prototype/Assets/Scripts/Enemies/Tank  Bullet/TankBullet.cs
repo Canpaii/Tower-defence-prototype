@@ -6,7 +6,7 @@ using UnityEngine;
 public class TankBullet : MonoBehaviour
 {
     [SerializeField] private float force;
-    public int damage;
+    public float damage;
     public Transform target;
 
     private float timer;

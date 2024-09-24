@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 90
-  currencyOnDeath: 25
+  currencyOnDeath: 30
   healthSlider: {fileID: 2292386364004472930}
 --- !u!54 &5006654581892904369
 Rigidbody:
@@ -481,6 +481,7 @@ MonoBehaviour:
   rayLength: 3
   rotationSpeed: 10
   wayPoints: {fileID: 0}
+  waypoints: {fileID: 0}
   wayPointIndex: 0
   left: 1
   right: 0
@@ -488,10 +489,6 @@ MonoBehaviour:
   tank:
     serializedVersion: 2
     m_Bits: 4096
-  baseWaypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &-4743237310921767861
 MonoBehaviour:
   m_ObjectHideFlags: 0
