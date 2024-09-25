@@ -31,7 +31,8 @@ public class TextTyper : MonoBehaviour
             currentIndex++;
             StartCoroutine(TypeText(textArray[currentIndex]));
         }
-        UpdateButtonStates();
+
+        UpdateButtonStates();  // Always update button states to ensure correct button behavior
     }
 
     void OnBackButtonClicked()
@@ -41,7 +42,8 @@ public class TextTyper : MonoBehaviour
             currentIndex--;
             StartCoroutine(TypeText(textArray[currentIndex]));
         }
-        UpdateButtonStates();
+
+        UpdateButtonStates();  // Always update button states to ensure correct button behavior
     }
 
     IEnumerator TypeText(string text)
@@ -64,6 +66,13 @@ public class TextTyper : MonoBehaviour
         backButton.interactable = currentIndex > 0;
 
         // Zorg ervoor dat de next button niet meer interactief is als je bij de laatste tekst bent
-        nextButton.interactable = currentIndex < textArray.Length - 1;
+        if (currentIndex >= textArray.Length - 1)
+        {
+            nextButton.interactable = false;
+        }
+        else
+        {
+            nextButton.interactable = true;
+        }
     }
 }
