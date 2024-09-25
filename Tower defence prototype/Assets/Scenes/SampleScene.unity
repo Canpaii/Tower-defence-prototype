@@ -3867,7 +3867,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2050120215}
     m_Modifications:
     - target: {fileID: 3986555988169047256, guid: c4f121f7427516245ae6f11163744be0,
         type: 3}
@@ -3897,17 +3897,17 @@ PrefabInstance:
     - target: {fileID: 7506119973579063631, guid: c4f121f7427516245ae6f11163744be0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7506119973579063631, guid: c4f121f7427516245ae6f11163744be0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7506119973579063631, guid: c4f121f7427516245ae6f11163744be0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7506119973579063631, guid: c4f121f7427516245ae6f11163744be0,
         type: 3}
@@ -4396,7 +4396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.48338526, y: 0.000000010261399, z: -0.0000000056661693, w: 0.87540776}
+  m_LocalRotation: {x: 0.48338526, y: 0.000000010261395, z: -0.0000000056661675, w: 0.87540776}
   m_LocalPosition: {x: 0, y: 92.5, z: -58.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4659,8 +4659,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -6069,6 +6069,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 290813108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &414215459 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7506119973579063631, guid: c4f121f7427516245ae6f11163744be0,
+    type: 3}
+  m_PrefabInstance: {fileID: 285407126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &419305248 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7016213968065631388, guid: 738fc3cb37cde484c8addfa412a0301b,
@@ -7072,7 +7078,7 @@ Transform:
   m_LocalScale: {x: 26.74, y: 10.8, z: 13.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2050120215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &508751915
 MonoBehaviour:
@@ -7088,7 +7094,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  mainBase: 1
   healthText: {fileID: 1227148167}
   loseScreen: {fileID: 1101202751}
 --- !u!4 &509824429 stripped
@@ -10083,52 +10088,35 @@ MonoBehaviour:
   gameStarted: 0
   waves:
   - enemies:
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
       airCraft: 0
       isLeftLane: 1
-    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
+    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
         type: 3}
       airCraft: 0
       isLeftLane: 0
   - enemies:
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
       airCraft: 0
       isLeftLane: 1
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
       airCraft: 0
       isLeftLane: 1
-    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
+    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
         type: 3}
       airCraft: 0
       isLeftLane: 0
   - enemies:
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
       airCraft: 0
       isLeftLane: 1
-    - enemyPrefab: {fileID: 2587245180889064386, guid: 7a33098c8b11f7145a5c160ec89b9fb2,
+    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
         type: 3}
       airCraft: 1
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 5135217025687882283, guid: 6d4d04af0aca4c44d95ee26457267ce5,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-  - enemies:
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
-        type: 3}
-      airCraft: 0
       isLeftLane: 0
     - enemyPrefab: {fileID: 5135217025687882283, guid: 6d4d04af0aca4c44d95ee26457267ce5,
         type: 3}
@@ -10138,11 +10126,28 @@ MonoBehaviour:
         type: 3}
       airCraft: 1
       isLeftLane: 0
-    - enemyPrefab: {fileID: 6270667068622170349, guid: fec9a815c9f693c4fa442de67ab73971,
+  - enemies:
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
       airCraft: 0
       isLeftLane: 1
-    - enemyPrefab: {fileID: 27033090974801733, guid: 0c86636ae5dfcf44d96e07997c4fbeb1,
+    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 5135217025687882283, guid: 6d4d04af0aca4c44d95ee26457267ce5,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 2587245180889064386, guid: 7a33098c8b11f7145a5c160ec89b9fb2,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
         type: 3}
       airCraft: 0
       isLeftLane: 0
@@ -18184,7 +18189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503378396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.48338526, y: 0.000000010261399, z: -0.0000000056661693, w: 0.87540776}
+  m_LocalRotation: {x: 0.48338526, y: 0.000000010261395, z: -0.0000000056661675, w: 0.87540776}
   m_LocalPosition: {x: 0, y: 42.5, z: -58.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20714,8 +20719,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -23546,6 +23551,9 @@ Transform:
   - {fileID: 1724665308}
   - {fileID: 1049248564}
   - {fileID: 8768530488896708608}
+  - {fileID: 508751914}
+  - {fileID: 2114553084}
+  - {fileID: 414215459}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2050533933 stripped
@@ -23821,7 +23829,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tower 1 - 250
+  m_text: 'LaserTurret - 250
 
 '
   m_isRightToLeft: 0
@@ -23850,8 +23858,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -24341,12 +24349,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114553081}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -500, y: -1, z: -500}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2050120215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2116437430 stripped
 Transform:
@@ -25020,6 +25028,3 @@ SceneRoots:
   - {fileID: 1387139606}
   - {fileID: 1074647938}
   - {fileID: 958039327}
-  - {fileID: 508751914}
-  - {fileID: 2114553084}
-  - {fileID: 285407126}

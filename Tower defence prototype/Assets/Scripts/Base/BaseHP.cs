@@ -4,12 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class BaseHP : MonoBehaviour
+public class BaseHP : BuildingHp
 {
-    public float maxHealth;
-    [SerializeField] private float currentHealth;
-    public bool mainBase;
-    
     public TMP_Text healthText;
     public GameObject loseScreen;
     void Start()
@@ -17,14 +13,10 @@ public class BaseHP : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage(float damage)
+    public override void TakeDamage(float damage)
     {
         currentHealth -= damage;
-
-        if (mainBase)
-        {
-            UpdateHealth(currentHealth);
-        }
+        UpdateHealth(currentHealth);
         
         print("The Base took" + damage + " damage");
         if (currentHealth <= 0)
@@ -37,12 +29,11 @@ public class BaseHP : MonoBehaviour
     {
         healthText.text = currenthealth.ToString();
     }
-    public void DIE()
+    public override void DIE()
     {
-        if (mainBase)
-        {
-            loseScreen.SetActive(true);
-        }
+       
+        loseScreen.SetActive(true);
+        
         
         Destroy(gameObject);
     }

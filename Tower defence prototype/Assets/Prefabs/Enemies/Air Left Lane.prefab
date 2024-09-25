@@ -250,8 +250,8 @@ Transform:
   m_LocalScale: {x: 2, y: 1.5, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5376117941166518971}
   - {fileID: 9071089825446211217}
+  - {fileID: 5376117941166518971}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &520167456492730389
@@ -408,11 +408,11 @@ MonoBehaviour:
   hitableLayer:
     serializedVersion: 2
     m_Bits: 32768
-  laserTower: {fileID: 0}
-  rotatingGunHolder: {fileID: 0}
-  guns: {fileID: 0}
+  laserTower: {fileID: 5376117941166518971}
+  rotatingGunHolder: {fileID: 5376117941166518971}
+  guns: {fileID: 5376117941166518971}
   gunLeftShootPoint: {fileID: 5376117941166518971}
-  gunRightShootPoint: {fileID: 0}
+  gunRightShootPoint: {fileID: 5376117941166518971}
   rotationSmooth: 0.5
   attackWaitTime: 0.75
   timer: 0

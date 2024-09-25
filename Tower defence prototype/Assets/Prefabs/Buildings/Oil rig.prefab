@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 4995535226696699244}
   - component: {fileID: 5262957724927198833}
   - component: {fileID: 5044810323925598083}
+  - component: {fileID: 8086942432542556289}
   - component: {fileID: 3371110859882235068}
-  - component: {fileID: -5294262793852266572}
+  - component: {fileID: 3159642860357099422}
   m_Layer: 10
   m_Name: Oil rig
   m_TagString: Hitable
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.063, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 3, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2048249244469871610}
@@ -106,8 +107,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.8169774, y: 1.5049858, z: 1.7762173}
+  m_Center: {x: 0.003193438, y: 0.2524929, z: -0.024475634}
+--- !u!114 &8086942432542556289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2216557535192434876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcc5839f81720e4eb9a6e2b57280a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 16
+  currentHealth: 0
 --- !u!114 &3371110859882235068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,22 +143,33 @@ MonoBehaviour:
   enemyManager: {fileID: 0}
   enemy: {fileID: 0}
   harvestAmount: 7
---- !u!114 &-5294262793852266572
-MonoBehaviour:
+--- !u!54 &3159642860357099422
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2216557535192434876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e3909682b589784189b08e7021d88de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 16
-  mainBase: 0
-  healthText: {fileID: 0}
-  loseScreen: {fileID: 0}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5002169155342963358
 GameObject:
   m_ObjectHideFlags: 0

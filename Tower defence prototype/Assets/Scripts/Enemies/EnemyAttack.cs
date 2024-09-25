@@ -28,8 +28,8 @@ public class EnemyAttack : MonoBehaviour
         
         if (target != null)
         {
-            // RotateGunHolder();
-            // RotateGun();
+            RotateGunHolder();
+            RotateGun();
                                
             Shoot();
         }
@@ -75,7 +75,7 @@ public class EnemyAttack : MonoBehaviour
     #endregion
    
     
-    /*#region RotationManager
+    #region RotationManager
     
     void RotateGunHolder()
     {
@@ -91,5 +91,5 @@ public class EnemyAttack : MonoBehaviour
         Quaternion rotation = Quaternion.LookRotation(direction);
         guns.rotation = Quaternion.Slerp(guns.rotation, rotation, rotationSmooth);
     } 
-    #endregion*/
+    #endregion
 }

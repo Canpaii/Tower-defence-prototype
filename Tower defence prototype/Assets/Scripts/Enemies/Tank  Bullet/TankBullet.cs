@@ -39,7 +39,7 @@ public class TankBullet : MonoBehaviour
     {
         if (other.transform.CompareTag("Hitable"))
         {
-            other.gameObject.GetComponent<BaseHP>().TakeDamage(damage);
+            other.gameObject.GetComponent<BuildingHp>().TakeDamage(damage);
             print("Hit");
 
             Destroy(gameObject);
