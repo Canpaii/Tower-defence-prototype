@@ -11,5 +11,10 @@ public class ReloadScene : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene("Silver");
+        }
     }
 }
