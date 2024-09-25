@@ -4077,7 +4077,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45650557, y: 0.000000021650013, z: -0.000000011108377, w: 0.8897206}
+  m_LocalRotation: {x: 0.45650557, y: -0.00000002165001, z: 0.0000000111083756, w: 0.8897206}
   m_LocalPosition: {x: 0, y: 92.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -16605,7 +16605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503378396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45650557, y: 0.000000021650013, z: -0.000000011108377, w: 0.8897206}
+  m_LocalRotation: {x: 0.45650557, y: -0.00000002165001, z: 0.0000000111083756, w: 0.8897206}
   m_LocalPosition: {x: 0, y: 42.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22957,21 +22957,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 454512177707341937, guid: 42fc335aadd39c145a2ab2d9412fd23d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 94b22baf0b063d0499eb24b317baffd0, type: 2}
-    - target: {fileID: 569981969431804394, guid: 42fc335aadd39c145a2ab2d9412fd23d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5f3107e42a4c7da4db6c916b956901bc, type: 2}
-    - target: {fileID: 606644847353399951, guid: 42fc335aadd39c145a2ab2d9412fd23d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7a10296ec72ec70448c86c3911a9fc1a, type: 2}
     - target: {fileID: 1586934711459652382, guid: 42fc335aadd39c145a2ab2d9412fd23d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23027,36 +23012,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser turret base 2
       objectReference: {fileID: 0}
-    - target: {fileID: 6031911938275917213, guid: 42fc335aadd39c145a2ab2d9412fd23d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7a10296ec72ec70448c86c3911a9fc1a, type: 2}
-    - target: {fileID: 6829844182395971032, guid: 42fc335aadd39c145a2ab2d9412fd23d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7a10296ec72ec70448c86c3911a9fc1a, type: 2}
-    - target: {fileID: 7064822274891510801, guid: 42fc335aadd39c145a2ab2d9412fd23d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7a10296ec72ec70448c86c3911a9fc1a, type: 2}
-    - target: {fileID: 7217686048296670782, guid: 42fc335aadd39c145a2ab2d9412fd23d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7a10296ec72ec70448c86c3911a9fc1a, type: 2}
-    - target: {fileID: 8454729811745342642, guid: 42fc335aadd39c145a2ab2d9412fd23d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5f3107e42a4c7da4db6c916b956901bc, type: 2}
-    - target: {fileID: 8890350022948947753, guid: 42fc335aadd39c145a2ab2d9412fd23d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c49d542c7e5d0e64698ca24aeb1ac40d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
