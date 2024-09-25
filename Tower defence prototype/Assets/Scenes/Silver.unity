@@ -10059,10 +10059,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiText: {fileID: 162205317}
   textArray:
-  - Test tesla 1
-  - Test tesla 2
-  - Test 3
-  - Test 4
+  - Laser Turret
+  - Laser Turret Level 2
+  - Laser Turret Level 3
+  - Tesla turret
+  - Tesla turret Level 1
   - 
   typingSpeed: 0.05
   nextButton: {fileID: 1267473177}
@@ -10121,7 +10122,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -12016,12 +12017,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1251361841}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &779290077 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 69a65f6d223ca6145a24cf7a48d023ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 1251361841}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &797322593
 GameObject:
   m_ObjectHideFlags: 0
@@ -13568,12 +13563,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d5576b687e736c479a3b035c5f82038, type: 3}
---- !u!1 &1039784072 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 69a65f6d223ca6145a24cf7a48d023ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 2097082294}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1043027162
 GameObject:
   m_ObjectHideFlags: 0
@@ -14118,11 +14107,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabModels:
-  - {fileID: 5646895838028753812, guid: df17124d07bb68c47b761a8f43f760e9, type: 3}
-  - {fileID: 1205267219922143123, guid: 938e2cf9d4f5b0a49b47df05a3fadfb0, type: 3}
-  - {fileID: 1039784072}
-  - {fileID: 1355903521}
-  - {fileID: 779290077}
+  - {fileID: 5936506294668104536, guid: 5bccde80f17fb594da3daeaa6ebb7126, type: 3}
+  - {fileID: 2111691361223342500, guid: 42fc335aadd39c145a2ab2d9412fd23d, type: 3}
+  - {fileID: 5829091516833109070, guid: c2ab6c00fb9323f4fb8eb937cc08fa31, type: 3}
+  - {fileID: 1484385788}
+  - {fileID: 595581558}
   nextButton: {fileID: 1267473177}
   prevButton: {fileID: 1338582785}
   spawnPoint: {fileID: 1199854013}
@@ -14135,13 +14124,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199854011}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.99893767, z: -0, w: -0.046081815}
   m_LocalPosition: {x: -38.76985, y: 0.4966, z: 13.54379}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 185.282, z: 0}
 --- !u!1 &1228421764
 GameObject:
   m_ObjectHideFlags: 0
@@ -15198,12 +15187,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341607723}
   m_CullTransparentMesh: 1
---- !u!1 &1355903521 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 69a65f6d223ca6145a24cf7a48d023ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 49375888}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1387044221
 GameObject:
   m_ObjectHideFlags: 0
@@ -15585,7 +15568,7 @@ Transform:
   m_GameObject: {fileID: 1449291017}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.117, y: 1.592, z: 0.876}
+  m_LocalPosition: {x: -37.117, y: 2.76, z: 0.876}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16028,6 +16011,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481751662}
   m_CullTransparentMesh: 1
+--- !u!1 &1484385788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 11d2fb3386a30e74a982cc50bd4f142b,
+    type: 3}
+  m_PrefabInstance: {fileID: 950152603}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1511478043
 GameObject:
   m_ObjectHideFlags: 0

@@ -74,9 +74,15 @@ public class ModelSwitcher : MonoBehaviour
     {
         if (currentModel != null)
         {
-            Destroy(currentModel);  // Verwijder het huidige model
+            // Save the current rotation of the current model before destroying it
+            spawnPoint.rotation = currentModel.transform.rotation;
+
+            // Destroy the current model
+            Destroy(currentModel);
         }
-        currentModel = Instantiate(prefabModels[index], spawnPoint.position, spawnPoint.rotation);  // Spawn het nieuwe model
+
+        // Spawn the new model and apply the spawnPoint rotation
+        currentModel = Instantiate(prefabModels[index], spawnPoint.position, spawnPoint.rotation);
     }
 
     void UpdateButtonStates()
