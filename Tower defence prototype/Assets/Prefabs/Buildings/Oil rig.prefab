@@ -135,13 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1d3ed0d72b77e45bd1c69a29f86bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  radius: 0
-  levelUpUI: {fileID: 0}
+  levelUpUI: {fileID: 5002169155342963358}
+  upgrades: []
   enemyManager: {fileID: 0}
-  enemy: {fileID: 0}
   harvestAmount: 7
 --- !u!54 &3159642860357099422
 Rigidbody:

@@ -18,6 +18,7 @@ public class BuildingPlacement : MonoBehaviour
     
     
     private TowerData currentTowerData;
+    private GameObject currentGrid;
     
 
     // Update is called once per frame
@@ -39,8 +40,8 @@ public class BuildingPlacement : MonoBehaviour
                     
                     if(Input.GetMouseButtonDown(0))
                     {   
+                        currentGrid = hitInfo.collider.gameObject; // give the tower a reference to the grid its on so you can sell the tower later and bring back the tile
                         PlaceTower();
-                       // hitInfo.collider.gameObject.SetActive(false); // give the tower a reference to the grid its on so you can sell the tower later and bring back the tile
                     }
                 }
                 else
@@ -60,9 +61,9 @@ public class BuildingPlacement : MonoBehaviour
                     currentPlacingTower.SetActive(true);
                     
                     if(Input.GetMouseButtonDown(0))
-                    {   
+                    {  
+                        currentGrid = hitInfo.collider.gameObject;  // give the tower a reference to the grid its on so you can sell the tower later and bring back the tile
                         PlaceTower();
-                        hitInfo.collider.gameObject.SetActive(false); // give the tower a reference to the grid its on so you can sell the tower later and bring back the tile
                     }
                 }
                 else
@@ -107,8 +108,10 @@ public class BuildingPlacement : MonoBehaviour
              // place tower on cursor and clear currentplacingtower gameOBject
              GameObject placingTower = Instantiate(currentTowerData.towerPrefab, currentPlacingTower.transform.position, quaternion.identity);
              
-             placingTower.GetComponent<TowerBehaviour>().enemyManager = enemyManager;
+             placingTower.GetComponent<TurretBasics>().enemyManager = enemyManager;
              
+             currentGrid.SetActive(false);
+             currentGrid = null;
              Destroy(currentPlacingTower);
              
              currentPlacingTower = null;

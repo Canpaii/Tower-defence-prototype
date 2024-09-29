@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6252085250809538553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4740600358809542780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8557897273454119082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 33.99675}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -431,7 +431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 43.828434, y: -6.2271}
+  m_AnchoredPosition: {x: 0, y: 6.2271}
   m_SizeDelta: {x: 10, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8715384605346136755
@@ -570,6 +570,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser gun 1 R
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d7d5b37cb87f7a34a95e532aa39efd2b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -652,6 +657,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: laser gunholder
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 91ce8be9e7d294142afeae03a6fe1502,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -739,6 +749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: laser top piece
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1917bf9ec58b4e7499b05279463ba2be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -922,6 +937,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser gun 1 L
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d7d5b37cb87f7a34a95e532aa39efd2b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1005,6 +1025,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: laser turret base
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae869815fa2512b408915c27382944d2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1025,6 +1050,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5126193005340625563}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae869815fa2512b408915c27382944d2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7254128976666219364}
   m_SourcePrefab: {fileID: 100100000, guid: ae869815fa2512b408915c27382944d2, type: 3}
 --- !u!4 &6196576260496075688 stripped
 Transform:
@@ -1050,12 +1079,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66c94d3196d9e5448adde8332bcda088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelUpUI: {fileID: 2852524704518716489}
+  upgrades: []
+  enemyManager: {fileID: 0}
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 12288
   radius: 11
-  levelUpUI: {fileID: 0}
-  enemyManager: {fileID: 0}
   enemy: {fileID: 0}
   laserTower: {fileID: 6196576260496075688}
   rotatingGunHolder: {fileID: 3755986210828891183}
@@ -1069,3 +1099,24 @@ MonoBehaviour:
   damage: 4
   bulletPrefab: {fileID: 7598174382105631414, guid: 28d8092273ac25747ab8bdafa9208b2d,
     type: 3}
+--- !u!65 &7254128976666219364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6824494863607460114}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.6947718, y: 3.7103062, z: 2.6947718}
+  m_Center: {x: 0, y: 1.8551531, z: 0}

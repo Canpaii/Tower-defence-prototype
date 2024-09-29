@@ -3,23 +3,20 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class TowerBehaviour : MonoBehaviour
+public class TowerBehaviour : TurretBasics
 {
     [SerializeField] private LayerMask enemyLayerMask;
-    [SerializeField] private float radius;
-    private GameObject grid; // the exact grid this gameObject is on can be used later for selling this building
-    
-    public GameObject levelUpUI;
-    public EnemyManager enemyManager;
+    public float radius;
     
     public Transform enemy;
+    
    public Transform FindEnemy()
    {
-       Collider[] nearbyEnemies = Physics.OverlapSphere(transform.position, radius, enemyLayerMask );
+       Collider[] nearbyEnemies = Physics.OverlapSphere(transform.position, radius, enemyLayerMask ); //get all enemies inrange 
        Transform closestTarget = null;
        float maxDistance = radius;
        
-       foreach (Collider enemyCollider in nearbyEnemies)
+       foreach (Collider enemyCollider in nearbyEnemies)// search for closest enemy
        { 
            float enemyDistance = Vector3.Distance(enemyCollider.transform.position, transform.position);
            if (enemyDistance < maxDistance)

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OilRig : TowerBehaviour
+public class OilRig : TurretBasics
 {
     public float harvestAmount;
     void Update()
