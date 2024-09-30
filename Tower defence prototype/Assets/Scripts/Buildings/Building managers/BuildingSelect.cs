@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-public class BuildingLevelUp : MonoBehaviour
+public class BuildingSelect : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;
     [SerializeField] private BuildingPlacement buildingPlacement;
 
     [SerializeField] private LayerMask tower;
 
-    [SerializeField] private GameObject _activeTower;
+    private GameObject _activeTower;
     
     // Update is called once per frame
     void Update()
