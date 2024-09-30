@@ -2,44 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class BuildingLevelUp : MonoBehaviour
 {
-    [SerializeField] private Camera playerCamera;
-    [SerializeField] private BuildingPlacement buildingPlacement;
-
-    [SerializeField] private LayerMask tower;
-
-    [SerializeField] private GameObject _activeTower;
-    
-    // Update is called once per frame
-    void Update()
+    public BuildingSelect buildingSelect;
+    public TMP_Text nameText;
+    public Image buildingPortrait;
+    public GameObject activeBuilding;
+    public void TurretUpgradeButton()
     {
-        Inputs();
+        activeBuilding.GetComponent<TurretBasics>().UpgradeTurret();
     }
 
-    private void Inputs()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            _activeTower = ActiveTower();
-        }
-        
-        if (Input.GetMouseButtonDown(1))
-        {
-            _activeTower = null;
-        }
-    }
-
-    private GameObject ActiveTower()
-    {
-        Ray camRay = playerCamera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(camRay, out RaycastHit hitInfo,300f ,tower))
-        {
-            _activeTower = hitInfo.collider.gameObject;
-            return _activeTower;
-        }
-        
-        return null;
+    public void ChangeTurretInfo()
+    { 
+        buildingPortrait.sprite = activeBuilding.GetComponent<TurretBasics>().UIData[0].icon;
+        nameText.text = activeBuilding.GetComponent<TurretBasics>().UIData[0].buildingName;
     }
 }

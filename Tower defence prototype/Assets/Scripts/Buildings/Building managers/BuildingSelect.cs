@@ -8,7 +8,8 @@ public class BuildingSelect : MonoBehaviour
     [SerializeField] private BuildingPlacement buildingPlacement;
 
     [SerializeField] private LayerMask tower;
-
+    
+    public BuildingLevelUp buildingLevelUp;
     private GameObject _activeTower;
     
     // Update is called once per frame
@@ -21,12 +22,13 @@ public class BuildingSelect : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            _activeTower = ActiveTower();
+            buildingLevelUp.activeBuilding = ActiveTower();
+            buildingLevelUp.ChangeTurretInfo();
         }
         
         if (Input.GetMouseButtonDown(1))
         {
-            _activeTower = null;
+            buildingLevelUp.activeBuilding = null;
         }
     }
 
@@ -38,7 +40,6 @@ public class BuildingSelect : MonoBehaviour
             _activeTower = hitInfo.collider.gameObject;
             return _activeTower;
         }
-        
-        return null;
+        return _activeTower;
     }
 }

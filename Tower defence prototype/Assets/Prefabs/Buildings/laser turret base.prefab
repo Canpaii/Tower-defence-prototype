@@ -1080,8 +1080,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelUpUI: {fileID: 2852524704518716489}
-  upgrades: []
+  upgrades:
+  - {fileID: 11400000, guid: 23d82d7b1314ec54895559eb38d52db6, type: 2}
+  - {fileID: 11400000, guid: d3bc85c081844f646a13b10e6bc487c0, type: 2}
+  - {fileID: 11400000, guid: 1f6ce5231a29d5641b71816ca5d570f6, type: 2}
+  currentUpgrade: 0
   enemyManager: {fileID: 0}
+  UIData:
+  - {fileID: 11400000, guid: bdf9965f3757605449358b6457463bc4, type: 2}
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 12288
