@@ -6,24 +6,24 @@ using TMPro;
 
 public class ModelSwitcher : MonoBehaviour
 {
-    public GameObject[] prefabModels;  // Array van prefab-modellen
-    public Button nextButton;          // Knop om naar het volgende model te gaan
-    public Button prevButton;          // Knop om naar het vorige model te gaan
-    public Transform spawnPoint;       // Plaats waar het model gespawned wordt
+    public GameObject[] prefabModels; 
+    public Button nextButton;        
+    public Button prevButton;          
+    public Transform spawnPoint;      
 
-    private GameObject currentModel;   // Het huidige model in de scene
-    private int currentIndex = 0;      // Huidige index van het model in de array
+    private GameObject currentModel;   
+    private int currentIndex = 0;     
 
-    private bool isDragging = false;   // Check of de gebruiker aan het slepen is
+    private bool isDragging = false;   
     private Vector3 previousMousePosition;
-    public float rotationSpeed = 5f;   // Snelheid van rotatie tijdens slepen
+    public float rotationSpeed = 5f;   
 
     void Start()
     {
         nextButton.onClick.AddListener(NextModel);
         prevButton.onClick.AddListener(PreviousModel);
         SpawnModel(currentIndex);
-        UpdateButtonStates();  // Zet knoppen in juiste staat bij opstarten
+        UpdateButtonStates();  
     }
 
     void Update()
@@ -74,23 +74,16 @@ public class ModelSwitcher : MonoBehaviour
     {
         if (currentModel != null)
         {
-            // Save the current rotation of the current model before destroying it
             spawnPoint.rotation = currentModel.transform.rotation;
-
-            // Destroy the current model
             Destroy(currentModel);
         }
 
-        // Spawn the new model and apply the spawnPoint rotation
         currentModel = Instantiate(prefabModels[index], spawnPoint.position, spawnPoint.rotation);
     }
 
     void UpdateButtonStates()
     {
-        // Disable de prevButton als je op het eerste model zit
         prevButton.interactable = currentIndex > 0;
-
-        // Disable de nextButton als je op het laatste model zit
         nextButton.interactable = currentIndex < prefabModels.Length - 1;
     }
 }
