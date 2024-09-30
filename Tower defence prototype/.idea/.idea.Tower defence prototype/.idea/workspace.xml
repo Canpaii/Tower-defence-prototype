@@ -7,9 +7,11 @@
     <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingLevelUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingLevelUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TowerData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TowerData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Silver/Build.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Silver/Build.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Camera/CameraMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Camera/CameraMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/materials/laser turret/laser base.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/joris/materials/laser turret/laser base.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/materials/laser turret/laser gun.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/joris/materials/laser turret/laser gun.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/materials/laser turret/laser top.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/joris/materials/laser turret/laser top.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +37,13 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/Placable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buildings/Laser turret Bullet/LaserBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Devtools/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/SpatialMappingWireframe.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -150,7 +152,7 @@
       <workItem from="1727253890417" duration="5939000" />
       <workItem from="1727457071618" duration="303000" />
       <workItem from="1727610049838" duration="9962000" />
-      <workItem from="1727698168349" duration="1044000" />
+      <workItem from="1727698168349" duration="2825000" />
     </task>
     <servers />
   </component>
