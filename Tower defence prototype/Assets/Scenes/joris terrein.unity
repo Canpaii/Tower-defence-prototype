@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1451,98 +1451,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 233245143}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &114462335
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 114462338}
-  - component: {fileID: 114462337}
-  - component: {fileID: 114462336}
-  m_Layer: 0
-  m_Name: Snow Terrain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!154 &114462336
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114462335}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 97bd0ba8782adb848be022bf6853e867, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &114462337
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114462335}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 97bd0ba8782adb848be022bf6853e867, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 2
-  m_SplatMapDistance: 1000
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
---- !u!4 &114462338
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114462335}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -400, y: -1.2, z: -400}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &116111026
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,7 +4004,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4587664, y: -0.00000004640134, z: 0.000000023957243, w: 0.88855696}
+  m_LocalRotation: {x: 0.45876637, y: 0.0000000070246053, z: -0.0000000036268404,
+    w: 0.88855696}
   m_LocalPosition: {x: 0, y: 93.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15242,12 +15151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 890dd2eb9ddd2f947b2445f7d2715ec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 330585545}
-  buildingPlacement: {fileID: 757657144}
-  tower:
-    serializedVersion: 2
-    m_Bits: 128
-  _activeTower: {fileID: 0}
+  buildingSelect: {fileID: 0}
+  nameText: {fileID: 0}
+  buildingPortrait: {fileID: 0}
+  activeBuilding: {fileID: 0}
 --- !u!1001 &1327530302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16722,7 +16629,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503378396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4587664, y: -0.00000004640134, z: 0.000000023957243, w: 0.88855696}
+  m_LocalRotation: {x: 0.45876637, y: 0.0000000070246053, z: -0.0000000036268404,
+    w: 0.88855696}
   m_LocalPosition: {x: 0, y: 43.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22930,6 +22838,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 688944984}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1951185960716623100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266944251227365479, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201811035788166481, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_Name
+      value: Snow Terrain
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53b25e246b6ff5c48852488409c83316, type: 3}
 --- !u!1001 &2887644154434806013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23287,4 +23263,4 @@ SceneRoots:
   - {fileID: 2887644154434806013}
   - {fileID: 4942108150696242542}
   - {fileID: 6615898648963016746}
-  - {fileID: 114462338}
+  - {fileID: 1951185960716623100}
