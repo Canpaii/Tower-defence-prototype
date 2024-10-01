@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c1a0306305eda42a0cbc27cb688a56, type: 3}
-  m_Name: TurretUpgrade 2
+  m_Script: {fileID: 11500000, guid: 00d4eff34ce34c84984d852aacde7d75, type: 3}
+  m_Name: OilRigUIData
   m_EditorClassIdentifier: 
-  upgradeCost: 100
-  sellAmount: 0
-  damage: 5
-  attackWaitTime: 0.15
-  range: 15
-  oilHarvestRate: 0
+  icon: {fileID: 21300000, guid: cffeb376d38a0974c9acd80aa264c220, type: 3}
+  buildingName: Oil Rig
+  descriptionText: 

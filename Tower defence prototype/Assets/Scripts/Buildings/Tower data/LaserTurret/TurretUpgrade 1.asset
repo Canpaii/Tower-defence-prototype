@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c1a0306305eda42a0cbc27cb688a56, type: 3}
   m_Name: TurretUpgrade 1
   m_EditorClassIdentifier: 
+  upgradeCost: 75
+  sellAmount: 0
   damage: 5
   attackWaitTime: 0.25
   range: 13

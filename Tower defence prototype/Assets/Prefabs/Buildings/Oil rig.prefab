@@ -136,8 +136,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelUpUI: {fileID: 5002169155342963358}
-  upgrades: []
+  upgrades:
+  - {fileID: 11400000, guid: fd7f0b90e8ed0124cb10e66c020e7507, type: 2}
+  - {fileID: 11400000, guid: 0f48def7dc1cce9418c574cedf7c47b8, type: 2}
+  - {fileID: 11400000, guid: a3bdedb204842ec4f8461677c9d67a5b, type: 2}
+  currentUpgrade: 0
   enemyManager: {fileID: 0}
+  UIData:
+  - {fileID: 11400000, guid: 33285c65c684f5e44a94ed1c23ac4dc4, type: 2}
   harvestAmount: 7
 --- !u!54 &3159642860357099422
 Rigidbody:

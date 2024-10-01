@@ -16,6 +16,11 @@ public class BuildingLevelUp : MonoBehaviour
         activeBuilding.GetComponent<TurretBasics>().UpgradeTurret();
     }
 
+    public void SellBuildingButton()
+    {
+        activeBuilding.GetComponent<TurretBasics>().SellBuilding();
+    }
+
     public void ChangeTurretInfo()
     { 
         buildingPortrait.sprite = activeBuilding.GetComponent<TurretBasics>().UIData[0].icon;

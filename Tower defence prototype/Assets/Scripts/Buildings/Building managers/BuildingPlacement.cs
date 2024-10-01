@@ -20,7 +20,7 @@ public class BuildingPlacement : MonoBehaviour
     private TowerData currentTowerData;
     private GameObject currentGrid;
     
-
+    public bool isPlacingTower; // bool used by buildingSelect
     // Update is called once per frame
     void Update()
     {
@@ -75,9 +75,10 @@ public class BuildingPlacement : MonoBehaviour
                 }
             }
             
-             if(Input.GetMouseButtonDown(1))
+            if(Input.GetMouseButtonDown(1))
             {
                 Destroy(currentPlacingTower);
+                StartCoroutine(SmallBoolDelay(0.1f));
                 buildingLevelUp.SetActive(true);
             }   
         }
@@ -89,6 +90,8 @@ public class BuildingPlacement : MonoBehaviour
         currentPlacingTower.SetActive(false);
         currentTowerData = towerData;
         buildingCost = towerData.cost;
+
+        isPlacingTower = true;
     }
     #region Tower Selection
     void DeselectTower()
@@ -116,14 +119,22 @@ public class BuildingPlacement : MonoBehaviour
              
              currentPlacingTower = null;
              buildingLevelUp.SetActive(true);
+             StartCoroutine(SmallBoolDelay(0.1f));
         }
         else
         {
             print ("You do not have enough money to place this tower.");
             
             Destroy(currentPlacingTower);
+            StartCoroutine(SmallBoolDelay(0.1f));
             currentPlacingTower = null;
         }
     }
     #endregion
+    
+    private IEnumerator SmallBoolDelay(float delay) //small delay for the bool because it changes too fast building select script is hurting from it 
+    {
+        yield return new WaitForSeconds(delay); // Wait for the specified delay
+        isPlacingTower = false; 
+    }
 }

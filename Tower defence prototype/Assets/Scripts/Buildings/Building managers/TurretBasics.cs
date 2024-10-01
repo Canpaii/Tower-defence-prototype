@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,11 +14,23 @@ public class TurretBasics : MonoBehaviour
     public EnemyManager enemyManager;
     
     public TowerUiData[] UIData;
+    
+    private Currency currency;
+
+    public void Start()
+    {
+        currency = CurrencyReference.instance.currency; // set currency reference
+    }
+
     public void UpgradeTurret() // call this method to change array index for upgrades 
     {
-        if (currentUpgrade < upgrades.Length - 1)
+        if (currentUpgrade < upgrades.Length - 1 && currency.currency >= upgrades[currentUpgrade].upgradeCost)
         {
             currentUpgrade++;
+            
+            currency.currency -= upgrades[currentUpgrade].upgradeCost;
+            currency.SubtractCurrency(upgrades[currentUpgrade].upgradeCost);
+            
             ApplyUpgrade(currentUpgrade);
         }
     }
@@ -28,7 +41,9 @@ public class TurretBasics : MonoBehaviour
 
     public void SellBuilding()
     {
-        
+        currency.currency += upgrades[currentUpgrade].sellAmount;
+        currency.SubtractCurrency(upgrades[currentUpgrade].sellAmount);
+        Destroy(gameObject);
     }
     
 }

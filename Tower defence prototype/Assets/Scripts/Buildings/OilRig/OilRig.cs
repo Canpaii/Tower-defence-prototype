@@ -12,4 +12,9 @@ public class OilRig : TurretBasics
             Currency.Instance.AddCurrency(harvestAmount * Time.deltaTime);
         }
     }
+    
+    protected override void ApplyUpgrade(int level)
+    {
+        harvestAmount = upgrades[level].oilHarvestRate;
+    }
 }

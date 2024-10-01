@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.EventSystems;
 public class BuildingSelect : MonoBehaviour
 {
     [SerializeField] private Camera playerCamera;
     [SerializeField] private BuildingPlacement buildingPlacement;
 
     [SerializeField] private LayerMask tower;
+
+    public GameObject levelUpUIPanel;
+    public GameObject shopUIPanel;
     
     public BuildingLevelUp buildingLevelUp;
     private GameObject _activeTower;
@@ -20,15 +23,24 @@ public class BuildingSelect : MonoBehaviour
 
     private void Inputs()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)  && !IsPointerOverUI() && !buildingPlacement.isPlacingTower )
         {
             buildingLevelUp.activeBuilding = ActiveTower();
-            buildingLevelUp.ChangeTurretInfo();
+            
+
+            if (buildingLevelUp.activeBuilding != null)
+            {
+                buildingLevelUp.ChangeTurretInfo();
+                levelUpUIPanel.SetActive(true); 
+                shopUIPanel.SetActive(false);
+            }
         }
         
         if (Input.GetMouseButtonDown(1))
         {
             buildingLevelUp.activeBuilding = null;
+            levelUpUIPanel.SetActive(false);
+            shopUIPanel.SetActive(true);
         }
     }
 
@@ -41,5 +53,10 @@ public class BuildingSelect : MonoBehaviour
             return _activeTower;
         }
         return _activeTower;
+    }
+    
+    private bool IsPointerOverUI() // check if mouse is over UI
+    {
+        return EventSystem.current.IsPointerOverGameObject();
     }
 }

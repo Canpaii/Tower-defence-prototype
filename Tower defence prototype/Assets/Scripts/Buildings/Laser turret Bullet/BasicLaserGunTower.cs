@@ -64,9 +64,9 @@ public class BasicLaserGunTower : TowerBehaviour
    
     protected override void ApplyUpgrade(int level)
     {
-        radius = upgrades[currentUpgrade].range;
-        attackWaitTime = upgrades[currentUpgrade].attackWaitTime;
-        damage = upgrades[currentUpgrade].damage;
+        radius = upgrades[level].range;
+        attackWaitTime = upgrades[level].attackWaitTime;
+        damage = upgrades[level].damage;
     }
     #region RotationManager
     
