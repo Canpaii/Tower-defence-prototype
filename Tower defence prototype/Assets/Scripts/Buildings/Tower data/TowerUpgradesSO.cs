@@ -6,6 +6,7 @@ using UnityEngine;
 public class TowerUpgradesSO : ScriptableObject
 {
     public int upgradeCost;
+    
     public int sellAmount;
     
     public int damage;

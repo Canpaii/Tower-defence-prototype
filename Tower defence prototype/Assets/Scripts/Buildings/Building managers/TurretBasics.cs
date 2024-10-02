@@ -14,12 +14,15 @@ public class TurretBasics : MonoBehaviour
     public EnemyManager enemyManager;
     
     public TowerUiData[] UIData;
-    
+    public TowerModels towerModels;
+
+    private GameObject currentModel;
     private Currency currency;
 
-    public void Start()
+    private void Start()
     {
-        currency = CurrencyReference.instance.currency; // set currency reference
+        currency = Currency.Instance;
+        currentModel = Instantiate(towerModels.allVariants[currentUpgrade], transform.position, Quaternion.identity); ;
     }
 
     public void UpgradeTurret() // call this method to change array index for upgrades 
@@ -28,21 +31,26 @@ public class TurretBasics : MonoBehaviour
         {
             currentUpgrade++;
             
-            currency.currency -= upgrades[currentUpgrade].upgradeCost;
             currency.SubtractCurrency(upgrades[currentUpgrade].upgradeCost);
-            
+
+            ChangeModel();
             ApplyUpgrade(currentUpgrade);
         }
     }
-     protected virtual void ApplyUpgrade(int level) // apply the data from array to stats 
+    protected virtual void ApplyUpgrade(int level) // apply the data from array to stats 
     {
         
     }
 
+    protected void ChangeModel()
+    {
+        DestroyImmediate(currentModel);
+        currentModel = Instantiate(towerModels.allVariants[currentUpgrade], transform.position, Quaternion.identity);
+    }
+    
     public void SellBuilding()
     {
-        currency.currency += upgrades[currentUpgrade].sellAmount;
-        currency.SubtractCurrency(upgrades[currentUpgrade].sellAmount);
+        currency.AddCurrency(upgrades[currentUpgrade].sellAmount);
         Destroy(gameObject);
     }
     

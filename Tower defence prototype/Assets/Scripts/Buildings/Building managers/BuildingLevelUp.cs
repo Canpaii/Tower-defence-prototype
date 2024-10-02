@@ -11,6 +11,7 @@ public class BuildingLevelUp : MonoBehaviour
     public TMP_Text nameText;
     public Image buildingPortrait;
     public GameObject activeBuilding;
+    
     public void TurretUpgradeButton()
     {
         activeBuilding.GetComponent<TurretBasics>().UpgradeTurret();

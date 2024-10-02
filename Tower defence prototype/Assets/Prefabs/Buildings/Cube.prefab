@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 1501108768344785666}
   - component: {fileID: 2015153962433355997}
   - component: {fileID: 3898813756837349384}
-  - component: {fileID: 4219333833456915179}
+  - component: {fileID: 3731005640796768426}
   m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
@@ -466,7 +466,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4219333833456915179
+--- !u!114 &3731005640796768426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,11 +475,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 7625710716888335026}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6646eb8fcf73554c8d49d4e111605f9, type: 3}
+  m_Script: {fileID: 11500000, guid: c933982167e4a7d4897bf97a70182b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelUpUI: {fileID: 8766420037895360631}
-  placed: 0
+  levelUpUI: {fileID: 0}
+  upgrades: []
+  currentUpgrade: 0
+  enemyManager: {fileID: 0}
+  UIData:
+  - {fileID: 0}
+  towerModels: {fileID: 0}
+  enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  radius: 0
+  arcTower: {fileID: 0}
+  rotatingGunHolder: {fileID: 0}
+  gunShootPoint: {fileID: 0}
+  rotationSmooth: 0
+  attackWaitTime: 0
+  damage: 0
+  arcLifeTime: 0
+  bulletPrefab: {fileID: 0}
 --- !u!1 &8766420037895360631
 GameObject:
   m_ObjectHideFlags: 0

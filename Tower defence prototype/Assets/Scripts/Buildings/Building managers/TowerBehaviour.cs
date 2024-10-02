@@ -8,7 +8,7 @@ public class TowerBehaviour : TurretBasics
     [SerializeField] private LayerMask enemyLayerMask;
     public float radius;
     
-    public Transform enemy;
+    protected Transform enemy;
     
    public Transform FindEnemy()
    {
