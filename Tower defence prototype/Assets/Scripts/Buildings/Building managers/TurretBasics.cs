@@ -5,53 +5,35 @@ using UnityEngine;
 
 public class TurretBasics : MonoBehaviour
 {
-    public GameObject levelUpUI;
-    [SerializeField] protected TowerUpgradesSO[] upgrades;
+    protected GameObject grid; // the exact grid this gameObject is on can be used later for selling this building to reset the grid
     
-    public int currentUpgrade = 0;
-    protected GameObject grid; // the exact grid this gameObject is on can be used later for selling this building
+    public int upgradeCost;
+    public int sellWorth;
     
     public EnemyManager enemyManager;
     
     public TowerUiData[] UIData;
-    public TowerModels towerModels;
 
-    private GameObject currentModel;
+    public GameObject towerUpgrade;
     private Currency currency;
 
-    private void Start()
+    protected void Start()
     {
         currency = Currency.Instance;
-        currentModel = Instantiate(towerModels.allVariants[currentUpgrade], transform.position, Quaternion.identity); ;
+        enemyManager = EnemyManager.instance;
     }
 
-    public void UpgradeTurret() // call this method to change array index for upgrades 
+    public void UpgradeTurret() // spawn upgraded variant of the turret 
     {
-        if (currentUpgrade < upgrades.Length - 1 && currency.currency >= upgrades[currentUpgrade].upgradeCost)
-        {
-            currentUpgrade++;
-            
-            currency.SubtractCurrency(upgrades[currentUpgrade].upgradeCost);
-
-            ChangeModel();
-            ApplyUpgrade(currentUpgrade);
-        }
-    }
-    protected virtual void ApplyUpgrade(int level) // apply the data from array to stats 
-    {
+        currency.SubtractCurrency(upgradeCost);
         
-    }
-
-    protected void ChangeModel()
-    {
-        DestroyImmediate(currentModel);
-        currentModel = Instantiate(towerModels.allVariants[currentUpgrade], transform.position, Quaternion.identity);
-    }
-    
-    public void SellBuilding()
-    {
-        currency.AddCurrency(upgrades[currentUpgrade].sellAmount);
+        Instantiate(towerUpgrade, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
-    
+  
+    public void SellBuilding()
+    {
+        currency.AddCurrency(sellWorth);
+        Destroy(gameObject);
+    }
 }

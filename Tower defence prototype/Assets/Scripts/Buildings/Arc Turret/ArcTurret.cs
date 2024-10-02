@@ -43,14 +43,6 @@ public class ArcTurret : TowerBehaviour
             timer = 0;
         }
     }
-   
-    protected override void ApplyUpgrade(int level)
-    {
-        radius = upgrades[level].range;
-        attackWaitTime = upgrades[level].attackWaitTime;
-        damage = upgrades[level].damage;
-        
-    }
     #region RotationManager
     
     void RotateGunHolder()

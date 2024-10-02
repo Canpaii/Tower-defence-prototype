@@ -11,7 +11,6 @@ public class BuildingPlacement : MonoBehaviour
     [SerializeField] private LayerMask oilGrid;
     [SerializeField] private float yOffset;
 
-    public EnemyManager enemyManager;
     public GameObject currentPlacingTower;
     public GameObject buildingLevelUp;
     private int buildingCost;
@@ -110,8 +109,6 @@ public class BuildingPlacement : MonoBehaviour
             
              // place tower on cursor and clear currentplacingtower gameOBject
              GameObject placingTower = Instantiate(currentTowerData.towerPrefab, currentPlacingTower.transform.position, quaternion.identity);
-             
-             placingTower.GetComponent<TurretBasics>().enemyManager = enemyManager;
              
              currentGrid.SetActive(false);
              currentGrid = null;

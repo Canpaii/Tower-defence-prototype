@@ -20,6 +20,7 @@ public struct Waves
 }
 public class EnemyManager : MonoBehaviour
 {
+    public static EnemyManager instance;
     public GameObject button;
     public bool gameStarted = false;
     [SerializeField] public Waves[] waves;
@@ -36,6 +37,12 @@ public class EnemyManager : MonoBehaviour
     
     private Transform spawnPoint;
     private int currentWaveIndex = 0;
+
+    private void Start()
+    {
+        instance = this;
+    }
+
     public void StartGame()
     {
         gameStarted = true;
