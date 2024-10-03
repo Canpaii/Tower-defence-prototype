@@ -4004,8 +4004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45876637, y: 0.0000000070246053, z: -0.0000000036268404,
-    w: 0.88855696}
+  m_LocalRotation: {x: 0.4587664, y: -0.00000004640134, z: 0.000000023957243, w: 0.88855696}
   m_LocalPosition: {x: 0, y: 93.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7323,6 +7322,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 738fc3cb37cde484c8addfa412a0301b, type: 3}
+--- !u!1001 &635275000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200375056955453802, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018406928347162389, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_Name
+      value: Desert Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018406928347162389, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 48f9a09c57fc52a43b381add4602a662, type: 3}
 --- !u!1001 &636331238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8314,6 +8386,7 @@ MonoBehaviour:
   enemyManager: {fileID: 802664888}
   currentPlacingTower: {fileID: 0}
   buildingLevelUp: {fileID: 1320121411}
+  isPlacingTower: 0
 --- !u!1001 &764196589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16656,8 +16729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503378396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45876637, y: 0.0000000070246053, z: -0.0000000036268404,
-    w: 0.88855696}
+  m_LocalRotation: {x: 0.4587664, y: -0.00000004640134, z: 0.000000023957243, w: 0.88855696}
   m_LocalPosition: {x: 0, y: 43.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22996,11 +23068,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snow Terrain
       objectReference: {fileID: 0}
-    - target: {fileID: 2201811035788166481, guid: 53b25e246b6ff5c48852488409c83316,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23561,11 +23628,12 @@ SceneRoots:
   - {fileID: 2050120215}
   - {fileID: 1074647938}
   - {fileID: 508751914}
+  - {fileID: 1951185960716623100}
+  - {fileID: 635275000}
   - {fileID: 5595877101970810144}
   - {fileID: 3791526603473108329}
   - {fileID: 2887644154434806013}
   - {fileID: 6615898648963016746}
-  - {fileID: 1951185960716623100}
   - {fileID: 3458167967754205021}
   - {fileID: 8921541065336417920}
   - {fileID: 417998597214114107}
