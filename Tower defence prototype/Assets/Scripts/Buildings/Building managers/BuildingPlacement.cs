@@ -32,7 +32,7 @@ public class BuildingPlacement : MonoBehaviour
             
             if (currentTowerData.towerType == TowerData.TowerType.OilRig)
             {
-                if (Physics.Raycast(camray, out RaycastHit hitInfo, 150f, oilGrid))
+                if (Physics.Raycast(camray, out RaycastHit hitInfo, 500f, oilGrid))
                 {
                     currentPlacingTower.transform.position = hitInfo.collider.gameObject.transform.position + new Vector3(0, yOffset, 0);
                     currentPlacingTower.SetActive(true);
@@ -54,7 +54,7 @@ public class BuildingPlacement : MonoBehaviour
             }
             else if (currentTowerData.towerType == TowerData.TowerType.Tower)
             {  
-                if(Physics.Raycast(camray, out RaycastHit hitInfo, 150f, grid))
+                if(Physics.Raycast(camray, out RaycastHit hitInfo, 500f, grid))
                 {
                     currentPlacingTower.transform.position = hitInfo.collider.gameObject.transform.position + new Vector3(0, yOffset, 0);
                     currentPlacingTower.SetActive(true);
@@ -109,7 +109,8 @@ public class BuildingPlacement : MonoBehaviour
             
              // place tower on cursor and clear currentplacingtower gameOBject
              GameObject placingTower = Instantiate(currentTowerData.towerPrefab, currentPlacingTower.transform.position, quaternion.identity);
-             
+             placingTower.GetComponent<TurretBasics>().grid = currentGrid;
+            
              currentGrid.SetActive(false);
              currentGrid = null;
              Destroy(currentPlacingTower);

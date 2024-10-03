@@ -33,7 +33,7 @@ public class BaseHP : BuildingHp
     {
        
         loseScreen.SetActive(true);
-        
+        Time.timeScale = 0;
         
         Destroy(gameObject);
     }

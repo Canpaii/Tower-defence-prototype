@@ -9,7 +9,7 @@ public class LaserBullet : MonoBehaviour
     public int damage;
     public Transform target;
     public float rotateSpeed;
-    private float timer;
+    private float _timer;
     public float homingDuration;
     private Rigidbody rb; 
     
@@ -30,9 +30,9 @@ public class LaserBullet : MonoBehaviour
 
     private void LateUpdate()
     {   
-        timer += Time.deltaTime;
+        _timer += Time.deltaTime;
 
-        if(timer <= homingDuration)
+        if(_timer <= homingDuration)
         {
             Vector3 direction = target.position - rb.position;
             direction.Normalize();
@@ -48,10 +48,9 @@ public class LaserBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Enemy"))
         {

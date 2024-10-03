@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.063, z: 0}
-  m_LocalScale: {x: 2, y: 3, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2048249244469871610}
@@ -45,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2216557535192434876}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 7056647582227870262, guid: f61df9d63327ac849ab6baf176090f9b, type: 3}
 --- !u!23 &5262957724927198833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5153f04feb1bc624786da58d0fab5169, type: 2}
+  - {fileID: 2100000, guid: e8a5d698faf3d8b4db63dbf66ba55c45, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -135,15 +135,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1d3ed0d72b77e45bd1c69a29f86bc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelUpUI: {fileID: 5002169155342963358}
-  upgrades:
-  - {fileID: 11400000, guid: fd7f0b90e8ed0124cb10e66c020e7507, type: 2}
-  - {fileID: 11400000, guid: 0f48def7dc1cce9418c574cedf7c47b8, type: 2}
-  - {fileID: 11400000, guid: a3bdedb204842ec4f8461677c9d67a5b, type: 2}
-  currentUpgrade: 0
+  upgradeCost: 0
+  sellWorth: 0
+  lastUpgrade: 0
   enemyManager: {fileID: 0}
-  UIData:
-  - {fileID: 11400000, guid: 33285c65c684f5e44a94ed1c23ac4dc4, type: 2}
+  UIData: {fileID: 11400000, guid: 33285c65c684f5e44a94ed1c23ac4dc4, type: 2}
+  towerUpgrade: {fileID: 3906534951157295522, guid: 29128f35f5eb6f44385b051f9649c382,
+    type: 3}
   harvestAmount: 7
 --- !u!54 &3159642860357099422
 Rigidbody:

@@ -8,16 +8,14 @@ public class BasicLaserGunTower : TowerBehaviour
     [SerializeField] private Transform laserTower;
     [SerializeField] private Transform rotatingGunHolder;
     [SerializeField] private Transform[] guns;
-    [SerializeField] private Transform gunLeftShootPoint, gunRightShootPoint;
+    [SerializeField] private Transform[] shootPoints;
+    [SerializeField] private int shootPointIndex = 0;
     
     [SerializeField] private float rotationSmooth;
     [SerializeField] private float attackWaitTime;
     
     [SerializeField] private int damage;
     private float timer;
-    
-    private bool leftShot = false;
-    private bool rightShot = false;
     
     public GameObject bulletPrefab;
     
@@ -38,26 +36,19 @@ public class BasicLaserGunTower : TowerBehaviour
     void Shoot()
     {
         timer += Time.deltaTime;
-        if (!leftShot && timer > attackWaitTime)
+        
+        if (shootPointIndex == shootPoints.Length)
         {
-            GameObject currentBullet = Instantiate(bulletPrefab, gunLeftShootPoint.position, gunLeftShootPoint.rotation);
+            shootPointIndex = 0;
+        } 
+        
+        if (timer > attackWaitTime)
+        {
+            GameObject currentBullet = Instantiate(bulletPrefab, shootPoints[shootPointIndex].position,shootPoints[shootPointIndex].rotation); 
             
             currentBullet.GetComponent<LaserBullet>().target = enemy;
             currentBullet.GetComponent<LaserBullet>().damage = damage;
-            
-            leftShot = true;
-            rightShot = false;
-            timer = 0;
-        }
-        else if (!rightShot && timer > attackWaitTime)
-        {
-            GameObject currentBullet = Instantiate(bulletPrefab, gunRightShootPoint.position, gunRightShootPoint.rotation);
-            
-            currentBullet.GetComponent<LaserBullet>().target = enemy;
-            currentBullet.GetComponent<LaserBullet>().damage = damage;
-            
-            leftShot = false;
-            rightShot = true;
+            shootPointIndex++;
             timer = 0;
         }
     }

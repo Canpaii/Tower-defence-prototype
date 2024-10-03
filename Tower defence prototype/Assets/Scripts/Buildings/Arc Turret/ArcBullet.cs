@@ -5,6 +5,7 @@ using UnityEngine;
 public class ArcBullet : MonoBehaviour
 {
     [SerializeField] private float force;
+    public float lifeTime;
     public float damage;
     public Transform target;
 
@@ -15,7 +16,7 @@ public class ArcBullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Destroy(gameObject, 5);
+        Destroy(gameObject, lifeTime);
     }
 
     private void Update()
@@ -34,7 +35,7 @@ public class ArcBullet : MonoBehaviour
         rb.velocity = direction * force;
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Hitable"))
         {

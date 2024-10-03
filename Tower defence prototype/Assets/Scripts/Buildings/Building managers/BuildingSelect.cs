@@ -25,22 +25,19 @@ public class BuildingSelect : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)  && !IsPointerOverUI() && !buildingPlacement.isPlacingTower )
         {
-            buildingLevelUp.activeBuilding = ActiveTower();
             
+            buildingLevelUp.activeBuilding = ActiveTower();
 
             if (buildingLevelUp.activeBuilding != null)
             {
-                buildingLevelUp.ChangeTurretInfo();
-                levelUpUIPanel.SetActive(true); 
-                shopUIPanel.SetActive(false);
+               SetWindowUpgrade();
             }
         }
         
         if (Input.GetMouseButtonDown(1))
         {
-            buildingLevelUp.activeBuilding = null;
-            levelUpUIPanel.SetActive(false);
-            shopUIPanel.SetActive(true);
+            SetWindowShop();
+            buildingLevelUp.HideRadius();
         }
     }
 
@@ -59,4 +56,23 @@ public class BuildingSelect : MonoBehaviour
     {
         return EventSystem.current.IsPointerOverGameObject();
     }
+
+    public void SetWindowShop()
+    {
+        buildingLevelUp.activeBuilding = null;
+        levelUpUIPanel.SetActive(false);
+        shopUIPanel.SetActive(true);
+        
+        buildingLevelUp.HideRadius();
+    }
+
+    public void SetWindowUpgrade()
+    {
+        buildingLevelUp.ChangeTurretInfo();
+        levelUpUIPanel.SetActive(true); 
+        shopUIPanel.SetActive(false);
+        
+        buildingLevelUp.ShowRadius();
+    }
+    
 }

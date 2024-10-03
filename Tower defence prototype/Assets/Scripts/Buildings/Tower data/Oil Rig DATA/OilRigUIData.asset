@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: OilRigUIData
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: cffeb376d38a0974c9acd80aa264c220, type: 3}
-  buildingName: Oil Rig
+  buildingName: Oil Rig lvl 1
   descriptionText: 
