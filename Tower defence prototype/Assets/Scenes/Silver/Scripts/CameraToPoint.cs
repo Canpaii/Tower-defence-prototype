@@ -21,10 +21,6 @@ public class CameraToPoint : MonoBehaviour
             // Add listener to the button
             moveButton.onClick.AddListener(StartCameraMovement);
         }
-        else
-        {
-            Debug.LogError("Move Button is not assigned.");
-        }
     }
 
     void Update()
