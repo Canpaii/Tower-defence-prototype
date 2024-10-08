@@ -13,10 +13,14 @@ public class EnemyHealth : MonoBehaviour
     
     public Slider healthSlider;
     private EnemyCounter _enemyCounter;
+    private EnemyList _enemyList;
     void Start()
     {
+        _enemyList = EnemyList.Instance;
         currentHealth = maxHealth;
         _enemyCounter = WinconditionManager.instance.counter;
+        
+        _enemyList.RegisterEnemy(transform);
     }
 
     public void TakeDamage(float damage)
@@ -41,7 +45,7 @@ public class EnemyHealth : MonoBehaviour
         // doe nog wat coole dingetjes ofzo
         _enemyCounter.UpdateEnemiesKilled();
         Currency.Instance.AddCurrency(currencyOnDeath);
-        
+        _enemyList.UnregisterEnemy(transform);
         Destroy(gameObject);
     }
     

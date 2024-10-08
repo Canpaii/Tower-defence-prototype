@@ -38,9 +38,12 @@ public class EnemyManager : MonoBehaviour
     private Transform spawnPoint;
     private int currentWaveIndex = 0;
 
+    private EnemyList _enemyList;
+
     private void Start()
     {
         instance = this;
+        _enemyList = EnemyList.Instance;
     }
 
     public void StartGame()
@@ -95,7 +98,7 @@ public class EnemyManager : MonoBehaviour
             }
             
             GameObject currentEnemy =  Instantiate(enemyWave.enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-           
+            
             yield return new WaitForSeconds(spawnDelay);  // Adjust spawn delay
         }
     }

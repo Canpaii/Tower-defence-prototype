@@ -12,7 +12,7 @@ public class ArcTurret : TowerBehaviour
     [SerializeField] private float attackWaitTime;
     
     [SerializeField] private int damage;
-    [SerializeField] private int arcLifeTime; 
+    [SerializeField] private float arcLifeTime; 
     private float timer;
     
     public GameObject bulletPrefab;
@@ -37,9 +37,8 @@ public class ArcTurret : TowerBehaviour
         {
             GameObject currentBullet = Instantiate(bulletPrefab, gunShootPoint.position, gunShootPoint.rotation);
             
-            currentBullet.GetComponent<LaserBullet>().target = enemy;
-            currentBullet.GetComponent<LaserBullet>().damage = damage;
-            
+            currentBullet.GetComponent<ArcBullet>().damage = damage;
+            currentBullet.GetComponent<ArcBullet>().lifeTime = arcLifeTime;
             timer = 0;
         }
     }

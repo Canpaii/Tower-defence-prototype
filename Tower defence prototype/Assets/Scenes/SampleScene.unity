@@ -10439,7 +10439,7 @@ MonoBehaviour:
   leftLaneSpawnPointAir: {fileID: 751166581}
   rightLaneSpawnPointAir: {fileID: 1031772711}
   countdown: 3
-  spawnDelay: 1
+  spawnDelay: 1.05
   timeBetweenWaves: 10
 --- !u!1001 &803776501
 PrefabInstance:
@@ -11332,6 +11332,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1331262436}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &866731832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866731833}
+  - component: {fileID: 866731834}
+  m_Layer: 0
+  m_Name: ActiveEnemyList
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &866731833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866731832}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -244.61964, y: -168.79416, z: -9.480751}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1074647938}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866731834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866731832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a55a579c7feca43b526d884bb77784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &869851083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13149,7 +13193,7 @@ MonoBehaviour:
         m_MethodName: SetTowerToPlace
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: f9ea90f4a01d5d948a82a241497999db,
+          m_ObjectArgument: {fileID: 11400000, guid: d0d5d62491b721a4e8288452297405a2,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: TowerData, Assembly-CSharp
           m_IntArgument: 0
@@ -14086,6 +14130,7 @@ Transform:
   - {fileID: 1599117991}
   - {fileID: 1866203995}
   - {fileID: 1564891735}
+  - {fileID: 866731833}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1076779726 stripped
@@ -18073,7 +18118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "*arc turret* \n"
+  m_text: Arc turret - 300
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

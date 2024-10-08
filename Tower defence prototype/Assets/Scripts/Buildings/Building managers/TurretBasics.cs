@@ -46,4 +46,14 @@ public class TurretBasics : MonoBehaviour
         grid.SetActive(true);
         Destroy(gameObject);
     }
+
+    public void ShowRadius()
+    {
+        radiusUI.SetActive(true);
+    }
+
+    public void HideRadius()
+    {
+        radiusUI.SetActive(false);
+    }
 }

@@ -37,12 +37,12 @@ public class BuildingLevelUp : MonoBehaviour
         nameText.text = activeBuilding.GetComponent<TurretBasics>().UIData.buildingName;
     } 
     public void ShowRadius() 
-    {
-        activeBuilding.GetComponent<TurretBasics>().radiusUI.SetActive(true);
+    { 
+        activeBuilding.GetComponent<TurretBasics>().ShowRadius();
     }
 
     public void HideRadius()
     {
-        activeBuilding.GetComponent<TurretBasics>().radiusUI.SetActive(false);
+        activeBuilding.GetComponent<TurretBasics>().HideRadius();
     }
 }

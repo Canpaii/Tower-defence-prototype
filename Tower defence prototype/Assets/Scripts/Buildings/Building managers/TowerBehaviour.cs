@@ -5,33 +5,56 @@ using UnityEngine;
 
 public class TowerBehaviour : TurretBasics
 {
-    [SerializeField] private LayerMask enemyLayerMask;
     public float radius;
     
     protected Transform enemy;
-    
-   public Transform FindEnemy()
-   {
-       Collider[] nearbyEnemies = Physics.OverlapSphere(transform.position, radius, enemyLayerMask ); //get all enemies inrange 
-       Transform closestTarget = null;
-       float maxDistance = radius;
-       
-       foreach (Collider enemyCollider in nearbyEnemies)// search for closest enemy
-       { 
-           float enemyDistance = Vector3.Distance(enemyCollider.transform.position, transform.position);
-           if (enemyDistance < maxDistance)
-           {
-               closestTarget = enemyCollider.transform; 
-               maxDistance = enemyDistance;
-           }
-       }
 
-       if (nearbyEnemies.Length == 0)
-       {
-           maxDistance = radius;
-           closestTarget = null;
-           
-       }
-       return closestTarget;
+    [SerializeField] private int flyingEnemyLayer;
+
+    public bool canTargetFlyingEnemies;
+    public Transform FindEnemy()
+    {
+        List<Transform> allEnemies = EnemyList.Instance.GetActiveEnemies(); 
+
+        Transform closestTarget = null;
+        float closestDistance = radius;
+
+        foreach (Transform enemyTransform in allEnemies)
+        {
+            bool isFlyingEnemy = IsFlyingEnemy(enemyTransform);
+
+            // Skip flying enemies if you cant target it
+            if (isFlyingEnemy && !canTargetFlyingEnemies)
+            {
+                continue;
+            }
+            
+            float distanceToEnemy = IsFlyingEnemy(enemyTransform) ? GetHorizontalDistance(enemyTransform) : Vector3.Distance(transform.position, enemyTransform.position);
+            
+            if (distanceToEnemy < closestDistance)
+            {
+                closestTarget = enemyTransform;
+                closestDistance = distanceToEnemy;
+            }
+        }
+
+        return closestTarget;
+    }
+    
+    private bool IsFlyingEnemy(Transform enemyTransform)
+    {
+        return enemyTransform.gameObject.layer == flyingEnemyLayer; 
+    }
+
+    // Get horizontal distance by ignoring height 
+    private float GetHorizontalDistance(Transform enemyTransform)
+    {
+        Vector3 towerPosition = transform.position;
+        Vector3 enemyPosition = enemyTransform.position;
+        
+        towerPosition.y = 0;
+        enemyPosition.y = 0;
+
+        return Vector3.Distance(towerPosition, enemyPosition);
     }
 }

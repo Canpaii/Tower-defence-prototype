@@ -283,22 +283,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1917bf9ec58b4e7499b05279463ba2be,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99586076
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1917bf9ec58b4e7499b05279463ba2be,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1917bf9ec58b4e7499b05279463ba2be,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.09089253
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1917bf9ec58b4e7499b05279463ba2be,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1917bf9ec58b4e7499b05279463ba2be,
         type: 3}
@@ -689,10 +689,9 @@ MonoBehaviour:
   towerUpgrade: {fileID: 7463820270865152850, guid: 17faa97703bd36d46888e6cc7df9aab6,
     type: 3}
   enemyManager: {fileID: 0}
-  enemyLayerMask:
-    serializedVersion: 2
-    m_Bits: 12288
   radius: 11
+  flyingEnemyLayer: 13
+  canTargetFlyingEnemies: 1
   laserTower: {fileID: 6196576260496075688}
   rotatingGunHolder: {fileID: 3755986210828891183}
   guns:

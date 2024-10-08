@@ -701,10 +701,9 @@ MonoBehaviour:
   UIData: {fileID: 11400000, guid: 2baa70f98a4dd694092112c497558f65, type: 2}
   towerUpgrade: {fileID: 0}
   enemyManager: {fileID: 0}
-  enemyLayerMask:
-    serializedVersion: 2
-    m_Bits: 12288
   radius: 11
+  flyingEnemyLayer: 13
+  canTargetFlyingEnemies: 1
   laserTower: {fileID: 6196576260496075688, guid: f06c9bc48f58ef24bb1e61690d4c6c01,
     type: 3}
   rotatingGunHolder: {fileID: 3755986210828891183, guid: f06c9bc48f58ef24bb1e61690d4c6c01,

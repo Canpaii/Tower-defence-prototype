@@ -25,7 +25,6 @@ public class BuildingSelect : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)  && !IsPointerOverUI() && !buildingPlacement.isPlacingTower )
         {
-            
             buildingLevelUp.activeBuilding = ActiveTower();
 
             if (buildingLevelUp.activeBuilding != null)
@@ -38,6 +37,8 @@ public class BuildingSelect : MonoBehaviour
         {
             SetWindowShop();
             buildingLevelUp.HideRadius();
+            
+            buildingLevelUp.activeBuilding = null;
         }
     }
 
@@ -49,7 +50,9 @@ public class BuildingSelect : MonoBehaviour
             _activeTower = hitInfo.collider.gameObject;
             return _activeTower;
         }
-        return _activeTower;
+        buildingLevelUp.HideRadius();
+        SetWindowShop();
+        return null;
     }
     
     private bool IsPointerOverUI() // check if mouse is over UI
