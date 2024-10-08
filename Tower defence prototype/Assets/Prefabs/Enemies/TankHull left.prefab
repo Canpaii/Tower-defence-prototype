@@ -258,9 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 15
-  hitableLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  oilRigLayer: 0
   laserTower: {fileID: 8559563104103603495}
   rotatingGunHolder: {fileID: 7196442945980777642}
   guns: {fileID: 370219352242407622}
@@ -268,6 +266,7 @@ MonoBehaviour:
   gunRightShootPoint: {fileID: 0}
   rotationSmooth: 0.5
   attackWaitTime: 2.5
+  canHitOilRig: 1
   timer: 0
   bulletPrefab: {fileID: 4208400491822282058, guid: 919bfec52a7d2dc45b044f0139597399,
     type: 3}

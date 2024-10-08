@@ -6,6 +6,7 @@ public class OilrigHP : BuildingHp
 {
     public override void DIE()
     {
+        buildingList.UnregisterBuilding(transform);
         Destroy(gameObject);
     }
 }

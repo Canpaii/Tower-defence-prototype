@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,9 +15,14 @@ public class EnemyHealth : MonoBehaviour
     public Slider healthSlider;
     private EnemyCounter _enemyCounter;
     private EnemyList _enemyList;
-    void Start()
+
+    private void Awake()
     {
         _enemyList = EnemyList.Instance;
+    }
+
+    void Start()
+    {
         currentHealth = maxHealth;
         _enemyCounter = WinconditionManager.instance.counter;
         

@@ -407,7 +407,7 @@ MonoBehaviour:
   radius: 15
   hitableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 32768
   laserTower: {fileID: 5376117941166518971}
   rotatingGunHolder: {fileID: 5376117941166518971}
   guns: {fileID: 5376117941166518971}

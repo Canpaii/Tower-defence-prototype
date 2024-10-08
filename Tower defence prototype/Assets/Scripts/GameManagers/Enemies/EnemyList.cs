@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyList : MonoBehaviour
 {
     public static EnemyList Instance;
-    private List<Transform> activeEnemies;
+    private List<Transform> activeEnemies = new List<Transform>();
 
     private void Awake()
     {

@@ -8,10 +8,6 @@ public class BaseHP : BuildingHp
 {
     public TMP_Text healthText;
     public GameObject loseScreen;
-    void Start()
-    {
-        currentHealth = maxHealth;
-    }
 
     public override void TakeDamage(float damage)
     {

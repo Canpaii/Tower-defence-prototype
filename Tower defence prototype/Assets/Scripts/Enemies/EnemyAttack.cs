@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttack : MonoBehaviour
+public class buildingAttack : MonoBehaviour
 {
     [SerializeField] private float radius;
-    [SerializeField] private LayerMask hitableLayer;
+    [SerializeField] private int oilRigLayer = 10;
     
     [SerializeField] private Transform laserTower;
     [SerializeField] private Transform rotatingGunHolder;
@@ -15,18 +15,25 @@ public class EnemyAttack : MonoBehaviour
     
     [SerializeField] private float rotationSmooth;
     [SerializeField] private float attackWaitTime;
+    [SerializeField] private bool canHitOilRig;
    
     [SerializeField] private float timer;
     
     
     public GameObject bulletPrefab;
+    private BuildingList _buildingList;
     
     [SerializeField] Transform target;
+
+    void Start()
+    {
+        _buildingList = BuildingList.Instance;
+    }
     void Update()
     {
         target = FindBuilding();
         
-        if (target != null)
+        if (target)
         {
             RotateGunHolder();
             RotateGun();
@@ -50,28 +57,48 @@ public class EnemyAttack : MonoBehaviour
 
      public Transform FindBuilding() // find the closest target in an area around the object
         {
-            Collider[] nearbyBuildings = Physics.OverlapSphere(transform.position, radius, hitableLayer );
+            List<Transform> allEnemies = _buildingList.GetActiveBuildings(); 
+
             Transform closestTarget = null;
-            float maxDistance = radius;
-           
-            foreach (Collider buildings in nearbyBuildings)
-            { 
-                float enemyDistance = Vector3.Distance(buildings.transform.position, transform.position);
-                if (enemyDistance < maxDistance)
+            float closestDistance = radius;
+
+            foreach (Transform buildingTransform in allEnemies)
+            {
+                bool isOilRig = IsOilRig(buildingTransform);
+
+                // Skip flying enemies if you cant target it
+                if (isOilRig && !canHitOilRig)
                 {
-                    closestTarget = buildings.transform; 
-                    maxDistance = enemyDistance;
+                    continue;
+                }
+            
+                float distanceTobuilding = IsOilRig(buildingTransform) ? GetHorizontalDistance(buildingTransform) : Vector3.Distance(transform.position, buildingTransform.position);
+            
+                if (distanceTobuilding < closestDistance)
+                {
+                    closestTarget = buildingTransform;
+                    closestDistance = distanceTobuilding;
                 }
             }
-    
-            if (nearbyBuildings.Length == 0)
-            {
-                maxDistance = radius;
-                closestTarget = null;
-            }
-            return closestTarget;
-        }
 
+            return closestTarget;;
+        }
+     
+        private bool IsOilRig(Transform buildingTransform)
+        {
+            return buildingTransform.gameObject.layer == oilRigLayer; 
+        }
+        
+        private float GetHorizontalDistance(Transform buildingTransform)
+        {
+            Vector3 enemyPosition = transform.position;
+            Vector3 buildingPosition = buildingTransform.position;
+        
+            enemyPosition.y = 0;
+            buildingPosition.y = 0;
+
+            return Vector3.Distance(enemyPosition, buildingPosition);
+        }
     #endregion
    
     

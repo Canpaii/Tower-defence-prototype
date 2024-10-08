@@ -5,7 +5,6 @@ using UnityEngine;
 public class OilRig : TurretBasics
 {
     public float harvestAmount;
-    
     void Update()
     {
         if (enemyManager.gameStarted)

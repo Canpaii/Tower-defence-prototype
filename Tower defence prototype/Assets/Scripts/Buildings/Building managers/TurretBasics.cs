@@ -18,8 +18,7 @@ public class TurretBasics : MonoBehaviour
     public EnemyManager enemyManager;
     private Currency currency;
     private BuildingLevelUp buildingLevelUp;
-
-    private bool selectedTower = false;
+    
 
     protected void Start()
     {
