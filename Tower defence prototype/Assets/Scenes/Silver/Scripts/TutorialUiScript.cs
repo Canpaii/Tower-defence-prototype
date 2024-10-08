@@ -1,23 +1,28 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class UIPanelFlyIn : MonoBehaviour
+public class TutorialUiScript : MonoBehaviour
 {
     public RectTransform panel;         // De RectTransform van het UI-paneel dat moet bewegen
-    public Vector3 targetPosition;      // De doelpositie waar het paneel heen moet
+    public float panelWidth = 800f;     // De breedte van het paneel (pas deze aan aan je paneel)
     public Button triggerButton;        // De knop die de animatie triggert
-    public float flyInSpeed = 500f;     // Snelheid waarmee het panel naar de doelpositie beweegt
+    public float flyInSpeed = 500f;     // Snelheid waarmee het paneel naar de doelpositie beweegt
     public bool isPanelVisible = false; // Houdt bij of het paneel zichtbaar is of niet
-    public KeyCode activatePanel;
-    private Vector3 offScreenPosition;  // De startpositie van het paneel (onder het scherm)
+    public KeyCode activatePanel;       // Toets om het paneel te activeren
+    private Vector3 offScreenPosition;  // De startpositie van het paneel (links buiten het scherm)
+    private Vector3 targetPosition;      // De doelpositie waar het paneel heen moet
     private Coroutine movePanelCoroutine; // Referentie naar de lopende coroutine
 
     void Start()
     {
-        // Zet de beginpositie van het paneel onder het scherm (in het midden onderaan)
-        offScreenPosition = new Vector3(targetPosition.x, -Screen.height, 0f);
+        // Zet de beginpositie van het paneel links buiten het scherm
+        offScreenPosition = new Vector3(-panelWidth, 0f, 0f);
         panel.anchoredPosition = offScreenPosition;
+
+        // Stel de doelpositie in om het paneel op het scherm te plaatsen
+        targetPosition = Vector3.zero; // Of pas dit aan naar de gewenste positie op het scherm
 
         // Voeg een listener toe voor de triggerButton
         triggerButton.onClick.AddListener(TogglePanel);
@@ -25,7 +30,7 @@ public class UIPanelFlyIn : MonoBehaviour
 
     void Update()
     {
-        // Luister naar de Escape toets
+        // Luister naar de activatePanel toets
         if (Input.GetKeyDown(activatePanel))
         {
             TogglePanel();
@@ -42,12 +47,12 @@ public class UIPanelFlyIn : MonoBehaviour
 
         if (isPanelVisible)
         {
-            // Beweeg het paneel terug naar beneden
+            // Beweeg het paneel terug naar buiten het scherm
             movePanelCoroutine = StartCoroutine(MovePanel(offScreenPosition));
         }
         else
         {
-            // Beweeg het paneel omhoog naar de doelpositie
+            // Beweeg het paneel naar de doelpositie
             movePanelCoroutine = StartCoroutine(MovePanel(targetPosition));
         }
 
