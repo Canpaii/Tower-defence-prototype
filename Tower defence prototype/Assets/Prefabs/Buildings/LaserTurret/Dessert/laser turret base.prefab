@@ -686,7 +686,7 @@ MonoBehaviour:
   sellWorth: 125
   lastUpgrade: 0
   UIData: {fileID: 11400000, guid: bdf9965f3757605449358b6457463bc4, type: 2}
-  towerUpgrade: {fileID: 7463820270865152850, guid: 17faa97703bd36d46888e6cc7df9aab6,
+  towerUpgrade: {fileID: 4954010755942068480, guid: 2fe6d576e6b2745479de058c70a7daff,
     type: 3}
   enemyManager: {fileID: 0}
   radius: 11
