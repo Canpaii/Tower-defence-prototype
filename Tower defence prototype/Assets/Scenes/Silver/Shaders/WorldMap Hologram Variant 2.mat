@@ -40,6 +40,7 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
+    - _QueueControl: 0
     - _ScrollSpeed: 0.005
     m_Colors:
     - _Fresnet_effect: {r: 0.44001427, g: 0.8983847, b: 0.9056604, a: 0}
