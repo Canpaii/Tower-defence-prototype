@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Left Lane.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Left Lane.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Right Lane 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Right Lane 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull left.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull right.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/BaseHP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/BaseHP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/BuildingHp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/BuildingHp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/OilrigHP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/OilRig/OilrigHP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/OilrigHP.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/OilRig/OilrigHP.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/OilRig/OilRig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/OilRig/OilRig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyList.cs" afterDir="false" />
-    </list>
+    <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,7 +158,7 @@
       <workItem from="1728222360446" duration="5929000" />
       <workItem from="1728354045948" duration="55000" />
       <workItem from="1728354106774" duration="4556000" />
-      <workItem from="1728392271659" duration="6266000" />
+      <workItem from="1728392271659" duration="6558000" />
     </task>
     <servers />
   </component>
