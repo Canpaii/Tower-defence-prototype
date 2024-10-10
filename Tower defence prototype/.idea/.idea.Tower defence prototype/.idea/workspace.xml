@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="" />
+    <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Lvl1Arc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Lvl1Arc.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Lvl2Arc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Lvl2Arc.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/Laser turret lvl 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/Laser turret lvl 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret base.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret base.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret lvl max.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret lvl max.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Left Lane.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Left Lane.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Right Lane 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Right Lane 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull left.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull right.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/Map/Desert Terrain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/joris/Map/Desert Terrain.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret 2/laser turret SNOW base 2 .prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret 2/laser turret SNOW base 2 .prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret 3/laser turret SNOW base 3 (1).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret 3/laser turret SNOW base 3 (1).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret/laser turret SNOW base .prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret/laser turret SNOW base .prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,6 +183,8 @@
       <workItem from="1728354045948" duration="55000" />
       <workItem from="1728354106774" duration="4556000" />
       <workItem from="1728392271659" duration="6558000" />
+      <workItem from="1728567881233" duration="2184000" />
+      <workItem from="1728572092681" duration="1110000" />
     </task>
     <servers />
   </component>

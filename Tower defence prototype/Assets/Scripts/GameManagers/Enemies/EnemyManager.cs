@@ -62,9 +62,12 @@ public class EnemyManager : MonoBehaviour
             }
             else
             {
-                StartCoroutine(SpawnWave(waves[currentWaveIndex]));
-                currentWaveIndex++;
-                countdown = timeBetweenWaves;  
+                if (currentWaveIndex < waves.Length)
+                {
+                    StartCoroutine(SpawnWave(waves[currentWaveIndex]));
+                    currentWaveIndex++; 
+                    countdown = timeBetweenWaves;  
+                }
             }
         }
     }

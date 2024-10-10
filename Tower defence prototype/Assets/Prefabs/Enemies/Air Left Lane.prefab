@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f3362c04762df4583de1ea02cd71c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 75
+  maxHealth: 65
   currencyOnDeath: 30
   healthSlider: {fileID: 5702262414719686635}
 --- !u!54 &218281104267409551
@@ -404,10 +404,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86246bbd816819a41b9e92795816af78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 15
-  hitableLayer:
-    serializedVersion: 2
-    m_Bits: 32768
+  radius: 17
+  oilRigLayer: 10
   laserTower: {fileID: 5376117941166518971}
   rotatingGunHolder: {fileID: 5376117941166518971}
   guns: {fileID: 5376117941166518971}
@@ -415,6 +413,7 @@ MonoBehaviour:
   gunRightShootPoint: {fileID: 5376117941166518971}
   rotationSmooth: 0.5
   attackWaitTime: 0.75
+  canHitOilRig: 0
   timer: 0
   bulletPrefab: {fileID: 1598842050633614354, guid: 99886216497a1bd4fac11422d797a549,
     type: 3}

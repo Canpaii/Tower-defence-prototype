@@ -35,10 +35,14 @@ public class BuildingSelect : MonoBehaviour
         
         if (Input.GetMouseButtonDown(1))
         {
-            SetWindowShop();
-            buildingLevelUp.HideRadius();
-            
-            buildingLevelUp.activeBuilding = null;
+            if (buildingLevelUp.activeBuilding != null)
+            {
+                buildingLevelUp.HideRadius();
+                
+                SetWindowShop();
+                
+                buildingLevelUp.activeBuilding = null;
+            }
         }
     }
 
@@ -65,8 +69,6 @@ public class BuildingSelect : MonoBehaviour
         buildingLevelUp.activeBuilding = null;
         levelUpUIPanel.SetActive(false);
         shopUIPanel.SetActive(true);
-        
-        buildingLevelUp.HideRadius();
     }
 
     public void SetWindowUpgrade()

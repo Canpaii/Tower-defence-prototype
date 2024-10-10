@@ -29,7 +29,7 @@ public class TurretBasics : MonoBehaviour
 
     public void UpgradeTurret() // spawn upgraded variant of the turret 
     {
-        if (!lastUpgrade)
+        if (!lastUpgrade && currency.currency >= upgradeCost)
         {
             currency.SubtractCurrency(upgradeCost);
             

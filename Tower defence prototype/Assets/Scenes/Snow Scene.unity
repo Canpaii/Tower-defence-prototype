@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9783,87 +9783,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d2efc7a8165274c818124a5f559a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 261370613}
+  button: {fileID: 0}
   gameStarted: 0
-  waves:
-  - enemies:
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-  - enemies:
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-  - enemies:
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 5135217025687882283, guid: 6d4d04af0aca4c44d95ee26457267ce5,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 5135217025687882283, guid: 5422777202c970d4ebc8e137d0fa6579,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 0
-  - enemies:
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 5135217025687882283, guid: 6d4d04af0aca4c44d95ee26457267ce5,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 5135217025687882283, guid: 5422777202c970d4ebc8e137d0fa6579,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 6657607501759857575, guid: cc96538491c591242a3bbe90b53ad8a3,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-  - enemies: []
-  - enemies: []
-  - enemies: []
-  - enemies: []
-  - enemies: []
-  - enemies: []
-  - enemies: []
-  leftLaneSpawnPoint: {fileID: 170189850}
-  rightLaneSpawnPoint: {fileID: 1785433079}
-  leftLaneSpawnPointAir: {fileID: 751166581}
-  rightLaneSpawnPointAir: {fileID: 1031772711}
-  countdown: 3
-  spawnDelay: 1.05
-  timeBetweenWaves: 10
+  waves: []
+  leftLaneSpawnPoint: {fileID: 0}
+  rightLaneSpawnPoint: {fileID: 0}
+  leftLaneSpawnPointAir: {fileID: 0}
+  rightLaneSpawnPointAir: {fileID: 0}
+  countdown: 0
+  spawnDelay: 0
+  timeBetweenWaves: 0
 --- !u!1001 &803776501
 PrefabInstance:
   m_ObjectHideFlags: 0

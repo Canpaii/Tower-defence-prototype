@@ -533,7 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f3362c04762df4583de1ea02cd71c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 90
+  maxHealth: 80
   currencyOnDeath: 30
   healthSlider: {fileID: 7274537612863829270}
 --- !u!114 &4864975840311921214
@@ -550,7 +550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   speedHolder: 0
-  rayLength: 3
+  rayLength: 2.5
   rotationSpeed: 10
   wayPoints: {fileID: 0}
   waypoints: {fileID: 0}
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86246bbd816819a41b9e92795816af78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 15
+  radius: 17
   oilRigLayer: 0
   laserTower: {fileID: 8673613782679171231}
   rotatingGunHolder: {fileID: 8564587535416282041}
