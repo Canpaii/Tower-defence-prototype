@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.0306253
+      value: 417.85
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.828593
+      value: 20.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.038456
+      value: 384.48547
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Hitable
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -111,7 +116,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 20
-  buildingList: {fileID: 0}
 --- !u!114 &-1942776853702403490
 MonoBehaviour:
   m_ObjectHideFlags: 0
