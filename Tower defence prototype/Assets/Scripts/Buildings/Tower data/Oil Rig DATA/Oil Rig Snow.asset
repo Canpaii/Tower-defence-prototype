@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78ee3b0b7868e842b094981833af6e3, type: 3}
   m_Name: Oil Rig Snow
   m_EditorClassIdentifier: 
-  towerType: 0
+  towerType: 1
   towerPrefab: {fileID: 6345101356882671721, guid: 497e4b916980e984c835ca786c8fac68,
     type: 3}
-  towerBlueprintPrefab: {fileID: 0}
+  towerBlueprintPrefab: {fileID: 6345101356882671721, guid: c2f839b76c92fa9418b5c97bcc948762,
+    type: 3}
   cost: 175

@@ -5,6 +5,7 @@ using UnityEngine;
 public class AirMovement : EnemyMovement
 {
     [SerializeField] private LayerMask airCraft;
+    public float flyTilt;
     public override void Update()
     {
         base.Update();
@@ -31,6 +32,11 @@ public class AirMovement : EnemyMovement
         else
         {
             speed = speedHolder;
+        }
+
+        if (speed == speedHolder)
+        {
+            
         }
     }
     

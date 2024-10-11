@@ -20,7 +20,7 @@ public struct Waves
 }
 public class EnemyManager : MonoBehaviour
 {
-    public static EnemyManager instance;
+    public static EnemyManager Instance;
     public GameObject button;
     public bool gameStarted = false;
     [SerializeField] public Waves[] waves;
@@ -42,7 +42,7 @@ public class EnemyManager : MonoBehaviour
 
     private void Start()
     {
-        instance = this;
+        Instance = this;
         _enemyList = EnemyList.Instance;
     }
 
@@ -76,7 +76,6 @@ public class EnemyManager : MonoBehaviour
     {
         foreach (EnemyWave enemyWave in wave.enemies)
         {
-            
             if (enemyWave.isLeftLane)
             {
                 if (enemyWave.airCraft)

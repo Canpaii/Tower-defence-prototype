@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f3362c04762df4583de1ea02cd71c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 65
+  maxHealth: 50
   currencyOnDeath: 30
   healthSlider: {fileID: 5702262414719686635}
 --- !u!54 &218281104267409551
@@ -392,6 +392,7 @@ MonoBehaviour:
   airCraft:
     serializedVersion: 2
     m_Bits: 8192
+  flyTilt: 0
 --- !u!114 &-1847495247927884070
 MonoBehaviour:
   m_ObjectHideFlags: 0

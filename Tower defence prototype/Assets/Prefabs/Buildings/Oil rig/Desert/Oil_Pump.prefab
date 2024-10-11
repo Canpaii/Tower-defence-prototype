@@ -62,7 +62,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e8a5d698faf3d8b4db63dbf66ba55c45, type: 2}
+      objectReference: {fileID: 2100000, guid: d7f843e3d2623434c848581bde4ec0cd, type: 2}
     - target: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_Name
@@ -90,6 +90,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -1942776853702403490}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2652754836044135221}
   m_SourcePrefab: {fileID: 100100000, guid: 57779e87849abe74288a52eae3ff8075, type: 3}
 --- !u!1 &7064609836690303677 stripped
 GameObject:
@@ -111,7 +115,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 20
-  buildingList: {fileID: 0}
 --- !u!114 &-1942776853702403490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,4 +136,29 @@ MonoBehaviour:
   towerUpgrade: {fileID: 7064609836690303677, guid: 6b80388b8bb619746969d4732baaf3b1,
     type: 3}
   enemyManager: {fileID: 0}
-  harvestAmount: 7
+  activationDelay: 3
+  harvestAmount: 10
+--- !u!114 &2652754836044135221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064609836690303677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc13e4fa583652540aa6dc840e55b1ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dissolveMaterial: {fileID: 2100000, guid: d7f843e3d2623434c848581bde4ec0cd, type: 2}
+  newMaterial: {fileID: 2100000, guid: e8a5d698faf3d8b4db63dbf66ba55c45, type: 2}
+  dissolveProperty: _DissolveAmount
+  duration: 3
+  timeSpeed: 3
+  targetRenderer: {fileID: 8721912577334463336}
+--- !u!23 &8721912577334463336 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 57779e87849abe74288a52eae3ff8075,
+    type: 3}
+  m_PrefabInstance: {fileID: 7983722045385660396}
+  m_PrefabAsset: {fileID: 0}
