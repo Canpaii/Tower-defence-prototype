@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a78ee3b0b7868e842b094981833af6e3, type: 3}
-  m_Name: LaserTurret
+  m_Name: Oil Rig Snow
   m_EditorClassIdentifier: 
   towerType: 0
-  towerPrefab: {fileID: 6824494863607460114, guid: f06c9bc48f58ef24bb1e61690d4c6c01,
+  towerPrefab: {fileID: 6345101356882671721, guid: 497e4b916980e984c835ca786c8fac68,
     type: 3}
-  towerBlueprintPrefab: {fileID: 5629751702182415071, guid: 850cd2fbc0305f14db2fcc97ca67efeb,
-    type: 3}
-  cost: 250
+  towerBlueprintPrefab: {fileID: 0}
+  cost: 175

@@ -7,7 +7,7 @@ public class BuildingHp : MonoBehaviour
 {
     public float maxHealth;
     public float currentHealth;
-    public BuildingList buildingList;
+    protected BuildingList buildingList;
     protected void Start()
     {
         currentHealth = maxHealth;

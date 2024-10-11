@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a78ee3b0b7868e842b094981833af6e3, type: 3}
-  m_Name: Oil Rig
+  m_Name: Oil Rig Desert
   m_EditorClassIdentifier: 
   towerType: 1
-  towerPrefab: {fileID: 2216557535192434876, guid: a959613a221b23d42958600be5e554c7,
+  towerPrefab: {fileID: 7064609836690303677, guid: 2b4f4e0c6edfcf74b8acaf6b17ca9051,
     type: 3}
   towerBlueprintPrefab: {fileID: 8550381834230388546, guid: 8df0de05c7b80884bbecda738c1485a5,
     type: 3}

@@ -66,10 +66,70 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_Name
-      value: 'Snow Oil_Pump '
+      value: Snow Oil_Pump  2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
+        type: 3}
+      propertyPath: m_TagString
+      value: Hitable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -126917214642057144}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5406925351881300631}
   m_SourcePrefab: {fileID: 100100000, guid: 57779e87849abe74288a52eae3ff8075, type: 3}
+--- !u!1 &6345101356882671721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
+    type: 3}
+  m_PrefabInstance: {fileID: 6111171118987085112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-126917214642057144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345101356882671721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1d3ed0d72b77e45bd1c69a29f86bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  radiusUI: {fileID: 0}
+  upgradeCost: 75
+  sellWorth: 85
+  lastUpgrade: 0
+  UIData: {fileID: 11400000, guid: 3b4c28ac66784cd49ad098418eed862f, type: 2}
+  towerUpgrade: {fileID: 0}
+  enemyManager: {fileID: 0}
+  harvestAmount: 15
+--- !u!114 &5406925351881300631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345101356882671721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcc5839f81720e4eb9a6e2b57280a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  currentHealth: 20
+  buildingList: {fileID: 0}

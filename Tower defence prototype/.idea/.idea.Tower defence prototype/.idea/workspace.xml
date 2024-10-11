@@ -6,28 +6,48 @@
   <component name="ChangeListManager">
     <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Lvl1Arc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Lvl1Arc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Lvl2Arc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Lvl2Arc.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/Laser turret lvl 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/Laser turret lvl 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret base.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret base.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret lvl max.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret lvl max.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Left Lane.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Left Lane.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Right Lane 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Air Right Lane 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull left.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/TankHull right.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingSelect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/joris/Map/Desert Terrain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/joris/Map/Desert Terrain.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret 2/laser turret SNOW base 2 .prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret 2/laser turret SNOW base 2 .prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret 3/laser turret SNOW base 3 (1).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret 3/laser turret SNOW base 3 (1).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret/laser turret SNOW base .prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/joris/laser turret/laser turret SNOW base .prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Snow/laser turret SNOW base 3 (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Snow/laser turret SNOW base 3 (1).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/Oil rig.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/Oil rig.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/OilRig lvl 3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/OilRig lvl 3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/OilRigh Blueprint.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/OilRigh Blueprint.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/OillRig lvl2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/OillRig lvl2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/oil pump.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/oil pump.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/BuildingHp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/BuildingHp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/Oil_Pump.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/Oil_Pump.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/Snow Oil_Pump .prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/Snow Oil_Pump .prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Materials/Tower_Defence_Oil_Pump_DefaultMaterial_AlbedoTransparency.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Materials/Tower_Defence_Oil_Pump_DefaultMaterial_AlbedoTransparency.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Tower_Defence_Oil_Pump_DefaultMaterial_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Tower_Defence_Oil_Pump_DefaultMaterial_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Tower_Defence_Oil_Pump_DefaultMaterial_Emission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Tower_Defence_Oil_Pump_DefaultMaterial_Emission.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Tower_Defence_Oil_Pump_DefaultMaterial_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Tower_Defence_Oil_Pump_DefaultMaterial_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Tower_Defence_Oil_Pump_DefaultMaterial_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/Tower_Defence_Oil_Pump_DefaultMaterial_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/oil pump SNOW.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture SNOW/oil pump SNOW.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/Tower_Defence_Oil_Pump_DefaultMaterial_AlbedoTransparency.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/Tower_Defence_Oil_Pump_DefaultMaterial_AlbedoTransparency.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/Tower_Defence_Oil_Pump_DefaultMaterial_Emission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/Tower_Defence_Oil_Pump_DefaultMaterial_Emission.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/Tower_Defence_Oil_Pump_DefaultMaterial_MetallicSmoothness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/Tower_Defence_Oil_Pump_DefaultMaterial_MetallicSmoothness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/Tower_Defence_Oil_Pump_DefaultMaterial_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/Tower_Defence_Oil_Pump_DefaultMaterial_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/oil pump.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/olie/texture/oil pump.mat.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +205,7 @@
       <workItem from="1728392271659" duration="6558000" />
       <workItem from="1728567881233" duration="2184000" />
       <workItem from="1728572092681" duration="1110000" />
+      <workItem from="1728633265941" duration="528000" />
     </task>
     <servers />
   </component>
