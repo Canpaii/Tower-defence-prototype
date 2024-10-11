@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
+using TMPro;
 
 public class LvlSelect : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool placedFirstTurret = false;
+    public Button placeTurretButton;
+
     void Start()
     {
-        
+        placeTurretButton.onClick.AddListener(PlaceFirstTurret);
     }
 
-    // Update is called once per frame
-    void Update()
+    // This method sets placedFirstTurret to true when the button is clicked
+    void PlaceFirstTurret()
     {
-        
+        placedFirstTurret = false;
     }
 }
