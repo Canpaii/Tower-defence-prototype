@@ -13,7 +13,7 @@ public class EnemyMovement : MonoBehaviour
     public float speedHolder;
     public float rayLength;
     public float rotationSpeed;
-
+    
     public Transform wayPoints;
     public Waypoints waypoints;
 
@@ -58,6 +58,24 @@ public class EnemyMovement : MonoBehaviour
     {
         Vector3 direction = (wayPoints.position - transform.position).normalized;
         transform.position = Vector3.MoveTowards(transform.position, wayPoints.position, speed * Time.deltaTime);
+        
+        Quaternion targetRotation = Quaternion.LookRotation(direction); 
+
+        
+        if (targetRotation != Quaternion.identity)
+        {
+            Quaternion smoothRotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        
+            
+            smoothRotation = Quaternion.Euler(0, smoothRotation.eulerAngles.y, 0);
+            
+            transform.rotation = smoothRotation;
+        }
+        
+        //oude manier van rotating 
+        
+        /*Vector3 direction = (wayPoints.position - transform.position).normalized;
+        transform.position = Vector3.MoveTowards(transform.position, wayPoints.position, speed * Time.deltaTime);
         // Rotate smoothly towards the target waypoint
 
         Quaternion targetRotation = Quaternion.LookRotation(direction); 
@@ -68,8 +86,6 @@ public class EnemyMovement : MonoBehaviour
         else
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-        }
-        
-        
+        }*/
     }
 }

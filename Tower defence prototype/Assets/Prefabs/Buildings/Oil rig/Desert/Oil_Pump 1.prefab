@@ -117,7 +117,7 @@ MonoBehaviour:
   UIData: {fileID: 11400000, guid: 0ebd8bcd4dbe14e439ff4549a47a02c1, type: 2}
   towerUpgrade: {fileID: 0}
   enemyManager: {fileID: 0}
-  harvestAmount: 11
+  harvestAmount: 15
 --- !u!114 &3402588872026001108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,4 +132,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 0
   currentHealth: 0
-  buildingList: {fileID: 0}

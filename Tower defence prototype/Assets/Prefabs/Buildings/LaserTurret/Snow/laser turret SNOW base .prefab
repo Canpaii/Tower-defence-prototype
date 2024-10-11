@@ -277,6 +277,7 @@ MonoBehaviour:
   towerUpgrade: {fileID: 7499147948790526131, guid: 0fd09a5b89e060f4cae5547916028861,
     type: 3}
   enemyManager: {fileID: 0}
+  activationDelay: 3
   radius: 11
   flyingEnemyLayer: 13
   canTargetFlyingEnemies: 1

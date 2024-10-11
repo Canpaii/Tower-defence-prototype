@@ -62,11 +62,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d7f843e3d2623434c848581bde4ec0cd, type: 2}
+      objectReference: {fileID: 2100000, guid: ae9df8ae0b5e7e544ac47ec92d32eb3e, type: 2}
     - target: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_Name
-      value: 'Snow Oil_Pump '
+      value: Blueprint
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
@@ -81,83 +81,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -126917214642057144}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -5638537135121447789}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 9021600779568864583}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57779e87849abe74288a52eae3ff8075, type: 3}
---- !u!23 &4831984583949457852 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 57779e87849abe74288a52eae3ff8075,
-    type: 3}
-  m_PrefabInstance: {fileID: 6111171118987085112}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6345101356882671721 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
-    type: 3}
-  m_PrefabInstance: {fileID: 6111171118987085112}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &-126917214642057144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345101356882671721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a1d3ed0d72b77e45bd1c69a29f86bc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grid: {fileID: 0}
-  radiusUI: {fileID: 0}
-  upgradeCost: 75
-  sellWorth: 85
-  lastUpgrade: 0
-  UIData: {fileID: 11400000, guid: 33285c65c684f5e44a94ed1c23ac4dc4, type: 2}
-  towerUpgrade: {fileID: 0}
-  enemyManager: {fileID: 0}
-  activationDelay: 3
-  harvestAmount: 10
---- !u!114 &-5638537135121447789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345101356882671721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dcc5839f81720e4eb9a6e2b57280a5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 20
-  currentHealth: 20
---- !u!114 &9021600779568864583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6345101356882671721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc13e4fa583652540aa6dc840e55b1ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dissolveMaterial: {fileID: 2100000, guid: d7f843e3d2623434c848581bde4ec0cd, type: 2}
-  newMaterial: {fileID: 2100000, guid: 54ad70c12d625f44c9c6d6b2d9d1e316, type: 2}
-  dissolveProperty: _DissolveAmount
-  duration: 3
-  timeSpeed: 3
-  targetRenderer: {fileID: 4831984583949457852}

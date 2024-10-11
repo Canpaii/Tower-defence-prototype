@@ -18,18 +18,31 @@ public class TurretBasics : MonoBehaviour
     public EnemyManager enemyManager;
     private Currency currency;
     private BuildingLevelUp buildingLevelUp;
-    
+
+    public float activationDelay;
+    private bool isActive = false; // Flag to check if turret is active
 
     protected void Start()
     {
         currency = Currency.Instance;
-        enemyManager = EnemyManager.instance;
+        enemyManager = EnemyManager.Instance;
         buildingLevelUp = BuildingLevelUp.instance;
+
+        
+        StartCoroutine(ActivateTurretAfterDelay());
+    }
+    
+    IEnumerator ActivateTurretAfterDelay()
+    {
+     
+        yield return new WaitForSeconds(activationDelay);
+
+        isActive = true;
     }
 
-    public void UpgradeTurret() // spawn upgraded variant of the turret 
+    public void UpgradeTurret() 
     {
-        if (!lastUpgrade && currency.currency >= upgradeCost)
+        if (!lastUpgrade && currency.currency >= upgradeCost && isActive)
         {
             currency.SubtractCurrency(upgradeCost);
             
@@ -41,9 +54,12 @@ public class TurretBasics : MonoBehaviour
   
     public void SellBuilding()
     {
-        currency.AddCurrency(sellWorth);
-        grid.SetActive(true);
-        Destroy(gameObject);
+        if (isActive) 
+        {
+            currency.AddCurrency(sellWorth);
+            grid.SetActive(true);
+            Destroy(gameObject);
+        }
     }
 
     public void ShowRadius()
