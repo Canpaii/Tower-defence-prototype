@@ -590,6 +590,7 @@ MonoBehaviour:
   UIData: {fileID: 11400000, guid: 2baa70f98a4dd694092112c497558f65, type: 2}
   towerUpgrade: {fileID: 2724933831943485838}
   enemyManager: {fileID: 0}
+  activationDelay: 0
   radius: 15
   flyingEnemyLayer: 13
   canTargetFlyingEnemies: 1
@@ -612,7 +613,7 @@ MonoBehaviour:
   shootPointIndex: 0
   rotationSmooth: 0.5
   attackWaitTime: 0.2
-  damage: 5
+  damage: 6
   bulletPrefab: {fileID: 7598174382105631414, guid: 28d8092273ac25747ab8bdafa9208b2d,
     type: 3}
 --- !u!65 &2940805379301840265

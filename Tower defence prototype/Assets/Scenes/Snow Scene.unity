@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9818,7 +9818,7 @@ MonoBehaviour:
   gameStarted: 0
   waves:
   - enemies:
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
+    - enemyPrefab: {fileID: 6380109087420080588, guid: 29bef36074766384eba7526a1e787af7,
         type: 3}
       airCraft: 0
       isLeftLane: 1
@@ -9933,7 +9933,7 @@ MonoBehaviour:
   rightLaneSpawnPointAir: {fileID: 1031772711}
   countdown: 3
   spawnDelay: 1.1
-  timeBetweenWaves: 10
+  timeBetweenWaves: 11
 --- !u!1001 &803776501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15468,8 +15468,9 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 86c6e1dba01768c4cbecedea758c5add, type: 2}
+  m_sharedMaterial: {fileID: 3235549127982923953, guid: 86c6e1dba01768c4cbecedea758c5add,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
