@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class CameraToPoint : MonoBehaviour
 {
@@ -48,24 +47,20 @@ public class CameraToPoint : MonoBehaviour
             {
                 isMoving = false; // Stop the movement when the target is reached
             }
-
-            // Debugging information
-            Debug.Log($"Elapsed Time: {elapsedTime}, t: {t}");
         }
     }
 
     // Method to start the camera movement
     void StartCameraMovement()
     {
-        if (positionTarget == null)
+        // Prevent starting a new movement if the camera is already moving
+        if (isMoving)
         {
-            Debug.LogError("Position Target is not assigned.");
             return;
         }
 
-        if (lookAtTarget == null)
+        if (positionTarget == null || lookAtTarget == null)
         {
-            Debug.LogError("Look At Target is not assigned.");
             return;
         }
 
