@@ -22,7 +22,7 @@ public class ArcTurret : TowerBehaviour
     {
         enemy = FindEnemy();
         
-        if (enemy)
+        if (enemy && isActive)
         {
             RotateGunHolder();
                                

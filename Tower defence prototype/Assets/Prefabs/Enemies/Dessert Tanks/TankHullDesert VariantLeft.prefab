@@ -591,8 +591,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.0470545, y: 1.5856555, z: 5.000775}
+  m_Center: {x: 0, y: 0.62771535, z: -0.079404354}
 --- !u!114 &2582937018186629514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,7 +680,7 @@ MonoBehaviour:
   gunLeftShootPoint: {fileID: 6084602983760312417}
   gunRightShootPoint: {fileID: 0}
   rotationSmooth: 0.5
-  attackWaitTime: 2.5
+  attackWaitTime: 2.25
   canHitOilRig: 1
   timer: 0
   bulletPrefab: {fileID: 4208400491822282058, guid: 919bfec52a7d2dc45b044f0139597399,

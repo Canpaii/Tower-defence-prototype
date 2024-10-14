@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Timers;
+using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -11,9 +12,9 @@ public class Tesla : TowerBehaviour
    public int maxBounces;
    public int damage;
    public int chainRange;
-   public int attackWaitTime;
+   public float attackWaitTime;
 
-   private float timer;
+   public float timer;
 
    public LayerMask enemyLayerMask;
    public void Update()
@@ -24,25 +25,33 @@ public class Tesla : TowerBehaviour
   private void Shoot()
    {
        timer += Time.deltaTime;
-
+        print(" Alive");
        if (timer > attackWaitTime)
        {
-           Transform firstTarget = FindEnemy();  // Your targeting logic
-           if (firstTarget != null) 
+           Transform firstTarget = FindEnemy(); 
+           
+           print(firstTarget);
+           print("CanShoot");
+           if (firstTarget != null && isActive) 
            { 
                ChainLightning(firstTarget, maxBounces);
+               print("ChainLightning");
            }
        }
    }
    void ChainLightning(Transform currentTarget, int bouncesLeft)
    {
        if (bouncesLeft <= 0) return;
-   
+
+       timer = 0; 
+       
+       
        // Deal damage to the current target
        EnemyHealth enemyScript = currentTarget.GetComponent<EnemyHealth>();
        if (enemyScript != null)
        {
            enemyScript.TakeDamage(damage);
+           print(" Deal Damage  ");
        }
    
        // Find nearby enemies to bounce to

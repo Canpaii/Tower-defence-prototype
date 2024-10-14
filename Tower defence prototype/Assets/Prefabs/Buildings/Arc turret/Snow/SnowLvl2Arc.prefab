@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4733185141131806659}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.56, y: 1.34, z: 0}
+  m_LocalPosition: {x: 0, y: 1.4, z: 2.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62,17 +62,17 @@ PrefabInstance:
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 25
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 25
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 25
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
@@ -283,11 +283,12 @@ MonoBehaviour:
   grid: {fileID: 0}
   radiusUI: {fileID: 4531576457209578672}
   upgradeCost: 0
-  sellWorth: 0
+  sellWorth: 225
   lastUpgrade: 1
   UIData: {fileID: 11400000, guid: 86006ce74b4eaea46b34b06b25f7b372, type: 2}
   towerUpgrade: {fileID: 0}
   enemyManager: {fileID: 0}
+  activationDelay: 0
   radius: 16
   flyingEnemyLayer: 13
   canTargetFlyingEnemies: 0
@@ -295,7 +296,7 @@ MonoBehaviour:
   rotatingGunHolder: {fileID: 6047018846986044977}
   gunShootPoint: {fileID: 1776195898472930796}
   rotationSmooth: 5
-  attackWaitTime: 1.8
+  attackWaitTime: 1.6
   damage: 35
   arcLifeTime: 1.22
   bulletPrefab: {fileID: 911241885614205479, guid: b9ba8144e08f3004587bbf0b1409532f,

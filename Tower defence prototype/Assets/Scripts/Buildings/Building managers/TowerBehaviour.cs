@@ -9,7 +9,7 @@ public class TowerBehaviour : TurretBasics
     
     protected Transform enemy;
 
-    [SerializeField] private int flyingEnemyLayer;
+    [SerializeField] private int flyingEnemyLayer = 13;
 
     public bool canTargetFlyingEnemies;
     public Transform FindEnemy()

@@ -62,17 +62,17 @@ PrefabInstance:
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 25
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 25
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 25
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
@@ -288,6 +288,7 @@ MonoBehaviour:
   UIData: {fileID: 11400000, guid: 86006ce74b4eaea46b34b06b25f7b372, type: 2}
   towerUpgrade: {fileID: 0}
   enemyManager: {fileID: 0}
+  activationDelay: 0
   radius: 16
   flyingEnemyLayer: 13
   canTargetFlyingEnemies: 0
@@ -295,7 +296,7 @@ MonoBehaviour:
   rotatingGunHolder: {fileID: 6047018846986044977}
   gunShootPoint: {fileID: 1776195898472930796}
   rotationSmooth: 5
-  attackWaitTime: 1.8
+  attackWaitTime: 1.6
   damage: 35
   arcLifeTime: 1.22
   bulletPrefab: {fileID: 911241885614205479, guid: b9ba8144e08f3004587bbf0b1409532f,

@@ -550,7 +550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   speedHolder: 0
-  rayLength: 2.5
+  rayLength: 3
   rotationSpeed: 10
   wayPoints: {fileID: 0}
   waypoints: {fileID: 0}
@@ -581,7 +581,7 @@ MonoBehaviour:
   gunLeftShootPoint: {fileID: 6979876432071834783}
   gunRightShootPoint: {fileID: 0}
   rotationSmooth: 0.5
-  attackWaitTime: 2.5
+  attackWaitTime: 2.25
   canHitOilRig: 1
   timer: 0
   bulletPrefab: {fileID: 4208400491822282058, guid: 919bfec52a7d2dc45b044f0139597399,

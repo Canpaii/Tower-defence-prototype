@@ -10,8 +10,10 @@ public class BuildingLevelUp : MonoBehaviour
     public static BuildingLevelUp instance;
     public BuildingSelect buildingSelect;
     public TMP_Text nameText;
+    public TMP_Text descText;
     public Image buildingPortrait;
     public GameObject activeBuilding;
+    public GameObject upgradeButton;
 
     void Awake()
     {
@@ -32,9 +34,14 @@ public class BuildingLevelUp : MonoBehaviour
     }
 
     public void ChangeTurretInfo()
-    { 
+    {
+        if (activeBuilding.GetComponent<TurretBasics>().lastUpgrade)
+        {
+            
+        }
         buildingPortrait.sprite = activeBuilding.GetComponent<TurretBasics>().UIData.icon;
         nameText.text = activeBuilding.GetComponent<TurretBasics>().UIData.buildingName;
+        descText.text = activeBuilding.GetComponent<TurretBasics>().UIData.descriptionText;
     } 
     public void ShowRadius() 
     { 

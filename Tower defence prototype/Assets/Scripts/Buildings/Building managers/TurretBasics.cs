@@ -20,7 +20,7 @@ public class TurretBasics : MonoBehaviour
     private BuildingLevelUp buildingLevelUp;
 
     public float activationDelay;
-    private bool isActive = false; // Flag to check if turret is active
+    [SerializeField] protected bool isActive = false;
 
     protected void Start()
     {

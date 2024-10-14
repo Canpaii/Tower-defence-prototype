@@ -7,7 +7,7 @@ public class OilRig : TurretBasics
     public float harvestAmount;
     void Update()
     {
-        if (enemyManager.gameStarted)
+        if (enemyManager.gameStarted && isActive)
         {
             Currency.Instance.AddCurrency(harvestAmount * Time.deltaTime);
         }

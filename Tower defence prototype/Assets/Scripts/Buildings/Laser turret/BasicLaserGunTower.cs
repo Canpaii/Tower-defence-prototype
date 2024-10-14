@@ -24,7 +24,7 @@ public class BasicLaserGunTower : TowerBehaviour
     {
         enemy = FindEnemy();
         
-        if (enemy)
+        if (enemy && isActive)
         {
             RotateGunHolder();
             RotateGun();
