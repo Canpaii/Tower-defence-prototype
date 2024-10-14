@@ -45,9 +45,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _Fill: 0.01
-    - _Float: 5.53
+    - _Float: 5
     - _QueueControl: 0
-    - _fresnel: 1.74
+    - _fresnel: 1.75
     m_Colors:
     - _Color: {r: 1.128973, g: 2.519392, b: 2.3844004, a: 0.8431373}
     - _Tiling: {r: 3.5, g: 3.5, b: 0, a: 0}

@@ -184,7 +184,7 @@ PrefabInstance:
     - target: {fileID: 1598568568109928812, guid: 5a192bbc52546654e88b9bce75bfaf03,
         type: 3}
       propertyPath: m_Name
-      value: TankHull
+      value: TankDesert
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -202,7 +202,7 @@ PrefabInstance:
     - target: {fileID: 7204668874276705591, guid: 8d158225494914a41a258defdfc4ec31,
         type: 3}
       propertyPath: m_Name
-      value: TankHullSnow (1)
+      value: TankSnow
       objectReference: {fileID: 0}
     - target: {fileID: 7600281069449990412, guid: 8d158225494914a41a258defdfc4ec31,
         type: 3}
@@ -377,84 +377,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1001 &1201894176
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_Name
-      value: Tower_Defence_Helicopter_Unity
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500282215773598946, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 12c390f72f8aaba4cb4ad655678b0100, type: 2}
-    - target: {fileID: 2120668963807833416, guid: 1aa5aff6e28c46148b4659fb3436f31e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 12c390f72f8aaba4cb4ad655678b0100, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1aa5aff6e28c46148b4659fb3436f31e, type: 3}
 --- !u!1 &1366740681
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +563,142 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3227887367032929481
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3313878645876121134, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_Name
+      value: Helicopter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7969242375077283609, guid: 27747c31cbc24eb4a9757d409b326ded,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27747c31cbc24eb4a9757d409b326ded, type: 3}
+--- !u!1001 &5348787376734476266
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601162953111685458, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405495220178477396, guid: e4a684474d3f77d40b4f57d96f6f5b39,
+        type: 3}
+      propertyPath: m_Name
+      value: HelicopterShieldVariant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e4a684474d3f77d40b4f57d96f6f5b39, type: 3}
 --- !u!1001 &7173648241683943410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -652,7 +710,7 @@ PrefabInstance:
     - target: {fileID: 1323895558000633791, guid: bc24d725f531ffd40a7377244447ecba,
         type: 3}
       propertyPath: m_Name
-      value: TankHullSnow
+      value: TankArmourSnow
       objectReference: {fileID: 0}
     - target: {fileID: 7674640669793344891, guid: bc24d725f531ffd40a7377244447ecba,
         type: 3}
@@ -770,7 +828,7 @@ PrefabInstance:
     - target: {fileID: 3637526524820985725, guid: 74487f0e3e2c76544b9e539bf982dcd4,
         type: 3}
       propertyPath: m_Name
-      value: TankHullDesert
+      value: TankArmourDesert
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -786,6 +844,7 @@ SceneRoots:
   - {fileID: 8352144802380266479}
   - {fileID: 7173648241683943410}
   - {fileID: 1756274644}
-  - {fileID: 1201894176}
   - {fileID: 242468}
   - {fileID: 127889258}
+  - {fileID: 5348787376734476266}
+  - {fileID: 3227887367032929481}
