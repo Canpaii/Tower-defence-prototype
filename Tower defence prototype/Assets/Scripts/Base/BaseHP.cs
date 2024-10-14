@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,9 +28,18 @@ public class BaseHP : BuildingHp
     }
     public override void DIE()
     {
-       
-        loseScreen.SetActive(true);
-        Time.timeScale = 0;
+        if (loseScreen != null)
+        {
+            loseScreen.SetActive(true);
+        }
+        else
+        {
+            print("loseScreen is null");
+        }
+        
+        // Time.timeScale = 0;
+        enemyList.DestroyAllEnemies();
+        enemyManager.gamePaused = true;
         
         Destroy(gameObject);
     }

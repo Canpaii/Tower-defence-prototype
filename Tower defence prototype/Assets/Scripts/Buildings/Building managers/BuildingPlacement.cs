@@ -20,6 +20,7 @@ public class BuildingPlacement : MonoBehaviour
     private GameObject currentGrid;
     
     public bool isPlacingTower; // bool used by buildingSelect
+    public GameObject grids;
     // Update is called once per frame
     void Update()
     {
@@ -91,6 +92,7 @@ public class BuildingPlacement : MonoBehaviour
         buildingCost = towerData.cost;
 
         isPlacingTower = true;
+        grids.SetActive(true);
     }
     #region Tower Selection
     void DeselectTower()
@@ -132,6 +134,7 @@ public class BuildingPlacement : MonoBehaviour
     
     private IEnumerator SmallBoolDelay(float delay) //small delay for the bool because it changes too fast building select script is hurting from it 
     {
+        grids.SetActive(false);
         yield return new WaitForSeconds(delay); // Wait for the specified delay
         isPlacingTower = false; 
     }

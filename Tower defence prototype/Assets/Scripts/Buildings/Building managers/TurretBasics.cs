@@ -47,6 +47,7 @@ public class TurretBasics : MonoBehaviour
             currency.SubtractCurrency(upgradeCost);
             
             GameObject newTurret = Instantiate(towerUpgrade, transform.position, Quaternion.identity); 
+            newTurret.GetComponent<TurretBasics>().grid = grid;
             buildingLevelUp.activeBuilding = newTurret;
             Destroy(gameObject);
         }
@@ -54,12 +55,9 @@ public class TurretBasics : MonoBehaviour
   
     public void SellBuilding()
     {
-        if (isActive) 
-        {
-            currency.AddCurrency(sellWorth);
-            grid.SetActive(true);
-            Destroy(gameObject);
-        }
+        currency.AddCurrency(sellWorth);
+        grid.SetActive(true);
+        Destroy(gameObject);
     }
 
     public void ShowRadius()

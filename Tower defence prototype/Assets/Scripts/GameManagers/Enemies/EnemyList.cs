@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyList : MonoBehaviour
 {
     public static EnemyList Instance;
-    private List<Transform> activeEnemies = new List<Transform>();
+    public List<Transform> activeEnemies = new List<Transform>();
 
     private void Awake()
     {
@@ -20,6 +20,14 @@ public class EnemyList : MonoBehaviour
     public void UnregisterEnemy(Transform enemy)
     {
         activeEnemies.Remove(enemy);
+    }
+
+    public void DestroyAllEnemies()
+    {
+        foreach (var enemy in activeEnemies)
+        {
+            Destroy(enemy.gameObject);
+        }
     }
 
     public List<Transform> GetActiveEnemies()

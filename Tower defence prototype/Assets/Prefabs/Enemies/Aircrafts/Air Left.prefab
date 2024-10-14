@@ -656,14 +656,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86246bbd816819a41b9e92795816af78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 17
+  radius: 20
   oilRigLayer: 10
   laserTower: {fileID: 2037444971639167703}
   rotatingGunHolder: {fileID: 2037444971639167703}
   guns: {fileID: 7065153144078170595}
   gunLeftShootPoint: {fileID: 7065153144078170595}
   gunRightShootPoint: {fileID: 0}
-  rotationSmooth: 0.01
+  rotationSmooth: 0.1
   attackWaitTime: 0.75
   canHitOilRig: 0
   timer: 0

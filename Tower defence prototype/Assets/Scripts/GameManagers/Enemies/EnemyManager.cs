@@ -23,6 +23,7 @@ public class EnemyManager : MonoBehaviour
     public static EnemyManager Instance;
     public GameObject button;
     public bool gameStarted = false;
+    public bool gamePaused = false;
     [SerializeField] public Waves[] waves;
     
     [SerializeField] private Transform leftLaneSpawnPoint;
@@ -54,7 +55,7 @@ public class EnemyManager : MonoBehaviour
 
     private void Update()
     {
-        if (gameStarted)
+        if (gameStarted && !gamePaused)
         {
             if (countdown > 0)
             {
@@ -98,9 +99,11 @@ public class EnemyManager : MonoBehaviour
                     spawnPoint = rightLaneSpawnPoint;
                 }
             }
-            
-            GameObject currentEnemy =  Instantiate(enemyWave.enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-            
+
+            if (!gamePaused)
+            {
+                GameObject currentEnemy =  Instantiate(enemyWave.enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            }
             yield return new WaitForSeconds(spawnDelay);  // Adjust spawn delay
         }
     }

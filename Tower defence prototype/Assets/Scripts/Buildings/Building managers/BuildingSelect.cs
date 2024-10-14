@@ -25,6 +25,11 @@ public class BuildingSelect : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)  && !IsPointerOverUI() && !buildingPlacement.isPlacingTower )
         {
+            if (buildingLevelUp.activeBuilding != null)
+            {
+                buildingLevelUp.HideRadius();
+            }
+            
             buildingLevelUp.activeBuilding = ActiveTower();
 
             if (buildingLevelUp.activeBuilding != null)

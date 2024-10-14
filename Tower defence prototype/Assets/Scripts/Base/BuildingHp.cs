@@ -8,6 +8,9 @@ public class BuildingHp : MonoBehaviour
     public float maxHealth;
     public float currentHealth;
     protected BuildingList buildingList;
+    public EnemyList enemyList;
+    public EnemyManager enemyManager;
+
     protected void Start()
     {
         currentHealth = maxHealth;
