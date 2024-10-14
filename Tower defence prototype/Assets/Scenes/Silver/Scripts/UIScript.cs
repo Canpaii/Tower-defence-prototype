@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
-public class UISCript : MonoBehaviour
+public class UIScript : MonoBehaviour
 {
     public TMP_Text tmpText;                // De TextMeshPro tekst die je wilt verplaatsen
     public Vector3 targetPosition1;         // Het doelpunt van de eerste knop

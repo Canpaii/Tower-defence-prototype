@@ -2,69 +2,94 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIPanelFlyIn : MonoBehaviour
+public class CameraAndPanelMove : MonoBehaviour
 {
-    public RectTransform panel;         // De RectTransform van het UI-paneel dat moet bewegen
-    public Vector3 targetPosition;      // De doelpositie waar het paneel heen moet
-    public Button triggerButton;        // De knop die de animatie triggert
-    public float flyInSpeed = 500f;     // Snelheid waarmee het panel naar de doelpositie beweegt
-    public bool isPanelVisible = false; // Houdt bij of het paneel zichtbaar is of niet
-    public KeyCode activatePanel;
-    private Vector3 offScreenPosition;  // De startpositie van het paneel (onder het scherm)
-    private Coroutine movePanelCoroutine; // Referentie naar de lopende coroutine
+    public Camera cameraToAdjust;
+    public Rect startViewportRect;
+    public Rect targetViewportRect;
+    public RectTransform panel;
+    public Vector3 panelStartPosition;
+    public Vector3 panelTargetPosition;
+    public float cameraTransitionSpeed = 2f;
+    public float panelMoveSpeed = 500f;
+    public KeyCode triggerKey = KeyCode.Tab;
+    public Button triggerButton;
+
+    private bool isTransitioning = false;
+    private Coroutine viewportCoroutine;
+    private Coroutine panelCoroutine;
 
     void Start()
     {
-        // Zet de beginpositie van het paneel onder het scherm (in het midden onderaan)
-        offScreenPosition = new Vector3(targetPosition.x, -Screen.height, 0f);
-        panel.anchoredPosition = offScreenPosition;
-
-        // Voeg een listener toe voor de triggerButton
-        triggerButton.onClick.AddListener(TogglePanel);
+        cameraToAdjust.rect = startViewportRect;
+        panel.anchoredPosition = panelStartPosition;
+        triggerButton.onClick.AddListener(ToggleCameraAndPanel);
     }
 
     void Update()
     {
-        // Luister naar de Escape toets
-        if (Input.GetKeyDown(activatePanel))
+        if (Input.GetKeyDown(triggerKey))
         {
-            TogglePanel();
+            ToggleCameraAndPanel();
         }
     }
 
-    void TogglePanel()
+    void ToggleCameraAndPanel()
     {
-        // Stop de huidige animatie als die loopt
-        if (movePanelCoroutine != null)
+        if (viewportCoroutine != null)
         {
-            StopCoroutine(movePanelCoroutine);
+            StopCoroutine(viewportCoroutine);
         }
 
-        if (isPanelVisible)
+        if (panelCoroutine != null)
         {
-            // Beweeg het paneel terug naar beneden
-            movePanelCoroutine = StartCoroutine(MovePanel(offScreenPosition));
+            StopCoroutine(panelCoroutine);
+        }
+
+        if (isTransitioning)
+        {
+            viewportCoroutine = StartCoroutine(AdjustViewport(startViewportRect));
+            panelCoroutine = StartCoroutine(MovePanel(panelStartPosition));
         }
         else
         {
-            // Beweeg het paneel omhoog naar de doelpositie
-            movePanelCoroutine = StartCoroutine(MovePanel(targetPosition));
+            viewportCoroutine = StartCoroutine(AdjustViewport(targetViewportRect));
+            panelCoroutine = StartCoroutine(MovePanel(panelTargetPosition));
         }
 
-        isPanelVisible = !isPanelVisible;  // Wissel de zichtbaarheid status
+        isTransitioning = !isTransitioning;
+    }
+
+    IEnumerator AdjustViewport(Rect destination)
+    {
+        Rect currentRect = cameraToAdjust.rect;
+
+        while (Mathf.Abs(currentRect.x - destination.x) > 0.01f || Mathf.Abs(currentRect.y - destination.y) > 0.01f)
+        {
+            currentRect = new Rect(
+                Mathf.Lerp(cameraToAdjust.rect.x, destination.x, cameraTransitionSpeed * Time.deltaTime),
+                Mathf.Lerp(cameraToAdjust.rect.y, destination.y, cameraTransitionSpeed * Time.deltaTime),
+                Mathf.Lerp(cameraToAdjust.rect.width, destination.width, cameraTransitionSpeed * Time.deltaTime),
+                Mathf.Lerp(cameraToAdjust.rect.height, destination.height, cameraTransitionSpeed * Time.deltaTime)
+            );
+
+            cameraToAdjust.rect = currentRect;
+            yield return null;
+        }
+
+        cameraToAdjust.rect = destination;
+        viewportCoroutine = null;
     }
 
     IEnumerator MovePanel(Vector3 destination)
     {
         while (Vector3.Distance(panel.anchoredPosition, destination) > 0.1f)
         {
-            // Beweeg de positie van het paneel richting de doelpositie met een bepaalde snelheid
-            panel.anchoredPosition = Vector3.MoveTowards(panel.anchoredPosition, destination, flyInSpeed * Time.deltaTime);
-            yield return null;  // Wacht een frame voordat je verdergaat
+            panel.anchoredPosition = Vector3.MoveTowards(panel.anchoredPosition, destination, panelMoveSpeed * Time.deltaTime);
+            yield return null;
         }
 
-        // Zorg ervoor dat de positie precies gelijk is aan de doelpositie
         panel.anchoredPosition = destination;
-        movePanelCoroutine = null;  // Reset de coroutine referentie wanneer klaar
+        panelCoroutine = null;
     }
 }
