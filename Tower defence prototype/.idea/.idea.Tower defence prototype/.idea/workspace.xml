@@ -6,30 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Snow/laser turret SNOW base 3 (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Snow/laser turret SNOW base 3 (1).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Aircrafts/Air Left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Aircrafts/Air Left.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Aircrafts/Air Right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Aircrafts/Air Right.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Sand/SandLvl1Arc 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Sand/SandLvl1Arc 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Silver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Silver.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Silver/Shaders/Build.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Silver/Shaders/Build.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/BaseHP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/BaseHP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Base/BuildingHp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Base/BuildingHp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingPlacement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingPlacement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingSelect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Wincondition.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Wincondition/EnemyCounter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Wincondition/EnemyCounter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Wincondition/WinconditionManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Wincondition/WinconditionManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/arc turret.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/arc turret.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/laser turret.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/laser turret.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/oil pump.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/oil pump.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/squam.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/squam.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/tesla turret.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/tesla turret.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingLevelUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingLevelUp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +174,7 @@
       <workItem from="1728876559611" duration="4323000" />
       <workItem from="1728894113744" duration="629000" />
       <workItem from="1728895481514" duration="772000" />
-      <workItem from="1728905263100" duration="4622000" />
+      <workItem from="1728905263100" duration="5829000" />
     </task>
     <servers />
   </component>

@@ -37,7 +37,7 @@ public class BuildingLevelUp : MonoBehaviour
     {
         if (activeBuilding.GetComponent<TurretBasics>().lastUpgrade)
         {
-            
+            // remove upgrade button
         }
         buildingPortrait.sprite = activeBuilding.GetComponent<TurretBasics>().UIData.icon;
         nameText.text = activeBuilding.GetComponent<TurretBasics>().UIData.buildingName;
