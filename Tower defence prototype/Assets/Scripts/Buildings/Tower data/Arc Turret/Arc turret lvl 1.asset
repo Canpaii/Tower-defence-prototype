@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d4eff34ce34c84984d852aacde7d75, type: 3}
   m_Name: Arc turret lvl 1
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: f0d7f43ec2843024f8cedc0996aed0eb, type: 3}
+  icon: {fileID: 21300000, guid: fa817e81ebdf9f448b672e900ca7d0fb, type: 3}
   buildingName: Arc Turret lvl 1
-  descriptionText: 
+  descriptionText: 'Shoots an arc through grounded enemies  '

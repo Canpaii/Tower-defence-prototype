@@ -515,6 +515,7 @@ MonoBehaviour:
     type: 3}
   enemyManager: {fileID: 0}
   activationDelay: 0
+  isActive: 0
   radius: 13
   flyingEnemyLayer: 13
   canTargetFlyingEnemies: 1
@@ -527,6 +528,7 @@ MonoBehaviour:
   - {fileID: 7478911015785777220}
   - {fileID: 8319278606899805091}
   - {fileID: 6409011643980515875}
+  - {fileID: 9000888151689976378}
   shootPoints:
   - {fileID: 6330624931694894241}
   - {fileID: 5223063361502414481}

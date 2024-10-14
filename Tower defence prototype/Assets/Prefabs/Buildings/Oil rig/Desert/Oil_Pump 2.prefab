@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3206121303730662625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4767983661171493488}
+  m_Layer: 10
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4767983661171493488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3206121303730662625}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7584441773650849799}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &7983722045385660396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,7 +111,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4767983661171493488}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
@@ -114,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 0}
-  radiusUI: {fileID: 0}
+  radiusUI: {fileID: 3206121303730662625}
   upgradeCost: 0
   sellWorth: 175
   lastUpgrade: 1
@@ -122,6 +157,7 @@ MonoBehaviour:
   towerUpgrade: {fileID: 0}
   enemyManager: {fileID: 0}
   activationDelay: 0
+  isActive: 0
   harvestAmount: 20
 --- !u!114 &-2496154883553657002
 MonoBehaviour:
@@ -158,3 +194,9 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.224345, y: 7.1087084, z: 4.208724}
   m_Center: {x: -0.11038208, y: 2.7160048, z: 0.10257149}
+--- !u!4 &7584441773650849799 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
+    type: 3}
+  m_PrefabInstance: {fileID: 7983722045385660396}
+  m_PrefabAsset: {fileID: 0}

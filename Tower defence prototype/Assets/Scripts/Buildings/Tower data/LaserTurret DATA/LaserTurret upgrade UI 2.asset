@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d4eff34ce34c84984d852aacde7d75, type: 3}
   m_Name: LaserTurret upgrade UI 2
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 09fd488af87369f49bda8907bdf04bcf, type: 3}
+  icon: {fileID: 21300000, guid: 09c64e7c6937ab94199732b24fa16c95, type: 3}
   buildingName: 'Laser Turret MAX lvl '
-  descriptionText: 
+  descriptionText: Shoots lasers to take down its enemies in the sky and ground

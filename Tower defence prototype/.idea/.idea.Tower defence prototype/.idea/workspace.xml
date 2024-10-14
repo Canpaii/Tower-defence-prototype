@@ -6,41 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Sand/SandLvl1Arc 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Sand/SandLvl1Arc 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Sand/SandLvl2Arc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Sand/SandLvl2Arc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Snow/SnowLvl1Arc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Snow/SnowLvl1Arc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Snow/SnowLvl2Arc.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Arc turret/Snow/SnowLvl2Arc.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Bullet/ArcBullet 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Bullet/ArcBullet 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Dessert/TeslaLvl2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Dessert/TeslaLvl2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Dessert/tesla.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Dessert/tesla.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Dessert Tanks/TankHull left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Dessert Tanks/TankHull left.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Dessert Tanks/TankHull right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Dessert Tanks/TankHull right.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Dessert Tanks/TankHullDesert Variant Right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Dessert Tanks/TankHullDesert Variant Right.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Dessert Tanks/TankHullDesert VariantLeft.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Dessert Tanks/TankHullDesert VariantLeft.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Tank Bullet.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Tank Bullet/AirshipBullet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Tank Bullet/AirshipBullet.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Tank Bullet/TankBullet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Tank Bullet/TankBullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/Oil_Pump 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/Oil_Pump 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/Oil_Pump 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/Oil_Pump 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/Oil_Pump.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Desert/Oil_Pump.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Snow/Snow Oil_Pump  1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Snow/Snow Oil_Pump  1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Snow/Snow Oil_Pump  2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Snow/Snow Oil_Pump  2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Snow/Snow Oil_Pump .prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Oil rig/Snow/Snow Oil_Pump .prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Silver/Shaders/Build.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Silver/Shaders/Build.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Arc Turret/ArcTurret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Arc Turret/ArcTurret.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingLevelUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingLevelUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TowerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TowerBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Laser turret/BasicLaserGunTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Laser turret/BasicLaserGunTower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/OilRig/OilRig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/OilRig/OilRig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tesla/Tesla.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tesla/Tesla.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Arc Turret/Arc Turret Dessert.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Arc Turret/Arc Turret Dessert.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Arc Turret/Arc Turret Snow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Arc Turret/Arc Turret Snow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/arc turret.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/arc turret.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/big bar.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/big bar.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/blue print button.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/blue print button.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/laser turret.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/laser turret.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/normal buttons.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/normal buttons.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/oil pump.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/oil pump.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Joris/tesla turret.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Joris/tesla turret.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Arc Turret/Arc turret lvl 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Arc Turret/Arc turret lvl 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Arc Turret/Arc turret lvl 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Arc Turret/Arc turret lvl 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/LaserTurret DATA/LaserTurret Upgrade 1UI 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/LaserTurret DATA/LaserTurret Upgrade 1UI 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/LaserTurret DATA/LaserTurret upgrade UI 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/LaserTurret DATA/LaserTurret upgrade UI 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/LaserTurret DATA/LaserTurretUI.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/LaserTurret DATA/LaserTurretUI.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Oil Rig DATA/OilRigUI LVL 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Oil Rig DATA/OilRigUI LVL 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Oil Rig DATA/OilRigUI LVL2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Oil Rig DATA/OilRigUI LVL2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Oil Rig DATA/OilRigUIData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Oil Rig DATA/OilRigUIData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Tesla/Tesla UI lvl2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Tesla/Tesla UI lvl2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Tesla/Tesla UI.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Tower data/Tesla/Tesla UI.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Settings/SampleSceneProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/joris/Map/sand wind.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/joris/Map/sand wind.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +188,9 @@
       <workItem from="1728633265941" duration="9780000" />
       <workItem from="1728824377527" duration="432000" />
       <workItem from="1728864655317" duration="1566000" />
-      <workItem from="1728876559611" duration="3917000" />
+      <workItem from="1728876559611" duration="4323000" />
+      <workItem from="1728894113744" duration="629000" />
+      <workItem from="1728895481514" duration="772000" />
     </task>
     <servers />
   </component>

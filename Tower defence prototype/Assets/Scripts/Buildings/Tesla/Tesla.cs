@@ -19,23 +19,27 @@ public class Tesla : TowerBehaviour
    public LayerMask enemyLayerMask;
    public void Update()
    {
-       Shoot();
+       enemy = FindEnemy();
+        
+       if (enemy && isActive)
+       {
+           Shoot();
+       }
    }
 
   private void Shoot()
    {
        timer += Time.deltaTime;
-        print(" Alive");
+       
        if (timer > attackWaitTime)
        {
-           Transform firstTarget = FindEnemy(); 
+           Transform firstTarget = enemy; 
            
            print(firstTarget);
-           print("CanShoot");
+          
            if (firstTarget != null && isActive) 
            { 
                ChainLightning(firstTarget, maxBounces);
-               print("ChainLightning");
            }
        }
    }

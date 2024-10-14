@@ -591,6 +591,7 @@ MonoBehaviour:
   towerUpgrade: {fileID: 2724933831943485838}
   enemyManager: {fileID: 0}
   activationDelay: 0
+  isActive: 0
   radius: 15
   flyingEnemyLayer: 13
   canTargetFlyingEnemies: 1
@@ -603,6 +604,7 @@ MonoBehaviour:
   - {fileID: 8511284533727571243}
   - {fileID: 2469671787999876002}
   - {fileID: 3419750709459260581}
+  - {fileID: 9006238240549153901}
   shootPoints:
   - {fileID: 1040232768846841114}
   - {fileID: 5838428924353903884}

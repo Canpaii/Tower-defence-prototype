@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d4eff34ce34c84984d852aacde7d75, type: 3}
   m_Name: OilRigUI LVL2
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: cffeb376d38a0974c9acd80aa264c220, type: 3}
+  icon: {fileID: 21300000, guid: 075c3e371fc0bbe47abb6a195bcb2e30, type: 3}
   buildingName: Oil Rig lvl 2
-  descriptionText: 
+  descriptionText: Pumps oil from the ground to get more resources
