@@ -1541,7 +1541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &124670892
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16251,8 +16251,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingSelect: {fileID: 1564891736}
   nameText: {fileID: 1148053209}
+  descText: {fileID: 0}
   buildingPortrait: {fileID: 1922758081}
   activeBuilding: {fileID: 0}
+  upgradeButton: {fileID: 0}
 --- !u!1001 &1327530302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18048,7 +18050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1492418864
 RectTransform:
   m_ObjectHideFlags: 0
