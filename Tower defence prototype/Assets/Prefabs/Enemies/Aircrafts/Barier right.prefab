@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f3362c04762df4583de1ea02cd71c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 125
+  maxHealth: 140
   currencyOnDeath: 25
   healthSlider: {fileID: 5798585070930790380}
   deathParticle: {fileID: 7329720988514312704, guid: 37df2ef9ae818ef4aa433fbdc3603a0d,
@@ -673,6 +673,6 @@ MonoBehaviour:
   attackWaitTime: 0.75
   canHitOilRig: 0
   timer: 0
-  bulletPrefab: {fileID: 1598842050633614354, guid: 99886216497a1bd4fac11422d797a549,
+  bulletPrefab: {fileID: 7598174382105631414, guid: 3b618c26bf5fb0a409293de1ea174d99,
     type: 3}
   target: {fileID: 0}

@@ -668,7 +668,7 @@ MonoBehaviour:
   attackWaitTime: 0.75
   canHitOilRig: 0
   timer: 0
-  bulletPrefab: {fileID: 1598842050633614354, guid: 99886216497a1bd4fac11422d797a549,
+  bulletPrefab: {fileID: 7598174382105631414, guid: 3b618c26bf5fb0a409293de1ea174d99,
     type: 3}
   target: {fileID: 0}
 --- !u!4 &2037444971639167703 stripped

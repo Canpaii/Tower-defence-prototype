@@ -4758,7 +4758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '750
+  m_text: '750$
 
 '
   m_isRightToLeft: 0
@@ -11138,14 +11138,6 @@ MonoBehaviour:
         type: 3}
       airCraft: 1
       isLeftLane: 0
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 0
   - enemies:
     - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
         type: 3}
@@ -11180,35 +11172,35 @@ MonoBehaviour:
       airCraft: 1
       isLeftLane: 0
   - enemies:
-    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
         type: 3}
       airCraft: 1
       isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6f7063271769fcf43b4d74f3467e6bcf,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6f7063271769fcf43b4d74f3467e6bcf,
         type: 3}
       airCraft: 1
       isLeftLane: 0
@@ -11229,19 +11221,19 @@ MonoBehaviour:
         type: 3}
       airCraft: 0
       isLeftLane: 0
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
         type: 3}
       airCraft: 1
       isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6f7063271769fcf43b4d74f3467e6bcf,
         type: 3}
       airCraft: 1
       isLeftLane: 0
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
         type: 3}
       airCraft: 1
       isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6f7063271769fcf43b4d74f3467e6bcf,
         type: 3}
       airCraft: 1
       isLeftLane: 0
@@ -11250,6 +11242,47 @@ MonoBehaviour:
       airCraft: 0
       isLeftLane: 1
     - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+  - enemies:
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6f7063271769fcf43b4d74f3467e6bcf,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6f7063271769fcf43b4d74f3467e6bcf,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6f7063271769fcf43b4d74f3467e6bcf,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6f7063271769fcf43b4d74f3467e6bcf,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6f7063271769fcf43b4d74f3467e6bcf,
         type: 3}
       airCraft: 0
       isLeftLane: 0
@@ -11270,31 +11303,6 @@ MonoBehaviour:
         type: 3}
       airCraft: 0
       isLeftLane: 0
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 0
-  - enemies:
     - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
         type: 3}
       airCraft: 0
@@ -11310,22 +11318,6 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
         type: 3}
       airCraft: 0
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 0
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
-        type: 3}
-      airCraft: 1
       isLeftLane: 0
     - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
         type: 3}
@@ -16789,7 +16781,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '100
+  m_text: '100+
 
 
 '
@@ -25156,7 +25148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96869833852574145beed6e03fe13c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfEnemies: 54
+  amountOfEnemies: 82
   enemiesKilled: 0
   winScreen: {fileID: 253388047}
 --- !u!114 &1866203997

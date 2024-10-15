@@ -685,6 +685,6 @@ MonoBehaviour:
   attackWaitTime: 2.25
   canHitOilRig: 1
   timer: 0
-  bulletPrefab: {fileID: 4208400491822282058, guid: 919bfec52a7d2dc45b044f0139597399,
+  bulletPrefab: {fileID: 7598174382105631414, guid: b823f3aed60ea854c83bbae65bbdccb5,
     type: 3}
   target: {fileID: 0}

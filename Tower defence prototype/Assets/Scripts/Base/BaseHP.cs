@@ -24,7 +24,7 @@ public class BaseHP : BuildingHp
     
     void UpdateHealth(float currenthealth)
     {
-        healthText.text = currenthealth.ToString();
+        healthText.text = currenthealth.ToString() + "+";
     }
     public override void DIE()
     {

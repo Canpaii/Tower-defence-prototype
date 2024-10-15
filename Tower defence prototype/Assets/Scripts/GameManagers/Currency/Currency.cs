@@ -18,18 +18,18 @@ public class Currency : MonoBehaviour
     }
     private void Start()
     {
-        currencyText.text = currency.ToString();
+        currencyText.text = currency.ToString() + "$";
     }
     public void SubtractCurrency(float amount)
     {
         currency -= amount;
         currencyToShow = (int)Math.Round(currency);
-        currencyText.text = currencyToShow.ToString();
+        currencyText.text = currencyToShow.ToString() + "$";
     }
     public void AddCurrency(float amount)
     {
         currency += amount;
         currencyToShow = (int)Math.Round(currency);
-        currencyText.text = currencyToShow.ToString(); 
+        currencyText.text = currencyToShow.ToString() + "$"; 
     }
 }
