@@ -1212,79 +1212,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1675426460}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &74817051
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.23
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 94a3e9744d5a8ca45a9d857c512e60a2, type: 2}
-    - target: {fileID: 919132149155446097, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_Name
-      value: Oil_Pump_Downgrade SNOW
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 532bac593686ff3409abbbdf3f5bb407, type: 3}
 --- !u!1001 &77233813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3252,79 +3179,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1846af59efb63a341b7eb1562224b85e, type: 3}
---- !u!1001 &233823571
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13.48
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.09
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 65500d47895a01f47b30c43f27b6c0ab, type: 2}
-    - target: {fileID: 919132149155446097, guid: 532bac593686ff3409abbbdf3f5bb407,
-        type: 3}
-      propertyPath: m_Name
-      value: Oil_Pump_Downgrade
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 532bac593686ff3409abbbdf3f5bb407, type: 3}
 --- !u!4 &234168743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7016213968065631388, guid: 738fc3cb37cde484c8addfa412a0301b,
@@ -4157,8 +4011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45876637, y: 0.0000000070246053, z: -0.0000000036268404,
-    w: 0.88855696}
+  m_LocalRotation: {x: 0.4587664, y: -0.00000004640134, z: 0.000000023957243, w: 0.88855696}
   m_LocalPosition: {x: 0, y: 93.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9052,6 +8905,7 @@ MonoBehaviour:
   countdown: 5
   spawnDelay: 1
   timeBetweenWaves: 10
+  currentWaveIndex: 0
 --- !u!1001 &803776501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15171,6 +15025,7 @@ MonoBehaviour:
   buildingSelect: {fileID: 0}
   nameText: {fileID: 0}
   descText: {fileID: 0}
+  upgradeCostText: {fileID: 0}
   buildingPortrait: {fileID: 0}
   activeBuilding: {fileID: 0}
   upgradeButton: {fileID: 0}
@@ -16666,8 +16521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503378396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45876637, y: 0.0000000070246053, z: -0.0000000036268404,
-    w: 0.88855696}
+  m_LocalRotation: {x: 0.4587664, y: -0.00000004640134, z: 0.000000023957243, w: 0.88855696}
   m_LocalPosition: {x: 0, y: 43.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23474,6 +23328,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42fc335aadd39c145a2ab2d9412fd23d, type: 3}
+--- !u!1001 &3917795776388406970
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226431734612832466, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8746545451159349864, guid: f40087d2c3dc63d43901c839e046ab6d,
+        type: 3}
+      propertyPath: m_Name
+      value: Oil_Pump_Downgrade SNOW
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f40087d2c3dc63d43901c839e046ab6d, type: 3}
 --- !u!1001 &4144490797867878409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23620,6 +23542,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74220747cf0ee314f924f333b7f41d4d, type: 3}
+--- !u!1001 &4266867290201247188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529792402057175537, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012890686340594507, guid: 102e1d1ceb32141449714736c5dc5c90,
+        type: 3}
+      propertyPath: m_Name
+      value: Oil_Pump_Downgrade
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 102e1d1ceb32141449714736c5dc5c90, type: 3}
 --- !u!1001 &4965164741649561443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24355,5 +24345,5 @@ SceneRoots:
   - {fileID: 4144490797867878409}
   - {fileID: 635275000}
   - {fileID: 5852108147557341988}
-  - {fileID: 233823571}
-  - {fileID: 74817051}
+  - {fileID: 4266867290201247188}
+  - {fileID: 3917795776388406970}
