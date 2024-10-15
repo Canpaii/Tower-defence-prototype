@@ -13,6 +13,7 @@ public class BuildingPlacement : MonoBehaviour
 
     public GameObject currentPlacingTower;
     public GameObject buildingLevelUp;
+    
     private int buildingCost;
     
     
@@ -49,6 +50,7 @@ public class BuildingPlacement : MonoBehaviour
                     if(Input.GetMouseButtonDown(0))
                     {   
                         DeselectTower();
+                        grids.SetActive(false);
                     }
                 }
                 
@@ -71,6 +73,7 @@ public class BuildingPlacement : MonoBehaviour
                     if(Input.GetMouseButtonDown(0)) 
                     {   
                         DeselectTower();
+                        grids.SetActive(false);
                     }
                 }
             }
