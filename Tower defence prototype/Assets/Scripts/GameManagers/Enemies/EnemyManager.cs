@@ -37,7 +37,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private float timeBetweenWaves;  
     
     private Transform spawnPoint;
-    private int currentWaveIndex = 0;
+    public int currentWaveIndex = 0;
 
     private EnemyList _enemyList;
 

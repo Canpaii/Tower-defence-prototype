@@ -507,8 +507,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 0}
   radiusUI: {fileID: 9200866003900988215}
-  upgradeCost: 100
-  sellWorth: 160
+  upgradeCost: 250
+  sellWorth: 175
   lastUpgrade: 0
   UIData: {fileID: 11400000, guid: 6fb32856bb3b1c6488536e92ce8fc417, type: 2}
   towerUpgrade: {fileID: 2724933831943485838, guid: fe67b9153e4438a4c8707f490ae1a26d,
@@ -878,17 +878,17 @@ PrefabInstance:
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 30.000002
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 30.000002
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 30.000002
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}

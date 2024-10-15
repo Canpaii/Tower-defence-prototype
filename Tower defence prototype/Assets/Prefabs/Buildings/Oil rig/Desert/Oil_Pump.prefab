@@ -159,6 +159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   currentHealth: 40
+  enemyList: {fileID: 0}
+  enemyManager: {fileID: 0}
 --- !u!114 &-1942776853702403490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +184,7 @@ MonoBehaviour:
   enemyManager: {fileID: 0}
   activationDelay: 3
   isActive: 0
-  harvestAmount: 10
+  harvestAmount: 8
 --- !u!114 &2652754836044135221
 MonoBehaviour:
   m_ObjectHideFlags: 0

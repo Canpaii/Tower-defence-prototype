@@ -25,6 +25,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6679524670537274223, guid: c924ca26563be014eb0469566d28d106,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679524670537274223, guid: c924ca26563be014eb0469566d28d106,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679524670537274223, guid: c924ca26563be014eb0469566d28d106,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679524670537274223, guid: c924ca26563be014eb0469566d28d106,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.7224603
       objectReference: {fileID: 0}
@@ -72,6 +87,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6679524670537274223, guid: c924ca26563be014eb0469566d28d106,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -138,8 +158,8 @@ MonoBehaviour:
   canTargetFlyingEnemies: 1
   maxBounces: 3
   damage: 10
-  chainRange: 10
-  attackWaitTime: 1.75
+  chainRange: 15
+  attackWaitTime: 2
   timer: 0
   enemyLayerMask:
     serializedVersion: 2
@@ -220,17 +240,17 @@ PrefabInstance:
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 33
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 33
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 33
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}

@@ -11,6 +11,7 @@ public class BuildingLevelUp : MonoBehaviour
     public BuildingSelect buildingSelect;
     public TMP_Text nameText;
     public TMP_Text descText;
+    public TMP_Text upgradeCostText;
     public Image buildingPortrait;
     public GameObject activeBuilding;
     public GameObject upgradeButton;
@@ -42,6 +43,7 @@ public class BuildingLevelUp : MonoBehaviour
         buildingPortrait.sprite = activeBuilding.GetComponent<TurretBasics>().UIData.icon;
         nameText.text = activeBuilding.GetComponent<TurretBasics>().UIData.buildingName;
         descText.text = activeBuilding.GetComponent<TurretBasics>().UIData.descriptionText;
+        upgradeCostText.text = activeBuilding.GetComponent<TurretBasics>().UIData.upgradeCostText;
     } 
     public void ShowRadius() 
     { 

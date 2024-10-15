@@ -15,3 +15,4 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 075c3e371fc0bbe47abb6a195bcb2e30, type: 3}
   buildingName: Oil Rig lvl 1
   descriptionText: Pumps oil from the ground to get more resources
+  upgradeCostText: Upgrade - 75

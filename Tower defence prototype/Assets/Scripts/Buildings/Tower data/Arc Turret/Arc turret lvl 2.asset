@@ -15,3 +15,4 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: fa817e81ebdf9f448b672e900ca7d0fb, type: 3}
   buildingName: Arc Turret lvl 2
   descriptionText: 'Shoots an arc through grounded enemies  '
+  upgradeCostText: Max Level

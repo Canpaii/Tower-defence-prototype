@@ -170,11 +170,12 @@ MonoBehaviour:
   sellWorth: 85
   lastUpgrade: 0
   UIData: {fileID: 11400000, guid: 33285c65c684f5e44a94ed1c23ac4dc4, type: 2}
-  towerUpgrade: {fileID: 0}
+  towerUpgrade: {fileID: 6345101356882671721, guid: 165090de517131c4a9a393fe77b8713c,
+    type: 3}
   enemyManager: {fileID: 0}
   activationDelay: 3
   isActive: 0
-  harvestAmount: 10
+  harvestAmount: 8
 --- !u!114 &-5638537135121447789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +190,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   currentHealth: 40
+  enemyList: {fileID: 0}
+  enemyManager: {fileID: 0}
 --- !u!114 &9021600779568864583
 MonoBehaviour:
   m_ObjectHideFlags: 0

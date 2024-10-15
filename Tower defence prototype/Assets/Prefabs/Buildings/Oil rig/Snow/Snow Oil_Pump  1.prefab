@@ -156,15 +156,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 0}
   radiusUI: {fileID: 4005267334209478663}
-  upgradeCost: 75
-  sellWorth: 85
+  upgradeCost: 100
+  sellWorth: 120
   lastUpgrade: 0
   UIData: {fileID: 11400000, guid: 0ebd8bcd4dbe14e439ff4549a47a02c1, type: 2}
-  towerUpgrade: {fileID: 0}
+  towerUpgrade: {fileID: 6345101356882671721, guid: 8361475e4bf28f241b678a642d0172e8,
+    type: 3}
   enemyManager: {fileID: 0}
   activationDelay: 0
   isActive: 0
-  harvestAmount: 15
+  harvestAmount: 13
 --- !u!114 &-980960199992937150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   currentHealth: 40
+  enemyList: {fileID: 0}
+  enemyManager: {fileID: 0}
 --- !u!65 &3398428106780539858
 BoxCollider:
   m_ObjectHideFlags: 0

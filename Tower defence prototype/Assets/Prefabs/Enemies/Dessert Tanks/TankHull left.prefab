@@ -217,8 +217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f3362c04762df4583de1ea02cd71c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 70
-  currencyOnDeath: 30
+  maxHealth: 100
+  currencyOnDeath: 25
   healthSlider: {fileID: 5549233045968413119}
 --- !u!114 &2530406198135967137
 MonoBehaviour:

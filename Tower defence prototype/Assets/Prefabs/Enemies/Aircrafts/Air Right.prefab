@@ -297,9 +297,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 88
+  m_MaxValue: 50
   m_WholeNumbers: 1
-  m_Value: 88
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -613,10 +613,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f3362c04762df4583de1ea02cd71c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
-  currencyOnDeath: 30
-  healthSlider: {fileID: 5702262414719686635, guid: 6d4d04af0aca4c44d95ee26457267ce5,
-    type: 3}
+  maxHealth: 85
+  currencyOnDeath: 20
+  healthSlider: {fileID: 3703536647639754644}
 --- !u!54 &3642366916759175766
 Rigidbody:
   m_ObjectHideFlags: 0

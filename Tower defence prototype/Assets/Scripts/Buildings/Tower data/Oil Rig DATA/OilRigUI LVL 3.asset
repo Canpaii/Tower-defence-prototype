@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: OilRigUI LVL 3
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 075c3e371fc0bbe47abb6a195bcb2e30, type: 3}
-  buildingName: Oil Rig max lvl
+  buildingName: Oil Rig MAX lvl
   descriptionText: Pumps oil from the ground to get more resources
+  upgradeCostText: Max Level
