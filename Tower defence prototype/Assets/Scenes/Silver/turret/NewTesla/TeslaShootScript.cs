@@ -5,23 +5,29 @@ using UnityEngine;
 public class TeslaShootScript : MonoBehaviour
 {
     public LineRenderer lineRenderer;
-    public float chainRadius = 10f;
+    public float chainRadius = 10f;  // Radius for detecting enemies
     public int maxChains = 5;
-    public LayerMask enemyLayer;
-    public Transform startPoint;
+    public Transform trailStartPoint;  // The starting point of the trail
+    public Transform detectionPoint;   // The point for detecting enemies
     public int repeatCount = 5;
     public float delayBetweenChains = 2f;
     public float chainSpeed = 0.2f;
-    public float trailVisibleDuration = 2f;  // De tijd dat de trail zichtbaar blijft
-    public Transform firstEnemyInChain;
+    public float trailVisibleDuration = 2f;  // Time the trail is visible
     public GameObject chainEffect;
+    public LayerMask enemyLayer;  // LayerMask for detecting enemies
 
     private List<Transform> hitEnemies = new List<Transform>();
     private bool isChainRunning = false;
 
+
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !isChainRunning)
+        // Check if there are enemies within the detection radius from the detectionPoint
+        Collider[] enemiesInRange = Physics.OverlapSphere(detectionPoint.position, chainRadius, enemyLayer);
+
+        // If there are enemies in range and the chain is not already running, start the chain attack
+        if (enemiesInRange.Length > 0 && !isChainRunning)
         {
             StartCoroutine(StartChainAttack());
         }
@@ -35,12 +41,13 @@ public class TeslaShootScript : MonoBehaviour
         {
             chainEffect.SetActive(true);
 
+            // Set LineRenderer's starting position to trailStartPoint's position
             lineRenderer.positionCount = 1;
-            lineRenderer.SetPosition(0, startPoint.position);
+            lineRenderer.SetPosition(0, trailStartPoint.position);  // Start from trailStartPoint position
 
-            yield return StartCoroutine(ChainToEnemies(startPoint.position));
+            yield return StartCoroutine(ChainToEnemies(trailStartPoint.position));
 
-            yield return new WaitForSeconds(trailVisibleDuration);  // Wacht totdat de trail zichtbaar is
+            yield return new WaitForSeconds(trailVisibleDuration);  // Wait until the trail is visible
 
             lineRenderer.positionCount = 0;
 
@@ -55,23 +62,26 @@ public class TeslaShootScript : MonoBehaviour
     IEnumerator ChainToEnemies(Vector3 startPos)
     {
         Vector3 currentPos = startPos;
-        bool isFirstEnemy = true;
 
         for (int i = 0; i < maxChains; i++)
         {
-            Collider[] enemiesInRange = Physics.OverlapSphere(currentPos, chainRadius, enemyLayer);
+            Collider[] enemiesInRange = Physics.OverlapSphere(currentPos, chainRadius);
 
             Transform closestEnemy = null;
             float shortestDistance = Mathf.Infinity;
 
             foreach (Collider enemy in enemiesInRange)
             {
-                float distanceToEnemy = Vector3.Distance(currentPos, enemy.transform.position);
-
-                if (distanceToEnemy < shortestDistance && !hitEnemies.Contains(enemy.transform))
+                // Check if the enemy is on the specified layer and has the "Enemy" tag
+                if (enemy.CompareTag("Enemy") && ((1 << enemy.gameObject.layer) & enemyLayer) != 0)
                 {
-                    closestEnemy = enemy.transform;
-                    shortestDistance = distanceToEnemy;
+                    float distanceToEnemy = Vector3.Distance(currentPos, enemy.transform.position);
+
+                    if (distanceToEnemy < shortestDistance && !hitEnemies.Contains(enemy.transform))
+                    {
+                        closestEnemy = enemy.transform;
+                        shortestDistance = distanceToEnemy;
+                    }
                 }
             }
 
@@ -80,16 +90,10 @@ public class TeslaShootScript : MonoBehaviour
                 break;
             }
 
-            if (isFirstEnemy)
-            {
-                firstEnemyInChain = closestEnemy;
-                isFirstEnemy = false;
-            }
-
             hitEnemies.Add(closestEnemy);
 
             lineRenderer.positionCount++;
-            lineRenderer.SetPosition(lineRenderer.positionCount - 1, closestEnemy.position);
+            lineRenderer.SetPosition(lineRenderer.positionCount - 1, closestEnemy.position);  // Set world position
 
             currentPos = closestEnemy.position;
 
@@ -97,5 +101,26 @@ public class TeslaShootScript : MonoBehaviour
         }
 
         hitEnemies.Clear();
+    }
+
+    // Visualize the detection radius with red lines in the Scene view
+    private void OnDrawGizmosSelected()
+    {
+        // Draw a red sphere representing the detection radius around the detectionPoint
+        if (detectionPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(detectionPoint.position, chainRadius);
+        }
+
+        // Draw lines to each enemy in the hitEnemies list
+        if (hitEnemies != null && hitEnemies.Count > 0)
+        {
+            Gizmos.color = Color.red;
+            foreach (Transform enemy in hitEnemies)
+            {
+                Gizmos.DrawLine(trailStartPoint.position, enemy.position);
+            }
+        }
     }
 }

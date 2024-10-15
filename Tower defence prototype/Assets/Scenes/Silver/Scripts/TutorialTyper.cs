@@ -10,6 +10,7 @@ public class TutorialTyper : MonoBehaviour
     public int disableClickIndex = 5;
     public float typingSpeed = 0.05f;
     public Button continueButton;
+    public RectTransform alles;
     public int continuePlacedTurretIndex = 7;
     public bool continuePlacedTurret = false;
     private int index = 0;
@@ -25,6 +26,7 @@ public class TutorialTyper : MonoBehaviour
 
     void Update()
     {
+        // Check for mouse button click to skip typing or proceed to the next text
         if (Input.GetMouseButtonDown(0) && canClickToSkip)
         {
             if (isTyping)
@@ -37,9 +39,16 @@ public class TutorialTyper : MonoBehaviour
             }
         }
 
+        // Allow proceeding to next text with Tab key
         if (index == disableClickIndex && Input.GetKeyDown(KeyCode.Tab))
         {
             AllowNextText();
+        }
+
+        // End the tutorial and hide UI on pressing the "8" key
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            EndTutorial();
         }
     }
 
@@ -124,5 +133,16 @@ public class TutorialTyper : MonoBehaviour
         }
 
         return true;
+    }
+
+    // Method to end the tutorial
+    public void EndTutorial()
+    {
+        // Optionally, you can hide or disable the UI elements here
+        textDisplay.gameObject.SetActive(false); // Hide the text display
+        continueButton.gameObject.SetActive(false); // Hide the continue button
+        alles.gameObject.SetActive(false);
+        Debug.Log("Tutorial Ended");
+        // You can add additional logic here to handle what happens after ending the tutorial
     }
 }

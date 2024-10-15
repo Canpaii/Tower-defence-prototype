@@ -18,6 +18,7 @@ public class UIPanelFlyIn : MonoBehaviour
     private bool isTransitioning = false;
     private Coroutine viewportCoroutine;
     private Coroutine panelCoroutine;
+    private bool isPaused = false;  
 
     void Start()
     {
@@ -32,6 +33,7 @@ public class UIPanelFlyIn : MonoBehaviour
         {
             ToggleCameraAndPanel();
         }
+
     }
 
     void ToggleCameraAndPanel()
