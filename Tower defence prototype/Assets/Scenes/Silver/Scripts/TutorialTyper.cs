@@ -7,11 +7,11 @@ public class TutorialTyper : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] tutorialTexts;
-    public int disableClickIndex = 5;  // The index where clicking is disabled
+    public int disableClickIndex = 5;
     public float typingSpeed = 0.05f;
     public Button continueButton;
-    public int continuePlacedTurretIndex = 7;  // The index where placedFirstTurret needs to be checked
-    public bool continuePlacedTurret = false;  // The condition that controls whether the user can continue
+    public int continuePlacedTurretIndex = 7;
+    public bool continuePlacedTurret = false;
     private int index = 0;
     private bool isTyping = false;
     private bool canClickToSkip = true;
@@ -31,10 +31,15 @@ public class TutorialTyper : MonoBehaviour
             {
                 SkipTyping();
             }
-            else if (CanProceed())  // Ensure CanProceed is true
+            else if (CanProceed())
             {
                 NextText();
             }
+        }
+
+        if (index == disableClickIndex && Input.GetKeyDown(KeyCode.Tab))
+        {
+            AllowNextText();
         }
     }
 
@@ -54,11 +59,10 @@ public class TutorialTyper : MonoBehaviour
         }
         isTyping = false;
 
-        // Show/hide the continue button based on the current index
         if (index == disableClickIndex)
         {
             DisableClickToSkip();
-            continueButton.gameObject.SetActive(true);  // Show button when clicking is blocked
+            continueButton.gameObject.SetActive(true);
         }
         else
         {
@@ -72,7 +76,7 @@ public class TutorialTyper : MonoBehaviour
         {
             StopCoroutine(typingCoroutine);
         }
-        textDisplay.text = tutorialTexts[index];  // Display full text
+        textDisplay.text = tutorialTexts[index];
         isTyping = false;
     }
 
@@ -92,12 +96,11 @@ public class TutorialTyper : MonoBehaviour
 
     public void AllowNextText()
     {
-        // Allow progression only if at disableClickIndex and CanProceed is true
         if (index == disableClickIndex)
         {
-            NextText();  // Progress to the next text when the button is clicked
+            NextText();
         }
-        else if (CanProceed())  // Check if we can proceed normally
+        else if (CanProceed())
         {
             NextText();
         }
@@ -108,21 +111,18 @@ public class TutorialTyper : MonoBehaviour
         canClickToSkip = false;
     }
 
-    // Function to check if conditions are met to proceed
     private bool CanProceed()
     {
-        // Check if the index is where turret placement is required
         if (index == continuePlacedTurretIndex && !continuePlacedTurret)
         {
-            return false;  // Don't allow progression until continuePlacedTurret is true
+            return false;
         }
 
-        // Block progression at disableClickIndex unless continue button is clicked
         if (index == disableClickIndex)
         {
-            return false;  // Block clicking to proceed at this specific index
+            return false;
         }
 
-        return true;  // Allow progression otherwise
+        return true;
     }
 }

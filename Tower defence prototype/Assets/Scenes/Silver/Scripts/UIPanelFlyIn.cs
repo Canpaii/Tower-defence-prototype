@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CameraAndPanelMove : MonoBehaviour
+public class UIPanelFlyIn : MonoBehaviour
 {
     public Camera cameraToAdjust;
     public Rect startViewportRect;
@@ -63,14 +63,19 @@ public class CameraAndPanelMove : MonoBehaviour
     IEnumerator AdjustViewport(Rect destination)
     {
         Rect currentRect = cameraToAdjust.rect;
+        float elapsedTime = 0f;
+        float transitionDuration = 1f / cameraTransitionSpeed; // Hoe lager de snelheid, hoe langer het duurt.
 
-        while (Mathf.Abs(currentRect.x - destination.x) > 0.01f || Mathf.Abs(currentRect.y - destination.y) > 0.01f)
+        while (elapsedTime < transitionDuration)
         {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / transitionDuration);
+
             currentRect = new Rect(
-                Mathf.Lerp(cameraToAdjust.rect.x, destination.x, cameraTransitionSpeed * Time.deltaTime),
-                Mathf.Lerp(cameraToAdjust.rect.y, destination.y, cameraTransitionSpeed * Time.deltaTime),
-                Mathf.Lerp(cameraToAdjust.rect.width, destination.width, cameraTransitionSpeed * Time.deltaTime),
-                Mathf.Lerp(cameraToAdjust.rect.height, destination.height, cameraTransitionSpeed * Time.deltaTime)
+                Mathf.Lerp(cameraToAdjust.rect.x, destination.x, t),
+                Mathf.Lerp(cameraToAdjust.rect.y, destination.y, t),
+                Mathf.Lerp(cameraToAdjust.rect.width, destination.width, t),
+                Mathf.Lerp(cameraToAdjust.rect.height, destination.height, t)
             );
 
             cameraToAdjust.rect = currentRect;
@@ -80,6 +85,7 @@ public class CameraAndPanelMove : MonoBehaviour
         cameraToAdjust.rect = destination;
         viewportCoroutine = null;
     }
+
 
     IEnumerator MovePanel(Vector3 destination)
     {

@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems; // Voor EventSystem
 
 public class TutorialUiScript : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class TutorialUiScript : MonoBehaviour
     public bool isPanelVisible = false; // Houdt bij of het paneel zichtbaar is of niet
     public KeyCode activatePanel;       // Toets om het paneel te activeren
     private Vector3 offScreenPosition;  // De startpositie van het paneel (links buiten het scherm)
-    private Vector3 targetPosition;      // De doelpositie waar het paneel heen moet
+    private Vector3 targetPosition;     // De doelpositie waar het paneel heen moet
     private Coroutine movePanelCoroutine; // Referentie naar de lopende coroutine
 
     void Start()
@@ -30,7 +31,13 @@ public class TutorialUiScript : MonoBehaviour
 
     void Update()
     {
-        // Luister naar de activatePanel toets
+        // Zorg ervoor dat de invoer niet verwerkt wordt als de knop ingedrukt wordt
+        if (EventSystem.current != null && EventSystem.current.currentSelectedGameObject == triggerButton.gameObject)
+        {
+            return; // Als de knop is geselecteerd (klikken of focus), doe niets
+        }
+
+        // Luister naar de activatePanel toets als de knop niet is geselecteerd
         if (Input.GetKeyDown(activatePanel))
         {
             TogglePanel();
