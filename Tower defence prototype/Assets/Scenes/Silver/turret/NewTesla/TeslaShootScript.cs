@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChainAttack : MonoBehaviour
+public class TeslaShootScript : MonoBehaviour
 {
     public LineRenderer lineRenderer;
     public float chainRadius = 10f;
