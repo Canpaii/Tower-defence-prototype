@@ -15,6 +15,8 @@ public class EnemyHealth : MonoBehaviour
     public Slider healthSlider;
     private EnemyCounter _enemyCounter;
     private EnemyList _enemyList;
+    
+    public GameObject deathParticle;
 
     private void Awake()
     {
@@ -52,6 +54,9 @@ public class EnemyHealth : MonoBehaviour
         _enemyCounter.UpdateEnemiesKilled();
         Currency.Instance.AddCurrency(currencyOnDeath);
         _enemyList.UnregisterEnemy(transform);
+        
+        Instantiate(deathParticle, transform.position, Quaternion.identity);
+        
         Destroy(gameObject);
     }
     

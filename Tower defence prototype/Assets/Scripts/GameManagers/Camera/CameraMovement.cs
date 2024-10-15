@@ -58,7 +58,7 @@ public class CameraMovement : MonoBehaviour
         positionY -= zoomSpeed * 100 * Time.deltaTime;
         
         positionY = Mathf.Clamp(positionY, -9, 80);
-        //interpolate for a smooth zoom in 
+        
         Vector3 targetPosition = new Vector3(cameraHolder.transform.position.x, positionY, cameraHolder.transform.position.z);
         cameraHolder.transform.position = Vector3.Lerp(cameraHolder.transform.position, targetPosition, Time.deltaTime * smoothFactor);
         
@@ -68,7 +68,7 @@ public class CameraMovement : MonoBehaviour
         positionY += zoomSpeed * 100 * Time.deltaTime;
         
         positionY = Mathf.Clamp(positionY, -9, 80);
-        //interpolate for a smooth zoom out
+        
         Vector3 targetPosition = new Vector3(cameraHolder.transform.position.x, positionY, cameraHolder.transform.position.z);
         cameraHolder.transform.position = Vector3.Lerp(cameraHolder.transform.position, targetPosition, Time.deltaTime * smoothFactor);
     }

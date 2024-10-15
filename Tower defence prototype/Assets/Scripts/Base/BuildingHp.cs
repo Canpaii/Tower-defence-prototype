@@ -7,14 +7,20 @@ public class BuildingHp : MonoBehaviour
 {
     public float maxHealth;
     public float currentHealth;
+    
     protected BuildingList buildingList;
+    protected BuildingLevelUp buildingLevelUp;
+    
     public EnemyList enemyList;
     public EnemyManager enemyManager;
 
     protected void Start()
     {
         currentHealth = maxHealth;
+        
         buildingList = BuildingList.Instance;
+        buildingLevelUp = BuildingLevelUp.instance;
+        
         buildingList.RegisterBuilding(transform);
     }
 

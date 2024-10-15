@@ -11235,6 +11235,88 @@ MonoBehaviour:
         type: 3}
       airCraft: 0
       isLeftLane: 0
+  - enemies:
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+  - enemies:
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1661166101977170029, guid: b2fa089de3267ac4980fefd655fbb9c3,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 0
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 6065f9ff8cc8e094a82801347a3e599a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1675476765787383434, guid: 8d802fcb10a859048b3b870b2f0f947a,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 0
   leftLaneSpawnPoint: {fileID: 170189850}
   rightLaneSpawnPoint: {fileID: 1785433079}
   leftLaneSpawnPointAir: {fileID: 751166581}
@@ -26755,7 +26837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraHolder: {fileID: 59224227}
   rotationSpeed: 70
-  zoomSpeed: 2000
+  zoomSpeed: 100
   smoothFactor: 100
 --- !u!4 &2023661839
 Transform:

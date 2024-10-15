@@ -15,5 +15,11 @@ public class OilrigHP : BuildingHp
     private void OnDestroy()
     {
         buildingList.UnregisterBuilding(transform);
+
+        if (buildingLevelUp.activeBuilding == gameObject)
+        {
+            buildingLevelUp.activeBuilding = null;
+            buildingLevelUp.buildingSelect.SetWindowShop();
+        }
     }
 }

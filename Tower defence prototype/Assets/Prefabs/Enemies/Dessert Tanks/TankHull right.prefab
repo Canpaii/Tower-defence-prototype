@@ -536,6 +536,8 @@ MonoBehaviour:
   maxHealth: 100
   currencyOnDeath: 25
   healthSlider: {fileID: 7274537612863829270}
+  deathParticle: {fileID: 7329720988514312704, guid: 37df2ef9ae818ef4aa433fbdc3603a0d,
+    type: 3}
 --- !u!114 &4864975840311921214
 MonoBehaviour:
   m_ObjectHideFlags: 0
