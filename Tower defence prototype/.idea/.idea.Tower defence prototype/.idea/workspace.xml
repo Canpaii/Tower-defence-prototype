@@ -6,15 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/Laser turret lvl 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/Laser turret lvl 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret lvl max.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Dessert/laser turret lvl max.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Snow/laser turret SNOW base 2 .prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Snow/laser turret SNOW base 2 .prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Snow/laser turret SNOW base 3 (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/LaserTurret/Snow/laser turret SNOW base 3 (1).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Dessert/SandTeslaLvl1 Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Dessert/SandTeslaLvl1 Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Dessert/SandTeslaLvl2 Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Dessert/SandTeslaLvl2 Variant.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Snow/SnowTeslaLvl1 Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Snow/SnowTeslaLvl1 Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Snow/SnowTeslaLvl2 Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Tesla/Snow/SnowTeslaLvl2 Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Bullets/Airship Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Bullets/Airship Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Bullets/Tank Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Bullets/Tank Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Silver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Silver.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Silver/turret/NewTesla/TeslaShootScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Silver/turret/NewTesla/TeslaShootScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Desert Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Silver/Line.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Silver/Line.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Silver/Scripts/SettingsFlyIn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Silver/Scripts/SettingsFlyIn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Silver/Shaders/Build.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Silver/Shaders/Build.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Snow Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingLevelUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingLevelUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingPlacement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/BuildingPlacement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building managers/TurretBasics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Laser turret/LaserBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Laser turret/LaserBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Buildings/BuildingList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Buildings/BuildingList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Currency/Currency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Currency/Currency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wincondition.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wincondition/EnemyCounter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wincondition/EnemyCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wincondition/WinconditionManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wincondition/WinconditionManager.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +55,14 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/41/54895cbc/Void.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Devtools/SceneSwitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Devtools/SpawnGold.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManagers/Buildings/BuildingList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManagers/Enemies/EnemyList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManagers/Wincondition/EnemyCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.7.0/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/SpatialMappingWireframe.shader" root0="SKIP_HIGHLIGHTING" />
@@ -188,6 +204,8 @@
       <workItem from="1728895481514" duration="772000" />
       <workItem from="1728905263100" duration="5829000" />
       <workItem from="1728952908441" duration="3349000" />
+      <workItem from="1729034639079" duration="21000" />
+      <workItem from="1729034666352" duration="7598000" />
     </task>
     <servers />
   </component>

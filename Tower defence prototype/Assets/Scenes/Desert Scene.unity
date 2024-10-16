@@ -11501,7 +11501,7 @@ MonoBehaviour:
   rightLaneSpawnPoint: {fileID: 751166581}
   leftLaneSpawnPointAir: {fileID: 751166581}
   rightLaneSpawnPointAir: {fileID: 170189850}
-  countdown: 3
+  countdown: 15
   spawnDelay: 1.5
   timeBetweenWaves: 16
   currentWaveIndex: 0
@@ -15487,7 +15487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -5261.4365}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1148, y: 646}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1114901839
@@ -20102,7 +20102,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.37734985}
+  m_AnchoredPosition: {x: 0, y: -0.37731934}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1439407067
@@ -20983,6 +20983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b8e38aaba3681498dfce25a04d3e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorialTyper: {fileID: 3039153}
 --- !u!1 &1488850932
 GameObject:
   m_ObjectHideFlags: 0
@@ -22181,7 +22182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef09a1613c965364592e420e1fc2f467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currency: 100000
+  currency: 175
   currencyText: {fileID: 1590328868}
 --- !u!4 &1604531257 stripped
 Transform:

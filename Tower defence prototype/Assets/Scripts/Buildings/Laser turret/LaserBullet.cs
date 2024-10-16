@@ -30,6 +30,11 @@ public class LaserBullet : MonoBehaviour
 
     private void LateUpdate()
     {   
+        if (!target)
+        {
+            Destroy(gameObject);
+        }
+        
         _timer += Time.deltaTime;
 
         if(_timer <= homingDuration)
@@ -42,11 +47,6 @@ public class LaserBullet : MonoBehaviour
             rb.angularVelocity = -amountToRotate * rotateSpeed;
 
             rb.velocity = transform.forward * force;
-        }
-
-        if (!target)
-        {
-            Destroy(gameObject);
         }
     }
 

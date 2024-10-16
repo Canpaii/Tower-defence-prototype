@@ -30,7 +30,7 @@ public class BuildingPlacement : MonoBehaviour
             Ray camray = playerCamera.ScreenPointToRay(Input.mousePosition);
             
             // set false so it wont immediatly open lvl up ui
-            buildingLevelUp.SetActive(false); 
+            // buildingLevelUp.SetActive(false); 
             
             if (currentTowerData.towerType == TowerData.TowerType.OilRig)
             {
@@ -50,6 +50,7 @@ public class BuildingPlacement : MonoBehaviour
                     if(Input.GetMouseButtonDown(0))
                     {   
                         DeselectTower();
+                        isPlacingTower = false;
                         grids.SetActive(false);
                     }
                 }
@@ -73,6 +74,7 @@ public class BuildingPlacement : MonoBehaviour
                     if(Input.GetMouseButtonDown(0)) 
                     {   
                         DeselectTower();
+                        isPlacingTower = false;
                         grids.SetActive(false);
                     }
                 }
@@ -82,7 +84,7 @@ public class BuildingPlacement : MonoBehaviour
             {
                 Destroy(currentPlacingTower);
                 StartCoroutine(SmallBoolDelay(0.1f));
-                buildingLevelUp.SetActive(true);
+                // buildingLevelUp.SetActive(true);
             }   
         }
     }
@@ -102,7 +104,7 @@ public class BuildingPlacement : MonoBehaviour
     {
         Destroy(currentPlacingTower);
         currentPlacingTower = null;
-        buildingLevelUp.SetActive(true);
+        // buildingLevelUp.SetActive(true);
     }
 
     void PlaceTower()
@@ -121,7 +123,7 @@ public class BuildingPlacement : MonoBehaviour
              Destroy(currentPlacingTower);
              
              currentPlacingTower = null;
-             buildingLevelUp.SetActive(true);
+             // buildingLevelUp.SetActive(true);
              StartCoroutine(SmallBoolDelay(0.1f));
         }
         else

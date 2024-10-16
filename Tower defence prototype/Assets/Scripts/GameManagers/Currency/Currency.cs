@@ -6,7 +6,7 @@ using TMPro;
 
 public class Currency : MonoBehaviour
 {
-    public static Currency Instance { get; private set; }
+    public static Currency Instance;
     
     public float currency;
     private int currencyToShow;

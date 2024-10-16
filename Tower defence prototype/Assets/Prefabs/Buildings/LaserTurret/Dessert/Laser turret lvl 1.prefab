@@ -507,7 +507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 0}
   radiusUI: {fileID: 9200866003900988215}
-  upgradeCost: 250
+  upgradeCost: 125
   sellWorth: 175
   lastUpgrade: 0
   UIData: {fileID: 11400000, guid: 6fb32856bb3b1c6488536e92ce8fc417, type: 2}

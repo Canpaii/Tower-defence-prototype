@@ -27,14 +27,12 @@ public class TurretBasics : MonoBehaviour
         currency = Currency.Instance;
         enemyManager = EnemyManager.Instance;
         buildingLevelUp = BuildingLevelUp.instance;
-
         
         StartCoroutine(ActivateTurretAfterDelay());
     }
     
     IEnumerator ActivateTurretAfterDelay()
     {
-     
         yield return new WaitForSeconds(activationDelay);
 
         isActive = true;

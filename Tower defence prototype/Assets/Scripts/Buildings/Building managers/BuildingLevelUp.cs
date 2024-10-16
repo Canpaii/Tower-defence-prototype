@@ -52,6 +52,9 @@ public class BuildingLevelUp : MonoBehaviour
 
     public void HideRadius()
     {
-        activeBuilding.GetComponent<TurretBasics>().HideRadius();
+        if (activeBuilding != null)
+        {
+            activeBuilding.GetComponent<TurretBasics>().HideRadius();
+        }
     }
 }

@@ -13,7 +13,6 @@ public class EnemyHealth : MonoBehaviour
     public int currencyOnDeath;
     
     public Slider healthSlider;
-    private EnemyCounter _enemyCounter;
     private EnemyList _enemyList;
     
     public GameObject deathParticle;
@@ -26,7 +25,6 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        _enemyCounter = WinconditionManager.instance.counter;
         
         _enemyList.RegisterEnemy(transform);
     }
@@ -39,8 +37,9 @@ public class EnemyHealth : MonoBehaviour
         
         print("I took " + damage + " damage");
         if (currentHealth <= 0)
-        {
-            DIE();
+        { 
+            Instantiate(deathParticle, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
     
@@ -48,16 +47,12 @@ public class EnemyHealth : MonoBehaviour
     {
         healthSlider.GetComponent<Slider>().value = currenthealth;
     }
-    public void DIE()
-    {
-        // doe nog wat coole dingetjes ofzo
-        _enemyCounter.UpdateEnemiesKilled();
-        Currency.Instance.AddCurrency(currencyOnDeath);
-        _enemyList.UnregisterEnemy(transform);
-        
-        Instantiate(deathParticle, transform.position, Quaternion.identity);
-        
-        Destroy(gameObject);
-    }
     
+    private void OnDestroy()
+    {
+        Currency.Instance.AddCurrency(currencyOnDeath); 
+        _enemyList.UnregisterEnemy(transform);
+             
+        
+    }
 }
