@@ -556,8 +556,8 @@ MonoBehaviour:
   detectionPoint: {fileID: 5565324555134106621}
   repeatCount: 5
   delayBetweenChains: 2
-  chainSpeed: 0.2
-  trailVisibleDuration: 0.5
+  chainSpeed: 0.05
+  trailVisibleDuration: 0.3
   chainEffect: {fileID: 2997347215872603762, guid: cbc9ad63972ca2c45babfdc8f5731d26,
     type: 3}
   enemyLayer:

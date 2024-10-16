@@ -165,7 +165,7 @@ MonoBehaviour:
   enemyManager: {fileID: 0}
   activationDelay: 0
   isActive: 0
-  harvestAmount: 14
+  harvestAmount: 13
 --- !u!114 &-980960199992937150
 MonoBehaviour:
   m_ObjectHideFlags: 0

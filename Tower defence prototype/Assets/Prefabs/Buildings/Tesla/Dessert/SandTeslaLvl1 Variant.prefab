@@ -568,13 +568,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 5882645600687882490}
   chainRadius: 15
-  maxChains: 5
+  maxChains: 3
   trailStartPoint: {fileID: 4632435294340691742}
   detectionPoint: {fileID: 2006322856631687754}
-  repeatCount: 5
+  repeatCount: 3
   delayBetweenChains: 2
-  chainSpeed: 0.2
-  trailVisibleDuration: 0.5
+  chainSpeed: 0.05
+  trailVisibleDuration: 0.3
   chainEffect: {fileID: 2997347215872603762}
   enemyLayer:
     serializedVersion: 2
