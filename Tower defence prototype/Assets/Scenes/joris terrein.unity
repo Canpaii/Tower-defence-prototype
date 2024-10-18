@@ -4011,7 +4011,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4587664, y: -0.00000004640134, z: 0.000000023957243, w: 0.88855696}
+  m_LocalRotation: {x: 0.45876637, y: 0.0000000070246053, z: -0.0000000036268404,
+    w: 0.88855696}
   m_LocalPosition: {x: 0, y: 93.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7198,6 +7199,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desert Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 4018406928347162389, guid: 48f9a09c57fc52a43b381add4602a662,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9489,6 +9495,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 215081974}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &857152411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 86.64832
+      objectReference: {fileID: 0}
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.03761
+      objectReference: {fileID: 0}
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 246.57385
+      objectReference: {fileID: 0}
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.3207774
+      objectReference: {fileID: 0}
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.02186839
+      objectReference: {fileID: 0}
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9447094
+      objectReference: {fileID: 0}
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.064403765
+      objectReference: {fileID: 0}
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -7.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 217.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 38814248048732931, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 847299013825491385, guid: 54c1effebd2f0824a8b24fdf223d5ca7,
+        type: 3}
+      propertyPath: m_Name
+      value: dish
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 54c1effebd2f0824a8b24fdf223d5ca7, type: 3}
 --- !u!1 &858494998
 GameObject:
   m_ObjectHideFlags: 0
@@ -16521,7 +16595,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503378396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4587664, y: -0.00000004640134, z: 0.000000023957243, w: 0.88855696}
+  m_LocalRotation: {x: 0.45876637, y: 0.0000000070246053, z: -0.0000000036268404,
+    w: 0.88855696}
   m_LocalPosition: {x: 0, y: 43.5, z: -66.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23104,6 +23179,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snow Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 2201811035788166481, guid: 53b25e246b6ff5c48852488409c83316,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24347,3 +24427,4 @@ SceneRoots:
   - {fileID: 5852108147557341988}
   - {fileID: 4266867290201247188}
   - {fileID: 3917795776388406970}
+  - {fileID: 857152411}
