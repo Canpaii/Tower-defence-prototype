@@ -538,6 +538,7 @@ MonoBehaviour:
   healthSlider: {fileID: 7274537612863829270}
   deathParticle: {fileID: 7329720988514312704, guid: 37df2ef9ae818ef4aa433fbdc3603a0d,
     type: 3}
+  deathSound: {fileID: 8300000, guid: 7a2e119306c073e4ea54ff0aeea2929f, type: 3}
 --- !u!114 &4864975840311921214
 MonoBehaviour:
   m_ObjectHideFlags: 0

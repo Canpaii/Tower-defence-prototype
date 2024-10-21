@@ -16,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
     private EnemyList _enemyList;
     
     public GameObject deathParticle;
+    // public AudioSource audioSource;
+    public AudioClip deathSound;
 
     private void Awake()
     {
@@ -39,6 +41,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         { 
             Instantiate(deathParticle, transform.position, Quaternion.identity);
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
             Destroy(gameObject);
         }
     }
