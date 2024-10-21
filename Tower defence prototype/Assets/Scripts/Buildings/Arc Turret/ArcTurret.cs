@@ -17,7 +17,6 @@ public class ArcTurret : TowerBehaviour
     
     public GameObject bulletPrefab;
     
-    // Update is called once per frame
     void Update()
     {
         enemy = FindEnemy();

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class TowerBehaviour : TurretBasics
@@ -28,7 +29,8 @@ public class TowerBehaviour : TurretBasics
             {
                 continue;
             }
-            
+
+
             float distanceToEnemy = IsFlyingEnemy(enemyTransform) ? GetHorizontalDistance(enemyTransform) : Vector3.Distance(transform.position, enemyTransform.position);
             
             if (distanceToEnemy < closestDistance)
