@@ -21,6 +21,7 @@ public class OilrigHP : BuildingHp
         print("The Base took" + damage + " damage");
         if (currentHealth <= 0)
         {
+            Instantiate(audioSource, transform.position, Quaternion.identity);
             DIE();
         }
     }

@@ -560,6 +560,8 @@ MonoBehaviour:
   currentHealth: 40
   enemyList: {fileID: 0}
   enemyManager: {fileID: 0}
+  audioSource: {fileID: 2435030057008753351, guid: ae81c23aff8221e4d996a66915655581,
+    type: 3}
   healthSlider: {fileID: 8766300891103990454}
 --- !u!114 &-1942776853702403490
 MonoBehaviour:
@@ -640,6 +642,7 @@ MonoBehaviour:
   currentHealth: 0
   enemyList: {fileID: 0}
   enemyManager: {fileID: 0}
+  audioSource: {fileID: 0}
   healthSlider: {fileID: 0}
 --- !u!4 &7584441773650849799 stripped
 Transform:

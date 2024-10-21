@@ -587,6 +587,8 @@ MonoBehaviour:
   currentHealth: 40
   enemyList: {fileID: 0}
   enemyManager: {fileID: 0}
+  audioSource: {fileID: 2435030057008753351, guid: ae81c23aff8221e4d996a66915655581,
+    type: 3}
   healthSlider: {fileID: 4200625125228617509}
 --- !u!114 &9021600779568864583
 MonoBehaviour:

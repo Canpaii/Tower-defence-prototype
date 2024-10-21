@@ -13,6 +13,7 @@ public class BuildingHp : MonoBehaviour
     
     public EnemyList enemyList;
     public EnemyManager enemyManager;
+    public AudioSource audioSource;
     [SerializeField] public Slider healthSlider;
     protected void Start()
     {
