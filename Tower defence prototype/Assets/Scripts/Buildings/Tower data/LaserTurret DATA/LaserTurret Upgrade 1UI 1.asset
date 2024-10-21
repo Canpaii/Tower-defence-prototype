@@ -15,4 +15,4 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 09c64e7c6937ab94199732b24fa16c95, type: 3}
   buildingName: Laser Turret lv 2
   descriptionText: Shoots lasers to take down its enemies in the sky and ground
-  upgradeCostText: Upgrade - 125
+  upgradeCostText: Upgrade - 200

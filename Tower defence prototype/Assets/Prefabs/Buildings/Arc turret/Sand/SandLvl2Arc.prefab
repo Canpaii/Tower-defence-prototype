@@ -298,7 +298,7 @@ MonoBehaviour:
   gunShootPoint: {fileID: 1776195898472930796}
   rotationSmooth: 5
   attackWaitTime: 1.6
-  damage: 36
+  damage: 40
   arcLifeTime: 1.22
   bulletPrefab: {fileID: 911241885614205479, guid: b9ba8144e08f3004587bbf0b1409532f,
     type: 3}

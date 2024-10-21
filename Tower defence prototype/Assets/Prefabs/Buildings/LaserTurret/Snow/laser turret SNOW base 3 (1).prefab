@@ -873,7 +873,7 @@ MonoBehaviour:
   grid: {fileID: 0}
   radiusUI: {fileID: 3369604808348433709}
   upgradeCost: 0
-  sellWorth: 235
+  sellWorth: 250
   lastUpgrade: 1
   UIData: {fileID: 11400000, guid: 6fb32856bb3b1c6488536e92ce8fc417, type: 2}
   towerUpgrade: {fileID: 2724933831943485838, guid: fe67b9153e4438a4c8707f490ae1a26d,
@@ -905,7 +905,7 @@ MonoBehaviour:
   - {fileID: 3362616519431647137}
   shootPointIndex: 0
   rotationSmooth: 0.5
-  attackWaitTime: 0.2
+  attackWaitTime: 0.25
   damage: 6
   bulletPrefab: {fileID: 7598174382105631414, guid: 28d8092273ac25747ab8bdafa9208b2d,
     type: 3}

@@ -39,8 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000010361636, g: 0.000026807356, b: 0.103633925,
-    a: 1}
+  m_IndirectSpecularColor: {r: 0.000009606275, g: 0.000026852149, b: 0.10362948, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18776,7 +18775,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tesla Turret - 350
+  m_text: 'Tesla Turret - 300
 
 '
   m_isRightToLeft: 0
