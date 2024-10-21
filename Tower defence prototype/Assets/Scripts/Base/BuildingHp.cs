@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class BuildingHp : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class BuildingHp : MonoBehaviour
     
     public EnemyList enemyList;
     public EnemyManager enemyManager;
-
+    [SerializeField] public Slider healthSlider;
     protected void Start()
     {
         currentHealth = maxHealth;

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class OilrigHP : BuildingHp
 {
@@ -10,6 +11,18 @@ public class OilrigHP : BuildingHp
         gameObject.GetComponent<OilRig>().grid.SetActive(true);
         
         Destroy(gameObject);
+    }
+    
+    public override void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        
+        healthSlider.value = currentHealth;
+        print("The Base took" + damage + " damage");
+        if (currentHealth <= 0)
+        {
+            DIE();
+        }
     }
 
     private void OnDestroy()

@@ -6701,6 +6701,7 @@ MonoBehaviour:
   currentHealth: 0
   enemyList: {fileID: 866731834}
   enemyManager: {fileID: 802664888}
+  healthSlider: {fileID: 0}
   healthText: {fileID: 1227148167}
   loseScreen: {fileID: 1861693181}
 --- !u!4 &453693754 stripped
