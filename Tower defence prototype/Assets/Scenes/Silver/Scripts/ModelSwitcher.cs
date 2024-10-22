@@ -8,8 +8,13 @@ public class ModelSwitcher : MonoBehaviour
     public GameObject[] prefabModels;
     public TMP_Text primaryTextUI;
     public TMP_Text secondaryTextUI;
+    public TMP_Text tertiaryTextUI;
+    public Image imageUI;
+    public Sprite[] imageArray;
+
     public string[] textArray;
     public string[] secondTextArray;
+    public string[] thirdTextArray;
     public float typingSpeed = 0.05f;
     public Button nextButton;
     public Button backButton;
@@ -31,7 +36,7 @@ public class ModelSwitcher : MonoBehaviour
         backButton.onClick.AddListener(OnBackClicked);
 
         SpawnModel(currentIndex);
-        typingCoroutine = StartCoroutine(TypeText(textArray[currentIndex], secondTextArray[currentIndex]));
+        typingCoroutine = StartCoroutine(TypeText(textArray[currentIndex], secondTextArray[currentIndex], thirdTextArray[currentIndex]));
 
         UpdateButtonStates();
     }
@@ -76,12 +81,11 @@ public class ModelSwitcher : MonoBehaviour
         {
             currentIndex++;
             SpawnModel(currentIndex);
-            typingCoroutine = StartCoroutine(TypeText(textArray[currentIndex], secondTextArray[currentIndex]));
+            typingCoroutine = StartCoroutine(TypeText(textArray[currentIndex], secondTextArray[currentIndex], thirdTextArray[currentIndex]));
             UpdateButtonStates();
         }
         else if (isTyping)
         {
-            // Als er wordt geklikt tijdens het typen, stop de Coroutine en toon direct de volledige tekst
             SkipTyping();
         }
     }
@@ -92,40 +96,46 @@ public class ModelSwitcher : MonoBehaviour
         {
             currentIndex--;
             SpawnModel(currentIndex);
-            typingCoroutine = StartCoroutine(TypeText(textArray[currentIndex], secondTextArray[currentIndex]));
+            typingCoroutine = StartCoroutine(TypeText(textArray[currentIndex], secondTextArray[currentIndex], thirdTextArray[currentIndex]));
             UpdateButtonStates();
         }
         else if (isTyping)
         {
-            // Als er wordt geklikt tijdens het typen, stop de Coroutine en toon direct de volledige tekst
             SkipTyping();
         }
     }
 
-    IEnumerator TypeText(string primaryText, string secondaryText)
+    IEnumerator TypeText(string primaryText, string secondaryText, string tertiaryText)
     {
         isTyping = true;
         primaryTextUI.text = "";
         secondaryTextUI.text = "";
+        tertiaryTextUI.text = "";
 
-        // Typ de primary text
         foreach (char letter in primaryText.ToCharArray())
         {
             primaryTextUI.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
 
-        // Typ de secondary text
         foreach (char letter in secondaryText.ToCharArray())
         {
             secondaryTextUI.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
 
+        foreach (char letter in tertiaryText.ToCharArray())
+        {
+            tertiaryTextUI.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        imageUI.sprite = imageArray[currentIndex];
+        imageUI.gameObject.SetActive(true);
+
         isTyping = false;
     }
 
-    // Stop het typen en toon de volledige tekst direct
     void SkipTyping()
     {
         if (typingCoroutine != null)
@@ -133,9 +143,12 @@ public class ModelSwitcher : MonoBehaviour
             StopCoroutine(typingCoroutine);
         }
 
-        // Toon direct de volledige tekst
         primaryTextUI.text = textArray[currentIndex];
         secondaryTextUI.text = secondTextArray[currentIndex];
+        tertiaryTextUI.text = thirdTextArray[currentIndex];
+
+        imageUI.sprite = imageArray[currentIndex];
+        imageUI.gameObject.SetActive(true);
 
         isTyping = false;
     }
