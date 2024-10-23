@@ -8831,7 +8831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &215317157
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8852,7 +8852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2976}
+  m_AnchoredPosition: {x: 0, y: -2071}
   m_SizeDelta: {x: 1148, y: 646}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215317159
@@ -9158,7 +9158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: 0.0000019073486}
+  m_AnchoredPosition: {x: 18.000122, y: 0.0000019073486}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &255954945
@@ -17386,7 +17386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 14.3, y: 0.0000009536743}
+  m_AnchoredPosition: {x: 8.699993, y: 0.0000009536743}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &859997932
@@ -21797,7 +21797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.6, y: -0.0000009536743}
+  m_AnchoredPosition: {x: 12, y: -0.0000009536743}
   m_SizeDelta: {x: 175.132, y: 50.9212}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1097806171
@@ -23701,7 +23701,7 @@ Transform:
   m_GameObject: {fileID: 1199854011}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.99893767, z: -0, w: -0.046081815}
-  m_LocalPosition: {x: -35.011, y: 0.641, z: -2.188}
+  m_LocalPosition: {x: -34.966, y: 0.603, z: -2.119}
   m_LocalScale: {x: 0.73483, y: 0.73483, z: 0.73483}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23720,15 +23720,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabModels:
-  - {fileID: 5936506294668104536, guid: 5bccde80f17fb594da3daeaa6ebb7126, type: 3}
-  - {fileID: 2111691361223342500, guid: 42fc335aadd39c145a2ab2d9412fd23d, type: 3}
-  - {fileID: 5829091516833109070, guid: c2ab6c00fb9323f4fb8eb937cc08fa31, type: 3}
+  - {fileID: 5632624687359324035, guid: c6af6c2a38501e645bfb7d00f9ea8588, type: 3}
+  - {fileID: 7077289109782832005, guid: ee81381f0eb2de241ac434d91357fcc7, type: 3}
+  - {fileID: 3898464826964843445, guid: da890d4d337c1e041b9731647f9a558d, type: 3}
   - {fileID: 460696530285802493, guid: f034942d2fd013740ad0c85c46e6748c, type: 3}
   - {fileID: 483314712153900663, guid: 5c574bd1d705df64dbba50168ef9defe, type: 3}
   - {fileID: 8755682612165983839, guid: 2368086b97cf79f40ae93d66858b361d, type: 3}
   - {fileID: 6166416889446608600, guid: 2b3e1efd069c1b04296efcb44e853359, type: 3}
-  - {fileID: 1598568568109928812, guid: 5a192bbc52546654e88b9bce75bfaf03, type: 3}
-  - {fileID: 5422312383309717219, guid: 85037dadd0429014ca13a893b4036276, type: 3}
+  - {fileID: 5713056829774489640, guid: 7444ece905d64e5439b86caa57eb7252, type: 3}
+  - {fileID: 6034544806200509418, guid: 6c8fc6f74b29ba741b310560a5ced6ff, type: 3}
+  - {fileID: 5985300726275198933, guid: fe7037bac8d542448aaadeaf9bbd06f9, type: 3}
+  - {fileID: 6650137285380115755, guid: d7a52967c35254c4aa1eca5ed19578f9, type: 3}
+  - {fileID: 296430355920312737, guid: 7b893221804686d42b9658cb7a4f1e50, type: 3}
   - {fileID: 3313878645876121134, guid: 27747c31cbc24eb4a9757d409b326ded, type: 3}
   - {fileID: 6405495220178477396, guid: e4a684474d3f77d40b4f57d96f6f5b39, type: 3}
   primaryTextUI: {fileID: 162205317}
@@ -23736,6 +23739,9 @@ MonoBehaviour:
   tertiaryTextUI: {fileID: 1097806172}
   imageUI: {fileID: 859997932}
   imageArray:
+  - {fileID: 21300000, guid: d01682d4158469c42bce2b09fd23e7e9, type: 3}
+  - {fileID: 21300000, guid: d01682d4158469c42bce2b09fd23e7e9, type: 3}
+  - {fileID: 21300000, guid: d01682d4158469c42bce2b09fd23e7e9, type: 3}
   - {fileID: 21300000, guid: d01682d4158469c42bce2b09fd23e7e9, type: 3}
   - {fileID: 21300000, guid: d01682d4158469c42bce2b09fd23e7e9, type: 3}
   - {fileID: 21300000, guid: d01682d4158469c42bce2b09fd23e7e9, type: 3}
@@ -23755,6 +23761,9 @@ MonoBehaviour:
   - Arc turret (Lvl 2)
   - 'Tesla turret '
   - Tesla turret Lvl2)
+  - Oil pump
+  - Oil pump (Lvl 2)
+  - Oil pump (Lvl 3)
   - Enemy Tank
   - Enemy tank (Armorered)
   - Enemy Helicopter
@@ -23772,18 +23781,24 @@ MonoBehaviour:
   - HELP HELP Lvl 2
   - HELPPP
   - HELP HELP Lvl 2
+  - HELP HELP Lvl 2
+  - HELP HELP Lvl 2
+  - HELP HELP Lvl 2
   thirdTextArray:
-  - 'Damage:'
-  - 'Damage:'
-  - 'Damage:'
-  - 'Damage:'
-  - 'Damage:'
-  - 'Damage:'
-  - 'Damage:'
-  - 'Damage:'
-  - 'Damage:'
-  - 'Damage:'
-  - 'Damage:'
+  - 'Damage: 4'
+  - 'Damage: 5'
+  - 'Damage: 6'
+  - 'Damage: 30'
+  - 'Damage: 40'
+  - 'Damage: 3 x 10'
+  - 'Damage: 5 x 16'
+  - 'Production Rate: 8'
+  - 'Production Rate: 13'
+  - 'Production Rate: 18'
+  - 'Health: 100'
+  - 'Health: 150'
+  - 'Health: 85'
+  - 'Health: 130'
   typingSpeed: 0.01
   nextButton: {fileID: 275288647}
   backButton: {fileID: 315330526}
@@ -38485,7 +38500,6 @@ SceneRoots:
   - {fileID: 438070052}
   - {fileID: 1585915173}
   - {fileID: 1043733960}
-  - {fileID: 1199854013}
   - {fileID: 1534456364}
   - {fileID: 1272254933}
   - {fileID: 1490760308}
@@ -38505,3 +38519,4 @@ SceneRoots:
   - {fileID: 84632902}
   - {fileID: 1452301058}
   - {fileID: 58834532}
+  - {fileID: 1199854013}
