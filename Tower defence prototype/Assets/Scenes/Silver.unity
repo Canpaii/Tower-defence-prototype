@@ -14004,7 +14004,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.7259505, g: 1, b: 0.6933962, a: 1}
-  m_Intensity: 25
+  m_Intensity: 100
   m_Range: 10
   m_SpotAngle: 128.01152
   m_InnerSpotAngle: 21.80208
@@ -15509,7 +15509,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.68261486, g: 1, b: 0.6367924, a: 1}
-  m_Intensity: 25
+  m_Intensity: 100
   m_Range: 19.260862
   m_SpotAngle: 159.29309
   m_InnerSpotAngle: 122.377335
@@ -18850,7 +18850,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.68261486, g: 1, b: 0.6367924, a: 1}
-  m_Intensity: 25
+  m_Intensity: 100
   m_Range: 19.260862
   m_SpotAngle: 178.99998
   m_InnerSpotAngle: 0
@@ -23732,8 +23732,8 @@ MonoBehaviour:
   - {fileID: 5985300726275198933, guid: fe7037bac8d542448aaadeaf9bbd06f9, type: 3}
   - {fileID: 6650137285380115755, guid: d7a52967c35254c4aa1eca5ed19578f9, type: 3}
   - {fileID: 296430355920312737, guid: 7b893221804686d42b9658cb7a4f1e50, type: 3}
-  - {fileID: 3313878645876121134, guid: 27747c31cbc24eb4a9757d409b326ded, type: 3}
-  - {fileID: 6405495220178477396, guid: e4a684474d3f77d40b4f57d96f6f5b39, type: 3}
+  - {fileID: 2607939859387255807, guid: 61412192249bb6e4a8befc3c37704094, type: 3}
+  - {fileID: 246299315084574414, guid: 16e0e797dba36f74aa11efbfd884f649, type: 3}
   primaryTextUI: {fileID: 162205317}
   secondaryTextUI: {fileID: 1228421767}
   tertiaryTextUI: {fileID: 1097806172}
@@ -26327,7 +26327,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.7259505, g: 1, b: 0.6933962, a: 1}
-  m_Intensity: 25
+  m_Intensity: 100
   m_Range: 10
   m_SpotAngle: 128.01152
   m_InnerSpotAngle: 21.80208
