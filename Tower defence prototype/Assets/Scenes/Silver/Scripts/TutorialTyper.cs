@@ -7,6 +7,7 @@ public class TutorialTyper : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] tutorialTexts;
+    public GameObject[] tutorialImages; // Array of images corresponding to tutorial text indexes
     public int disableClickIndex = 5;
     public float typingSpeed = 0.05f;
     public Button continueButton;
@@ -21,12 +22,12 @@ public class TutorialTyper : MonoBehaviour
     void Start()
     {
         continueButton.onClick.AddListener(AllowNextText);
+        UpdateImage(); // Ensure the correct image is displayed at the start
         StartTyping();
     }
 
     void Update()
     {
-        // Check for mouse button click to skip typing or proceed to the next text
         if (Input.GetMouseButtonDown(0) && canClickToSkip)
         {
             if (isTyping)
@@ -39,13 +40,11 @@ public class TutorialTyper : MonoBehaviour
             }
         }
 
-        // Allow proceeding to next text with Tab key
         if (index == disableClickIndex && Input.GetKeyDown(KeyCode.Tab))
         {
             AllowNextText();
         }
 
-        // End the tutorial and hide UI on pressing the "8" key
         if (Input.GetKeyDown(KeyCode.Alpha8))
         {
             EndTutorial();
@@ -94,7 +93,9 @@ public class TutorialTyper : MonoBehaviour
         if (index < tutorialTexts.Length - 1)
         {
             index++;
-            canClickToSkip = true;
+            Debug.Log("NextText: Moving to index " + index);
+
+            UpdateImage(); // Immediately update image before starting to type the new text
             StartTyping();
         }
         else
@@ -135,14 +136,42 @@ public class TutorialTyper : MonoBehaviour
         return true;
     }
 
-    // Method to end the tutorial
+    private void UpdateImage()
+    {
+        // Deactivate all images first
+        foreach (GameObject image in tutorialImages)
+        {
+            if (image != null)
+            {
+                image.SetActive(false);
+            }
+        }
+
+        // Activate the image corresponding to the current text index, if it exists
+        if (index < tutorialImages.Length && tutorialImages[index] != null)
+        {
+            Debug.Log("UpdateImage: Activating image for index " + index);
+            tutorialImages[index].SetActive(true);
+        }
+        else
+        {
+            Debug.Log("UpdateImage: No image for index " + index);
+        }
+    }
+
     public void EndTutorial()
     {
-        // Optionally, you can hide or disable the UI elements here
-        textDisplay.gameObject.SetActive(false); // Hide the text display
-        continueButton.gameObject.SetActive(false); // Hide the continue button
+        textDisplay.gameObject.SetActive(false);
+        continueButton.gameObject.SetActive(false);
         alles.gameObject.SetActive(false);
-        Debug.Log("Tutorial Ended");
-        // You can add additional logic here to handle what happens after ending the tutorial
+
+        // Deactivate all images when the tutorial ends
+        foreach (GameObject image in tutorialImages)
+        {
+            if (image != null)
+            {
+                image.SetActive(false);
+            }
+        }
     }
 }
