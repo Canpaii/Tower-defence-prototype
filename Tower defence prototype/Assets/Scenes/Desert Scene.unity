@@ -253,9 +253,9 @@ MonoBehaviour:
   - First press the arrow (or tab) to open your tower list.
   - Place an Oil Pump on the marked spot.
   - The Oil Pump is your passive income and can only be placed on oil fields.
-  - Now start the game.
   - Tanks will attack your Oil Pumps so place a Laser Turret to defend your Oil Pump
     and Base.
+  - Now start the game.
   - Here's a tank right now!
   - Great job, now place an Arc Turret to defend the next wave.
   - Quickly, place a Tesla Turret to combat the Helicopters.
@@ -6062,7 +6062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &395569935
 Transform:
   m_ObjectHideFlags: 0
@@ -10371,7 +10371,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638237021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.52}
+  m_LocalPosition: {x: 0, y: 0, z: 5.1}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10379,7 +10379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1290.6106, y: -715.31976}
+  m_AnchoredPosition: {x: -1263.56, y: -715.31976}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &638237023
@@ -11975,35 +11975,6 @@ MonoBehaviour:
   gamePaused: 0
   waves:
   - enemies:
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
-        type: 3}
-      airCraft: 1
-      isLeftLane: 1
-  - enemies:
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
     - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
       airCraft: 0
@@ -12013,25 +11984,52 @@ MonoBehaviour:
         type: 3}
       airCraft: 0
       isLeftLane: 1
-    - enemyPrefab: {fileID: 5135217025687882283, guid: 6d4d04af0aca4c44d95ee26457267ce5,
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
       airCraft: 1
       isLeftLane: 1
-    - enemyPrefab: {fileID: 5135217025687882283, guid: 6d4d04af0aca4c44d95ee26457267ce5,
+  - enemies:
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
         type: 3}
-      airCraft: 0
-      isLeftLane: 0
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+  - enemies: []
+  - enemies:
     - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
       airCraft: 0
-      isLeftLane: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
   leftLaneSpawnPoint: {fileID: 170189850}
   rightLaneSpawnPoint: {fileID: 751166581}
   leftLaneSpawnPointAir: {fileID: 751166581}
   rightLaneSpawnPointAir: {fileID: 170189850}
-  countdown: 15
-  spawnDelay: 1.5
-  timeBetweenWaves: 16
+  countdown: 3
+  spawnDelay: 3
+  timeBetweenWaves: 17
   currentWaveIndex: 0
 --- !u!1 &808578779
 GameObject:
@@ -20867,7 +20865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 12}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -569, y: -8.000397}
+  m_AnchoredPosition: {x: -569, y: -8.000275}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1424633081
@@ -23407,7 +23405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef09a1613c965364592e420e1fc2f467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currency: 175
+  currency: 1300
   currencyText: {fileID: 1590328868}
 --- !u!4 &1604531257 stripped
 Transform:
@@ -26929,8 +26927,8 @@ RectTransform:
   - {fileID: 75565555}
   - {fileID: 1556558367}
   - {fileID: 1235938836}
-  - {fileID: 1424633080}
   - {fileID: 459833051}
+  - {fileID: 1424633080}
   - {fileID: 357569798}
   - {fileID: 779515245}
   - {fileID: 875523149}

@@ -224,7 +224,6 @@ MonoBehaviour:
     type: 3}
   audioSource: {fileID: 2435030057008753351, guid: 55f64419c448556429daba9ec8d02fb5,
     type: 3}
-  deathSound: {fileID: 8300000, guid: 7a2e119306c073e4ea54ff0aeea2929f, type: 3}
 --- !u!114 &2530406198135967137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,7 +272,7 @@ MonoBehaviour:
   attackWaitTime: 2.25
   canHitOilRig: 1
   timer: 0
-  bulletPrefab: {fileID: 7598174382105631414, guid: b823f3aed60ea854c83bbae65bbdccb5,
+  bulletPrefab: {fileID: 7598174382105631414, guid: ac91efa0b4cec8e4c802c0ec8397d9c9,
     type: 3}
   target: {fileID: 0}
 --- !u!54 &-7071537849446436977
