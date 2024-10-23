@@ -566,8 +566,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dcc5839f81720e4eb9a6e2b57280a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 40
-  currentHealth: 40
+  maxHealth: 48
+  currentHealth: 48
   enemyList: {fileID: 0}
   enemyManager: {fileID: 0}
   audioSource: {fileID: 2435030057008753351, guid: ae81c23aff8221e4d996a66915655581,
