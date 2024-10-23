@@ -425,6 +425,8 @@ MonoBehaviour:
     type: 3}
   enemyManager: {fileID: 0}
   activationDelay: 3
+  audioSource: {fileID: 2435030057008753351, guid: bb33fdf3919e90b4cac8492cf1ae5390,
+    type: 3}
   isActive: 0
   radius: 17
   flyingEnemyLayer: 0
@@ -437,6 +439,8 @@ MonoBehaviour:
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 12288
+  audioSource: {fileID: 2435030057008753351, guid: 721241f58efa44342b3624355be97e5d,
+    type: 3}
 --- !u!114 &7264798079255932801
 MonoBehaviour:
   m_ObjectHideFlags: 0

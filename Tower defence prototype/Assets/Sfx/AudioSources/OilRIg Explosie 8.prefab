@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2435030057008753351}
   - component: {fileID: 7421987041579098310}
   m_Layer: 0
-  m_Name: OilRIg Explosie
+  m_Name: OilRIg Explosie 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

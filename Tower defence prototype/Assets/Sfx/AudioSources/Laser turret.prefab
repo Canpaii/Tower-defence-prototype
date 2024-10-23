@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2435030057008753351}
   - component: {fileID: 7421987041579098310}
   m_Layer: 0
-  m_Name: OilRIg Explosie
+  m_Name: Laser turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,11 +44,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7470548760573088505, guid: 546fe425d47e6404eb7166ad410ff0d1,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: bb4bdc6c36133774482b7b13b94c6cbb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3237cec23f65bb94c927aa993bb07452, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.15
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

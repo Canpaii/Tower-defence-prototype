@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hologram Variant
+  m_Name: Hologram Variant - Copy
   m_Shader: {fileID: -6465566751694194690, guid: f024abe2c98a2094cb0f86a90a801cb8,
     type: 3}
   m_Parent: {fileID: -876546973899608171, guid: f024abe2c98a2094cb0f86a90a801cb8,

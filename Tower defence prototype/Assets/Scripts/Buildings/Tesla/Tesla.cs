@@ -16,6 +16,7 @@ public class Tesla : TowerBehaviour
    public float timer;
 
    public LayerMask enemyLayerMask;
+   public AudioSource audioSource;
    public void Update()
    {
        enemy = FindEnemy();
@@ -30,7 +31,7 @@ public class Tesla : TowerBehaviour
    {
        timer += Time.deltaTime;
        
-       if (timer > attackWaitTime)
+       if (timer > attackWaitTime && isActive)
        {
            Transform firstTarget = enemy; 
            
@@ -39,6 +40,7 @@ public class Tesla : TowerBehaviour
            if (firstTarget != null && isActive) 
            { 
                ChainLightning(firstTarget, maxBounces);
+               PlaySFX();
            }
        }
    }
@@ -70,4 +72,8 @@ public class Tesla : TowerBehaviour
        }
    }
 
+   void PlaySFX()
+   {
+       Instantiate(audioSource, transform.position, Quaternion.identity);
+   }
 }

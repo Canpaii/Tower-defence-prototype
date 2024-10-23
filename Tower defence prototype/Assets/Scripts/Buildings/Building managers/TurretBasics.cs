@@ -20,6 +20,7 @@ public class TurretBasics : MonoBehaviour
     private BuildingLevelUp buildingLevelUp;
 
     public float activationDelay;
+    public AudioSource audioSource;
     [SerializeField] protected bool isActive = false;
 
     protected void Start()
@@ -27,7 +28,7 @@ public class TurretBasics : MonoBehaviour
         currency = Currency.Instance;
         enemyManager = EnemyManager.Instance;
         buildingLevelUp = BuildingLevelUp.instance;
-        
+        Instantiate(audioSource, transform.position, Quaternion.identity);
         StartCoroutine(ActivateTurretAfterDelay());
     }
     

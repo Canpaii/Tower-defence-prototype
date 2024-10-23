@@ -504,6 +504,8 @@ MonoBehaviour:
   towerUpgrade: {fileID: 7500997894276612123}
   enemyManager: {fileID: 0}
   activationDelay: 3
+  audioSource: {fileID: 2435030057008753351, guid: bb33fdf3919e90b4cac8492cf1ae5390,
+    type: 3}
   isActive: 0
   radius: 17
   flyingEnemyLayer: 0
@@ -516,6 +518,8 @@ MonoBehaviour:
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 12288
+  audioSource: {fileID: 2435030057008753351, guid: 721241f58efa44342b3624355be97e5d,
+    type: 3}
 --- !u!65 &-2308733682062147749
 BoxCollider:
   m_ObjectHideFlags: 0

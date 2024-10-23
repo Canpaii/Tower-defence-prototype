@@ -18,6 +18,7 @@ public class BasicLaserGunTower : TowerBehaviour
     private float timer;
     
     public GameObject bulletPrefab;
+    public AudioSource bulletSound;
     
     // Update is called once per frame
     void Update()
@@ -45,7 +46,7 @@ public class BasicLaserGunTower : TowerBehaviour
         if (timer > attackWaitTime)
         {
             GameObject currentBullet = Instantiate(bulletPrefab, shootPoints[shootPointIndex].position,shootPoints[shootPointIndex].rotation); 
-            
+            Instantiate(bulletSound, transform.position, transform.rotation);
             currentBullet.GetComponent<LaserBullet>().target = enemy;
             currentBullet.GetComponent<LaserBullet>().damage = damage;
             shootPointIndex++;

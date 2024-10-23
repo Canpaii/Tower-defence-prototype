@@ -23,7 +23,7 @@ public class BuildingSelect : MonoBehaviour
 
     private void Inputs()
     {
-        if (Input.GetMouseButtonDown(0)  && !IsPointerOverUI() && !buildingPlacement.isPlacingTower )
+        if (Input.GetMouseButtonDown(0) && !IsPointerOverUI() && !buildingPlacement.isPlacingTower )
         {
             if (buildingLevelUp.activeBuilding != null)
             {

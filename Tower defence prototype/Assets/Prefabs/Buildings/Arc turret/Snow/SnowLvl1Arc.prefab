@@ -392,7 +392,9 @@ MonoBehaviour:
   towerUpgrade: {fileID: 4743969872449117796, guid: d096fa335cef73643a1b5097e994ef3f,
     type: 3}
   enemyManager: {fileID: 0}
-  activationDelay: 0
+  activationDelay: 3
+  audioSource: {fileID: 2435030057008753351, guid: bb33fdf3919e90b4cac8492cf1ae5390,
+    type: 3}
   isActive: 0
   radius: 14
   flyingEnemyLayer: 13
@@ -402,8 +404,10 @@ MonoBehaviour:
   gunShootPoint: {fileID: 1524125128678358398}
   rotationSmooth: 5
   attackWaitTime: 2
-  damage: 30
+  damage: 35
   arcLifeTime: 0.66
+  arcSound: {fileID: 2435030057008753351, guid: 9f72ed140e4fa814abdb8098f5f8eda7,
+    type: 3}
   bulletPrefab: {fileID: 911241885614205479, guid: b9ba8144e08f3004587bbf0b1409532f,
     type: 3}
 --- !u!65 &4507614527000843999
