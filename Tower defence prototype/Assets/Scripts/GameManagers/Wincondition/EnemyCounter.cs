@@ -17,7 +17,7 @@ public class EnemyCounter : MonoBehaviour
         if (enemiesKilled == amountOfEnemies)
         {
             winScreen.SetActive(true);
-            Time.timeScale = 0; 
+            Time.timeScale = 1; 
         }
     }
 }
