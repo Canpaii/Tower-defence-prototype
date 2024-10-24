@@ -24525,21 +24525,20 @@ MonoBehaviour:
   - Enemy Helicopter
   - Enemy Helicopter (Barriered)
   secondTextArray:
-  - The basic laser turret ready to blast your enemies to the ground
-  - The upgraded variant of the basic turret, shoots faster and does more damage
-  - The strongest variant of the laser turret, annhilates ur enemies
-  - The arc turret, a strong plasma powered turret that shoots an powerful arc that
-    goes straight through them
-  - The upgraded variant of the arc turret, even more destructive!
-  - The tesla turret!
-  - Upgraded tesla turret
-  - HELP HLEP
-  - HELP HELP Lvl 2
-  - HELPPP
-  - HELP HELP Lvl 2
-  - HELP HELP Lvl 2
-  - HELP HELP Lvl 2
-  - HELP HELP Lvl 2
+  - Can shoot both air and ground units with a high fire-rate.
+  - Increased fire-rate and damage.
+  - Increased fire-rate and damage.
+  - Can only shoot ground targets but is very strong.
+  - The projectile has double the range and does more damage.
+  - This turret can use chain damage to damage 3 targets at once.
+  - Has increased chain from 3 to 5 targets.
+  - Can only be used to drill oil from the ground.
+  - Restores and increases health when upgraded and drills more oil.
+  - Restores and increases health when upgraded and drills more oil.
+  - Will attack oil pumps and the base when close.
+  - Has more health.
+  - Only attacks the base but is faster than the tank.
+  - Has more health.
   thirdTextArray:
   - 'Damage: 4'
   - 'Damage: 5'
