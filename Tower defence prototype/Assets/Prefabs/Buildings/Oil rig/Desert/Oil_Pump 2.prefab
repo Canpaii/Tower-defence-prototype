@@ -433,17 +433,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.0306253
+      value: -26.425098
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.828593
+      value: 6.6100745
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.038456
+      value: -30.64285
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
@@ -484,7 +484,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e8a5d698faf3d8b4db63dbf66ba55c45, type: 2}
+      objectReference: {fileID: 2100000, guid: bb9e9da7369aeb04db381e4aab0cdfaa, type: 2}
     - target: {fileID: 919132149155446097, guid: 57779e87849abe74288a52eae3ff8075,
         type: 3}
       propertyPath: m_Name
@@ -568,8 +568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dcc5839f81720e4eb9a6e2b57280a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 48
-  currentHealth: 48
+  maxHealth: 56
+  currentHealth: 56
   enemyList: {fileID: 0}
   enemyManager: {fileID: 0}
   audioSource: {fileID: 2435030057008753351, guid: ae81c23aff8221e4d996a66915655581,

@@ -22880,7 +22880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.81446534, g: 0.9577727, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -24525,14 +24525,14 @@ MonoBehaviour:
   - Enemy Helicopter
   - Enemy Helicopter (Barriered)
   secondTextArray:
-  - Can shoot both air and ground units with a high fire-rate.
+  - Can target both air and ground units with a high fire-rate.
   - Increased fire-rate and damage.
   - Increased fire-rate and damage.
-  - Can only shoot ground targets but is very strong.
+  - Shoots high area damage projectiles. Can only hit ground targets.
   - The projectile has double the range and does more damage.
-  - This turret can use chain damage to damage 3 targets at once.
-  - Has increased chain from 3 to 5 targets.
-  - Can only be used to drill oil from the ground.
+  - Uses chain damage to damage 3 targets at once. Can hit ground and air.
+  - Has increased chain amount from 3 to 5 targets.
+  - 'Drills oil from the ground from wich you earn money. '
   - Restores and increases health when upgraded and drills more oil.
   - Restores and increases health when upgraded and drills more oil.
   - Will attack oil pumps and the base when close.
@@ -24547,13 +24547,13 @@ MonoBehaviour:
   - 'Damage: 40'
   - 'Damage: 3 x 10'
   - 'Damage: 5 x 16'
-  - 'Production Rate: 8'
+  - 'Production Rate: 8 '
   - 'Production Rate: 13'
   - 'Production Rate: 18'
-  - 'Health: 100'
-  - 'Health: 150'
-  - 'Health: 85'
-  - 'Health: 130'
+  - 'Damage: 4 Health: 100'
+  - 'Damage: 4 Health: 150'
+  - 'Damage: 1 Health: 85'
+  - 'Damage: 1 Health: 130'
   typingSpeed: 0.01
   nextButton: {fileID: 275288647}
   backButton: {fileID: 315330526}
