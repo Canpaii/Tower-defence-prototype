@@ -7180,6 +7180,7 @@ GameObject:
   - component: {fileID: 436209052}
   - component: {fileID: 436209054}
   - component: {fileID: 436209053}
+  - component: {fileID: 436209055}
   m_Layer: 5
   m_Name: portrait
   m_TagString: Untagged
@@ -7244,6 +7245,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436209051}
   m_CullTransparentMesh: 1
+--- !u!114 &436209055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436209051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 175
+  enoughCurrency: {r: 1, g: 1, b: 1, a: 1}
+  insufficientCurrency: {r: 1, g: 0, b: 0, a: 1}
+  portraitImage: {fileID: 436209053}
 --- !u!1001 &441460527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19197,6 +19214,7 @@ GameObject:
   - component: {fileID: 1242760359}
   - component: {fileID: 1242760361}
   - component: {fileID: 1242760360}
+  - component: {fileID: 1242760362}
   m_Layer: 5
   m_Name: portrait
   m_TagString: Untagged
@@ -19261,6 +19279,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242760358}
   m_CullTransparentMesh: 1
+--- !u!114 &1242760362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242760358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 250
+  enoughCurrency: {r: 1, g: 1, b: 1, a: 1}
+  insufficientCurrency: {r: 1, g: 0, b: 0, a: 1}
+  portraitImage: {fileID: 1242760360}
 --- !u!1 &1255694137
 GameObject:
   m_ObjectHideFlags: 0
@@ -20313,6 +20347,7 @@ GameObject:
   - component: {fileID: 1312472521}
   - component: {fileID: 1312472523}
   - component: {fileID: 1312472522}
+  - component: {fileID: 1312472524}
   m_Layer: 5
   m_Name: portrait
   m_TagString: Untagged
@@ -20377,6 +20412,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312472520}
   m_CullTransparentMesh: 1
+--- !u!114 &1312472524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312472520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 300
+  enoughCurrency: {r: 1, g: 1, b: 1, a: 1}
+  insufficientCurrency: {r: 1, g: 0, b: 0, a: 1}
+  portraitImage: {fileID: 1312472522}
 --- !u!4 &1316000001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8768530490398501111, guid: 1846af59efb63a341b7eb1562224b85e,
@@ -24705,6 +24756,7 @@ GameObject:
   - component: {fileID: 1627553330}
   - component: {fileID: 1627553332}
   - component: {fileID: 1627553331}
+  - component: {fileID: 1627553333}
   m_Layer: 5
   m_Name: portrait
   m_TagString: Untagged
@@ -24769,6 +24821,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627553329}
   m_CullTransparentMesh: 1
+--- !u!114 &1627553333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627553329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 250
+  enoughCurrency: {r: 1, g: 1, b: 1, a: 1}
+  insufficientCurrency: {r: 1, g: 0, b: 0, a: 1}
+  portraitImage: {fileID: 1627553331}
 --- !u!1001 &1633598119
 PrefabInstance:
   m_ObjectHideFlags: 0
