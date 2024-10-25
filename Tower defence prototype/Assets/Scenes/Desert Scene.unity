@@ -1426,6 +1426,7 @@ GameObject:
   - component: {fileID: 73876889}
   - component: {fileID: 73876888}
   - component: {fileID: 73876887}
+  - component: {fileID: 73876890}
   m_Layer: 5
   m_Name: Laser Turret button
   m_TagString: Untagged
@@ -1548,6 +1549,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73876885}
   m_CullTransparentMesh: 1
+--- !u!114 &73876890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73876885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 300
+  enoughCurrency: {fileID: 21300000, guid: 64999e3def880eb40bb3e23be5e5b63a, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 34a7271b471c4224a964ac121db7aa7a,
+    type: 3}
+  portraitImage: {fileID: 73876888}
 --- !u!1 &75565554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,6 +1887,7 @@ GameObject:
   - component: {fileID: 120262931}
   - component: {fileID: 120262933}
   - component: {fileID: 120262932}
+  - component: {fileID: 120262934}
   m_Layer: 5
   m_Name: portrait
   m_TagString: Untagged
@@ -1933,6 +1952,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120262930}
   m_CullTransparentMesh: 1
+--- !u!114 &120262934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120262930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 300
+  enoughCurrency: {fileID: 21300000, guid: 20cb9686865effe448cc63e834994e89, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 1a2066760ab075a4e9a52ad696422ee8,
+    type: 3}
+  portraitImage: {fileID: 120262932}
 --- !u!1001 &121215806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2029,6 +2065,7 @@ GameObject:
   - component: {fileID: 123163374}
   - component: {fileID: 123163373}
   - component: {fileID: 123163375}
+  - component: {fileID: 123163376}
   m_Layer: 5
   m_Name: Portrait Arc
   m_TagString: Untagged
@@ -2138,7 +2175,37 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 123163373}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757657144}
+        m_TargetAssemblyTypeName: BuildingPlacement, Assembly-CSharp
+        m_MethodName: SetTowerToPlace
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d0d5d62491b721a4e8288452297405a2,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: TowerData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &123163376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123163371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 250
+  enoughCurrency: {fileID: 21300000, guid: c86a9ceabe98fdb48b385137b894071e, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 6376102e433eddb4d87f78d5dc700295,
+    type: 3}
+  portraitImage: {fileID: 123163373}
 --- !u!4 &126115517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7016213968065631388, guid: 738fc3cb37cde484c8addfa412a0301b,
@@ -10656,7 +10723,9 @@ MonoBehaviour:
   bloodyOverlay: {fileID: 397475524}
   bloodyOverlay2: {fileID: 534204584}
   maxOpacity: 0.8
-  opacityIncreaseRate: 0.1
+  opacityIncreaseAmount: 0.3
+  opacityHoldDuration: 0.5
+  fadeDownSpeed: 0.1
 --- !u!1 &511446941
 GameObject:
   m_ObjectHideFlags: 0
@@ -12024,6 +12093,7 @@ GameObject:
   - component: {fileID: 561856543}
   - component: {fileID: 561856545}
   - component: {fileID: 561856544}
+  - component: {fileID: 561856546}
   m_Layer: 5
   m_Name: portrait
   m_TagString: Untagged
@@ -12088,6 +12158,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561856542}
   m_CullTransparentMesh: 1
+--- !u!114 &561856546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561856542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 175
+  enoughCurrency: {fileID: 21300000, guid: 075c3e371fc0bbe47abb6a195bcb2e30, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 9632f05c07d6119488b1a64c4aee1d75,
+    type: 3}
+  portraitImage: {fileID: 561856544}
 --- !u!1001 &565061782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12248,6 +12335,7 @@ GameObject:
   - component: {fileID: 571904172}
   - component: {fileID: 571904171}
   - component: {fileID: 571904170}
+  - component: {fileID: 571904173}
   m_Layer: 5
   m_Name: Laser Turret button
   m_TagString: Untagged
@@ -12370,6 +12458,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571904168}
   m_CullTransparentMesh: 1
+--- !u!114 &571904173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571904168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 175
+  enoughCurrency: {fileID: 21300000, guid: 64999e3def880eb40bb3e23be5e5b63a, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 34a7271b471c4224a964ac121db7aa7a,
+    type: 3}
+  portraitImage: {fileID: 571904171}
 --- !u!1001 &584633325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12449,6 +12554,7 @@ GameObject:
   - component: {fileID: 602505241}
   - component: {fileID: 602505243}
   - component: {fileID: 602505242}
+  - component: {fileID: 602505244}
   m_Layer: 5
   m_Name: portrait
   m_TagString: Untagged
@@ -12513,6 +12619,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602505240}
   m_CullTransparentMesh: 1
+--- !u!114 &602505244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602505240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 250
+  enoughCurrency: {fileID: 21300000, guid: fa817e81ebdf9f448b672e900ca7d0fb, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: a9eabe9ad4fb334488cbaf17367fb894,
+    type: 3}
+  portraitImage: {fileID: 602505242}
 --- !u!1001 &606618690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22515,6 +22638,7 @@ GameObject:
   - component: {fileID: 1183936697}
   - component: {fileID: 1183936696}
   - component: {fileID: 1183936698}
+  - component: {fileID: 1183936699}
   m_Layer: 5
   m_Name: Portrait Laser
   m_TagString: Untagged
@@ -22624,7 +22748,37 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1183936696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757657144}
+        m_TargetAssemblyTypeName: BuildingPlacement, Assembly-CSharp
+        m_MethodName: SetTowerToPlace
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f9ea90f4a01d5d948a82a241497999db,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: TowerData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1183936699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183936694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 250
+  enoughCurrency: {fileID: 21300000, guid: c86a9ceabe98fdb48b385137b894071e, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 6376102e433eddb4d87f78d5dc700295,
+    type: 3}
+  portraitImage: {fileID: 1183936696}
 --- !u!4 &1185979959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7016213968065631388, guid: 738fc3cb37cde484c8addfa412a0301b,
@@ -27439,6 +27593,7 @@ GameObject:
   - component: {fileID: 1459306700}
   - component: {fileID: 1459306699}
   - component: {fileID: 1459306698}
+  - component: {fileID: 1459306701}
   m_Layer: 5
   m_Name: Laser Turret button
   m_TagString: Untagged
@@ -27561,6 +27716,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459306696}
   m_CullTransparentMesh: 1
+--- !u!114 &1459306701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459306696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 250
+  enoughCurrency: {fileID: 21300000, guid: 64999e3def880eb40bb3e23be5e5b63a, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 34a7271b471c4224a964ac121db7aa7a,
+    type: 3}
+  portraitImage: {fileID: 1459306699}
 --- !u!4 &1459585870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4644403974790759513, guid: 85037dadd0429014ca13a893b4036276,
@@ -30961,7 +31133,9 @@ MonoBehaviour:
   bloodyOverlay: {fileID: 534204584}
   bloodyOverlay2: {fileID: 534204584}
   maxOpacity: 1
-  opacityIncreaseRate: 0.02
+  opacityIncreaseAmount: 0.3
+  opacityHoldDuration: 0.5
+  fadeDownSpeed: 0.1
 --- !u!1001 &1701151192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31851,6 +32025,7 @@ GameObject:
   - component: {fileID: 1750199130}
   - component: {fileID: 1750199132}
   - component: {fileID: 1750199131}
+  - component: {fileID: 1750199133}
   m_Layer: 5
   m_Name: portrait
   m_TagString: Untagged
@@ -31915,6 +32090,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750199129}
   m_CullTransparentMesh: 1
+--- !u!114 &1750199133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750199129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 250
+  enoughCurrency: {fileID: 21300000, guid: 09c64e7c6937ab94199732b24fa16c95, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 8323e7f110b53ff49a5fceb06500e351,
+    type: 3}
+  portraitImage: {fileID: 1750199131}
 --- !u!1001 &1754129523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33732,6 +33924,7 @@ GameObject:
   - component: {fileID: 1867468959}
   - component: {fileID: 1867468958}
   - component: {fileID: 1867468960}
+  - component: {fileID: 1867468961}
   m_Layer: 5
   m_Name: Portrait Oil Rig
   m_TagString: Untagged
@@ -33841,7 +34034,37 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1867468958}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757657144}
+        m_TargetAssemblyTypeName: BuildingPlacement, Assembly-CSharp
+        m_MethodName: SetTowerToPlace
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: ef9a97c41cfcd424eaba458ab954f097,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: TowerData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1867468961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867468956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 175
+  enoughCurrency: {fileID: 21300000, guid: c86a9ceabe98fdb48b385137b894071e, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 6376102e433eddb4d87f78d5dc700295,
+    type: 3}
+  portraitImage: {fileID: 1867468958}
 --- !u!1 &1868828174
 GameObject:
   m_ObjectHideFlags: 0
@@ -37567,6 +37790,7 @@ GameObject:
   - component: {fileID: 2070717758}
   - component: {fileID: 2070717757}
   - component: {fileID: 2070717756}
+  - component: {fileID: 2070717759}
   m_Layer: 5
   m_Name: Laser Turret button
   m_TagString: Untagged
@@ -37689,6 +37913,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070717754}
   m_CullTransparentMesh: 1
+--- !u!114 &2070717759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070717754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 250
+  enoughCurrency: {fileID: 21300000, guid: 64999e3def880eb40bb3e23be5e5b63a, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 34a7271b471c4224a964ac121db7aa7a,
+    type: 3}
+  portraitImage: {fileID: 2070717757}
 --- !u!1 &2076389740
 GameObject:
   m_ObjectHideFlags: 0
@@ -37855,6 +38096,7 @@ GameObject:
   - component: {fileID: 2081799436}
   - component: {fileID: 2081799435}
   - component: {fileID: 2081799437}
+  - component: {fileID: 2081799438}
   m_Layer: 5
   m_Name: Portrait Tesla
   m_TagString: Untagged
@@ -37964,7 +38206,37 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2081799435}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757657144}
+        m_TargetAssemblyTypeName: BuildingPlacement, Assembly-CSharp
+        m_MethodName: SetTowerToPlace
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e3c422cb6ecfcb54d9e9ed3a689802af,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: TowerData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2081799438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081799433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e5bee0ee13f1b449bb6aa5d6dd4502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingCost: 300
+  enoughCurrency: {fileID: 21300000, guid: c86a9ceabe98fdb48b385137b894071e, type: 3}
+  insufficientCurrency: {fileID: 21300000, guid: 6376102e433eddb4d87f78d5dc700295,
+    type: 3}
+  portraitImage: {fileID: 2081799435}
 --- !u!1001 &2090712275
 PrefabInstance:
   m_ObjectHideFlags: 0

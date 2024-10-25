@@ -5,19 +5,19 @@ using UnityEngine.UI;
 public class PortraitChange : MonoBehaviour
 {
     public float buildingCost;
-    public Color enoughCurrency;
-    public Color insufficientCurrency;
+    public Sprite enoughCurrency;
+    public Sprite insufficientCurrency;
     public Image portraitImage;
 
     void Update()
     {
         if (Currency.Instance.currency >= buildingCost)
         {
-            portraitImage.color = enoughCurrency;
+            portraitImage.sprite = enoughCurrency;
         }
         else
         {
-            portraitImage.color = insufficientCurrency;
+            portraitImage.sprite = insufficientCurrency;
         }
     }
 }

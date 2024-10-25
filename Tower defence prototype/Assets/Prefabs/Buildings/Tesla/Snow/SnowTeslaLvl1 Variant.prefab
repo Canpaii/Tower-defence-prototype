@@ -441,6 +441,8 @@ MonoBehaviour:
   detectionPoint: {fileID: 9098134035296502933}
   chainSpeed: 0.05
   trailVisibleDuration: 0.03
+  teslaSFX: {fileID: 2435030057008753351, guid: 721241f58efa44342b3624355be97e5d,
+    type: 3}
 --- !u!65 &4072802087790697025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -698,17 +700,17 @@ PrefabInstance:
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2899625114557602479, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
         type: 3}

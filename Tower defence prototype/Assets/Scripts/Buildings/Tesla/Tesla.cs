@@ -26,6 +26,8 @@ public class Tesla : TowerBehaviour
     private List<Transform> hitEnemies = new List<Transform>();
     private bool isChainRunning = false;
     private float timer;
+    
+    public AudioSource teslaSFX;
 
     private void Update()
     {
@@ -79,6 +81,7 @@ public class Tesla : TowerBehaviour
             if (enemyScript != null)
             {
                 enemyScript.TakeDamage(damage);
+                Instantiate(teslaSFX, trailStartPoint.position, Quaternion.identity);
             }
 
             // Record hit position and update line renderer
