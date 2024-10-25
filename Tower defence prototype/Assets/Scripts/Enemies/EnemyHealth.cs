@@ -56,7 +56,5 @@ public class EnemyHealth : MonoBehaviour
     {
         Currency.Instance.AddCurrency(currencyOnDeath); 
         _enemyList.UnregisterEnemy(transform);
-             
-        
     }
 }
