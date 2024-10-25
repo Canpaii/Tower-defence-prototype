@@ -6707,7 +6707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 102, y: 0}
+  m_AnchoredPosition: {x: 105, y: 0}
   m_SizeDelta: {x: 80, y: 171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &340013977 stripped
@@ -8662,14 +8662,14 @@ RectTransform:
   m_GameObject: {fileID: 436209051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
+  m_LocalScale: {x: 0.79, y: 0.79, z: 0.79}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1418483232}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -5.68}
+  m_AnchoredPosition: {x: -2.3, y: -4.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &436209053
@@ -8723,8 +8723,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingCost: 175
-  enoughCurrency: {r: 1, g: 1, b: 1, a: 1}
-  insufficientCurrency: {r: 1, g: 0, b: 0, a: 1}
+  enoughCurrency: {fileID: 0}
+  insufficientCurrency: {fileID: 0}
   portraitImage: {fileID: 436209053}
 --- !u!1001 &441460527
 PrefabInstance:
@@ -16828,7 +16828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -309, y: 0}
+  m_AnchoredPosition: {x: -272, y: 0}
   m_SizeDelta: {x: 80, y: 171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &844727149 stripped
@@ -24630,7 +24630,7 @@ RectTransform:
   m_GameObject: {fileID: 1242760358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1459051953}
@@ -24691,8 +24691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingCost: 250
-  enoughCurrency: {r: 1, g: 1, b: 1, a: 1}
-  insufficientCurrency: {r: 1, g: 0, b: 0, a: 1}
+  enoughCurrency: {fileID: 0}
+  insufficientCurrency: {fileID: 0}
   portraitImage: {fileID: 1242760360}
 --- !u!1 &1251461621
 GameObject:
@@ -25971,7 +25971,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -5.68}
+  m_AnchoredPosition: {x: 0, y: -4.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1312472522
@@ -26025,8 +26025,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingCost: 300
-  enoughCurrency: {r: 1, g: 1, b: 1, a: 1}
-  insufficientCurrency: {r: 1, g: 0, b: 0, a: 1}
+  enoughCurrency: {fileID: 0}
+  insufficientCurrency: {fileID: 0}
   portraitImage: {fileID: 1312472522}
 --- !u!4 &1316000001 stripped
 Transform:
@@ -31273,8 +31273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingCost: 250
-  enoughCurrency: {r: 1, g: 1, b: 1, a: 1}
-  insufficientCurrency: {r: 1, g: 0, b: 0, a: 1}
+  enoughCurrency: {fileID: 0}
+  insufficientCurrency: {fileID: 0}
   portraitImage: {fileID: 1627553331}
 --- !u!1001 &1633598119
 PrefabInstance:
