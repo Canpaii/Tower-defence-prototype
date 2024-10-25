@@ -594,6 +594,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4331073989945110805, guid: 1a119906fbbe31c409496e0c08880be4,
         type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331073989945110805, guid: 1a119906fbbe31c409496e0c08880be4,
+        type: 3}
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.size
       value: 4
       objectReference: {fileID: 0}
