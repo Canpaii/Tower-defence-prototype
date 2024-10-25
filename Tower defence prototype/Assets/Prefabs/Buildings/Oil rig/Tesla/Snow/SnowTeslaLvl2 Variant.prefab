@@ -678,7 +678,7 @@ MonoBehaviour:
   UIData: {fileID: 11400000, guid: 920de29484cb7f44ea76bd579a8eb81b, type: 2}
   towerUpgrade: {fileID: 7500997894276612123}
   enemyManager: {fileID: 0}
-  activationDelay: 3
+  activationDelay: 0
   audioSource: {fileID: 2435030057008753351, guid: bb33fdf3919e90b4cac8492cf1ae5390,
     type: 3}
   isActive: 0

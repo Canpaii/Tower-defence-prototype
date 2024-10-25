@@ -354,6 +354,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4368882789884607154}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3212715266694812898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167760803172068944, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4368882789884607154}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7374815273195758711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -523,14 +529,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 0}
-  radiusUI: {fileID: 0}
+  radiusUI: {fileID: 3212715266694812898}
   upgradeCost: 150
   sellWorth: 175
   lastUpgrade: 0
-  UIData: {fileID: 11400000, guid: f7e18aa5ac89b7240a0f5ea595912c64, type: 2}
+  UIData: {fileID: 11400000, guid: 920de29484cb7f44ea76bd579a8eb81b, type: 2}
   towerUpgrade: {fileID: 4824968969767444947}
   enemyManager: {fileID: 0}
-  activationDelay: 3
+  activationDelay: 0
   audioSource: {fileID: 2435030057008753351, guid: bb33fdf3919e90b4cac8492cf1ae5390,
     type: 3}
   isActive: 0
