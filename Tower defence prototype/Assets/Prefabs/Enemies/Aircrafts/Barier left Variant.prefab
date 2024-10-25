@@ -678,3 +678,5 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7598174382105631414, guid: 3b618c26bf5fb0a409293de1ea174d99,
     type: 3}
   target: {fileID: 0}
+  audioSource: {fileID: 2435030057008753351, guid: d9137c1b50dd95e48a630c21c38bb6ed,
+    type: 3}

@@ -352,7 +352,6 @@ MonoBehaviour:
     type: 3}
   audioSource: {fileID: 2435030057008753351, guid: 55f64419c448556429daba9ec8d02fb5,
     type: 3}
-  deathSound: {fileID: 8300000, guid: 7a2e119306c073e4ea54ff0aeea2929f, type: 3}
 --- !u!114 &-3301974047976603749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,6 +403,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7598174382105631414, guid: b823f3aed60ea854c83bbae65bbdccb5,
     type: 3}
   target: {fileID: 0}
+  audioSource: {fileID: 2435030057008753351, guid: d9137c1b50dd95e48a630c21c38bb6ed,
+    type: 3}
 --- !u!54 &-5661550896593124275
 Rigidbody:
   m_ObjectHideFlags: 0

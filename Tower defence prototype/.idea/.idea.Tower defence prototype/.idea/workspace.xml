@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="" />
+    <list default="true" id="fe9da87c-c507-4213-9a46-2246457f964d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tower defence prototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyAttack.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +68,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds\Tower defence prototype.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Builds/Oil Defenders.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\cansi\Documents\Builds" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -185,7 +188,7 @@
       <workItem from="1729776029909" duration="4000" />
       <workItem from="1729776036276" duration="2000" />
       <workItem from="1729776046006" duration="1765000" />
-      <workItem from="1729845069379" duration="5503000" />
+      <workItem from="1729845069379" duration="6360000" />
     </task>
     <servers />
   </component>

@@ -591,6 +591,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7598174382105631414, guid: b823f3aed60ea854c83bbae65bbdccb5,
     type: 3}
   target: {fileID: 0}
+  audioSource: {fileID: 2435030057008753351, guid: d9137c1b50dd95e48a630c21c38bb6ed,
+    type: 3}
 --- !u!54 &4018988130571983637
 Rigidbody:
   m_ObjectHideFlags: 0

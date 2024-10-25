@@ -24,6 +24,8 @@ public class buildingAttack : MonoBehaviour
     private BuildingList _buildingList;
     
     [SerializeField] Transform target;
+    
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -48,6 +50,7 @@ public class buildingAttack : MonoBehaviour
         if (timer > attackWaitTime)
         {
             GameObject currentBullet = Instantiate(bulletPrefab, gunLeftShootPoint.position, gunLeftShootPoint.rotation);
+            Instantiate(audioSource, transform.position, transform.rotation);
             currentBullet.GetComponent<TankBullet>().target = target; 
             
             timer = 0;

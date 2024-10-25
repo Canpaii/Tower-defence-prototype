@@ -673,6 +673,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7598174382105631414, guid: 3b618c26bf5fb0a409293de1ea174d99,
     type: 3}
   target: {fileID: 0}
+  audioSource: {fileID: 2435030057008753351, guid: d9137c1b50dd95e48a630c21c38bb6ed,
+    type: 3}
 --- !u!4 &2037444971639167703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1aa5aff6e28c46148b4659fb3436f31e,
