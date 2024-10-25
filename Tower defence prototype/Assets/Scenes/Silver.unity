@@ -23856,10 +23856,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eb3c5ebc3737a7c409d6b5bbf325b6fd, type: 3}
   - {fileID: 21300000, guid: eb3c5ebc3737a7c409d6b5bbf325b6fd, type: 3}
   - {fileID: 21300000, guid: eb3c5ebc3737a7c409d6b5bbf325b6fd, type: 3}
-  - {fileID: 21300000, guid: 578704c60f16f614d8cca89f59e980ca, type: 3}
-  - {fileID: 21300000, guid: 578704c60f16f614d8cca89f59e980ca, type: 3}
-  - {fileID: 21300000, guid: 578704c60f16f614d8cca89f59e980ca, type: 3}
-  - {fileID: 21300000, guid: 578704c60f16f614d8cca89f59e980ca, type: 3}
+  - {fileID: 21300000, guid: de5aef37cc3e2fe4083c19593df93545, type: 3}
+  - {fileID: 21300000, guid: de5aef37cc3e2fe4083c19593df93545, type: 3}
+  - {fileID: 21300000, guid: de5aef37cc3e2fe4083c19593df93545, type: 3}
+  - {fileID: 21300000, guid: de5aef37cc3e2fe4083c19593df93545, type: 3}
   textArray:
   - 'Laser turret '
   - Laser turret (Lvl 2)

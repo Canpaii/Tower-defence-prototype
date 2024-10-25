@@ -255,16 +255,16 @@ MonoBehaviour:
     rundown on them
   - The Oil Pump is your passive income and can only be placed on those black oil
     fields.
-  - Tanks will attack your Oil Pumps so place turrets to defend it
+  - Tanks will attack your Oil Pumps so place turrets to defend it.
   - The laser Turret an quick shooting destructive weapon.
-  - and when you upgrade it its even more destructive!
   - The arc turret an piercing demolisher of a turret. The only downside of it is
     it doesn't shoot air based enemies
-  - Upgarde it to make it even more powerfull!
-  - Now the last one, the tesla tower. Zaps enemies and bounces from enemy to enemy
+  - Now the last one, the tesla tower. Zaps enemies and bounces from enemy to enemy.
+  - You can upgrade these towers by clicking on them and then clicking the upgrade
+    button.
   - That was all the information about the towers now goodluck with getting that
     oil!
-  - Press the start button below your turrets to begin
+  - Press the start button below your turrets to begin.
   tutorialImages:
   - {fileID: 0}
   - {fileID: 0}
@@ -274,10 +274,9 @@ MonoBehaviour:
   - {fileID: 1556558366}
   - {fileID: 1556558366}
   - {fileID: 459833050}
-  - {fileID: 459833050}
-  - {fileID: 357569797}
   - {fileID: 357569797}
   - {fileID: 779515244}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   disableClickIndex: 16
