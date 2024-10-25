@@ -432,12 +432,15 @@ MonoBehaviour:
   damage: 10
   chainRange: 15
   attackWaitTime: 2
-  timer: 0
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 12288
-  audioSource: {fileID: 2435030057008753351, guid: 721241f58efa44342b3624355be97e5d,
-    type: 3}
+  lineRenderer: {fileID: 6109994771681694137}
+  chainEffect: {fileID: 2604703962148858535}
+  trailStartPoint: {fileID: 5384813455854157047}
+  detectionPoint: {fileID: 9098134035296502933}
+  chainSpeed: 0.05
+  trailVisibleDuration: 0.03
 --- !u!65 &4072802087790697025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -484,7 +487,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3493147128355971640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17966ddf14f537242bf9ab17ca5b10c8, type: 3}
   m_Name: 

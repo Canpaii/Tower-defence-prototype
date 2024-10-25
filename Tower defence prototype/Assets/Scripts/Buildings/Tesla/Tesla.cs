@@ -8,72 +8,115 @@ using UnityEngine;
 
 public class Tesla : TowerBehaviour
 {
-   public int maxBounces;
-   public int damage;
-   public int chainRange;
-   public float attackWaitTime;
+ 
+    public int maxBounces;
+    public int damage;
+    public int chainRange;
+    public float attackWaitTime;
+    public LayerMask enemyLayerMask;
 
-   public float timer;
+  
+    public LineRenderer lineRenderer;
+    public GameObject chainEffect;
+    public Transform trailStartPoint; 
+    public Transform detectionPoint; 
+    public float chainSpeed = 0.2f;
+    public float trailVisibleDuration = 2f;
 
-   public LayerMask enemyLayerMask;
-   public AudioSource audioSource;
-   public void Update()
-   {
-       enemy = FindEnemy();
+    private List<Transform> hitEnemies = new List<Transform>();
+    private bool isChainRunning = false;
+    private float timer;
+
+    private void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (timer >= attackWaitTime && !isChainRunning)
+        {
+            Collider[] enemiesInRange = Physics.OverlapSphere(detectionPoint.position, chainRange, enemyLayerMask);
+
+            if (enemiesInRange.Length > 0)
+            {
+                timer = 0;
+                StartCoroutine(StartChainAttack());
+            }
+        }
+    }
+
+    private IEnumerator StartChainAttack()
+    {
+        isChainRunning = true;
+        hitEnemies.Clear();
+        chainEffect.SetActive(true);
+
+        // Set LineRenderer's starting position
+        lineRenderer.positionCount = 1;
+        lineRenderer.SetPosition(0, trailStartPoint.position);
+
+        yield return ChainToEnemies(trailStartPoint.position, maxBounces);
+
+        yield return new WaitForSeconds(trailVisibleDuration);
         
-       if (enemy && isActive)
-       {
-           Shoot();
-       }
-   }
+        lineRenderer.positionCount = 0;
+        chainEffect.SetActive(false);
 
-  private void Shoot()
-   {
-       timer += Time.deltaTime;
-       
-       if (timer > attackWaitTime && isActive)
-       {
-           Transform firstTarget = enemy; 
-           
-           print(firstTarget);
-          
-           if (firstTarget != null && isActive) 
-           { 
-               ChainLightning(firstTarget, maxBounces);
-               PlaySFX();
-           }
-       }
-   }
-   void ChainLightning(Transform currentTarget, int bouncesLeft)
-   {
-       if (bouncesLeft <= 0) return;
+        isChainRunning = false;
+    }
 
-       timer = 0; 
-       
-       
-       // Deal damage to the current target
-       EnemyHealth enemyScript = currentTarget.GetComponent<EnemyHealth>();
-       if (enemyScript != null)
-       {
-           enemyScript.TakeDamage(damage);
-           print(" Deal Damage  ");
-       }
-   
-       // Find nearby enemies to bounce to
-       Collider[] enemiesInRange = Physics.OverlapSphere(currentTarget.position, chainRange, enemyLayerMask);
-       foreach (var enemyCollider in enemiesInRange)
-       {
-           Transform newTarget = enemyCollider.transform;
-           if (newTarget != currentTarget)
-           {
-               ChainLightning(newTarget, bouncesLeft - 1);
-               break;  // Only bounce to one enemy at a time
-           }
-       }
-   }
+    private IEnumerator ChainToEnemies(Vector3 startPos, int bouncesLeft)
+    {
+        Vector3 currentPos = startPos;
 
-   void PlaySFX()
-   {
-       Instantiate(audioSource, transform.position, Quaternion.identity);
-   }
+        for (int i = 0; i < bouncesLeft; i++)
+        {
+            Collider[] enemiesInRange = Physics.OverlapSphere(currentPos, chainRange, enemyLayerMask);
+            Transform closestEnemy = FindClosestEnemy(enemiesInRange, currentPos);
+
+            if (closestEnemy == null)
+                break;
+            
+            EnemyHealth enemyScript = closestEnemy.GetComponent<EnemyHealth>();
+            if (enemyScript != null)
+            {
+                enemyScript.TakeDamage(damage);
+            }
+
+            // Record hit position and update line renderer
+            hitEnemies.Add(closestEnemy);
+            lineRenderer.positionCount++;
+            lineRenderer.SetPosition(lineRenderer.positionCount - 1, closestEnemy.position);
+            currentPos = closestEnemy.position;
+
+            yield return new WaitForSeconds(chainSpeed);
+        }
+    }
+
+    private Transform FindClosestEnemy(Collider[] enemies, Vector3 position)
+    {
+        Transform closestEnemy = null;
+        float shortestDistance = Mathf.Infinity;
+
+        foreach (Collider enemy in enemies)
+        {
+            if (enemy.CompareTag("Enemy") && !hitEnemies.Contains(enemy.transform))
+            {
+                float distanceToEnemy = Vector3.Distance(position, enemy.transform.position);
+                if (distanceToEnemy < shortestDistance)
+                {
+                    closestEnemy = enemy.transform;
+                    shortestDistance = distanceToEnemy;
+                }
+            }
+        }
+        return closestEnemy;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (detectionPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(detectionPoint.position, chainRange);
+        }
+    }
 }

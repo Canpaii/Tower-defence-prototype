@@ -354,12 +354,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4368882789884607154}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3212715266694812898 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1167760803172068944, guid: c068bd3b5cd0bda4b988a20a7939cfa1,
-    type: 3}
-  m_PrefabInstance: {fileID: 4368882789884607154}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7374815273195758711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -484,6 +478,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7264798079255932801}
+    - targetCorrespondingSourceObject: {fileID: 2642804686501971364, guid: a20ca03c2f4be9d42ae06b9757afc99c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2045234731323910300}
   m_SourcePrefab: {fileID: 100100000, guid: a20ca03c2f4be9d42ae06b9757afc99c, type: 3}
 --- !u!1 &4824968969767444947 stripped
 GameObject:
@@ -525,31 +523,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 0}
-  radiusUI: {fileID: 3212715266694812898}
-  upgradeCost: 0
-  sellWorth: 250
-  lastUpgrade: 1
-  UIData: {fileID: 11400000, guid: 920de29484cb7f44ea76bd579a8eb81b, type: 2}
-  towerUpgrade: {fileID: 7500997894276612123, guid: 326e32fa34fedaf4eb2e6963318bdbf7,
-    type: 3}
+  radiusUI: {fileID: 0}
+  upgradeCost: 150
+  sellWorth: 175
+  lastUpgrade: 0
+  UIData: {fileID: 11400000, guid: f7e18aa5ac89b7240a0f5ea595912c64, type: 2}
+  towerUpgrade: {fileID: 4824968969767444947}
   enemyManager: {fileID: 0}
   activationDelay: 3
   audioSource: {fileID: 2435030057008753351, guid: bb33fdf3919e90b4cac8492cf1ae5390,
     type: 3}
   isActive: 0
-  radius: 17
+  radius: 15
   flyingEnemyLayer: 0
   canTargetFlyingEnemies: 1
   maxBounces: 5
   damage: 16
-  chainRange: 12
-  attackWaitTime: 1.75
-  timer: 0
+  chainRange: 10
+  attackWaitTime: 2
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 12288
-  audioSource: {fileID: 2435030057008753351, guid: 721241f58efa44342b3624355be97e5d,
-    type: 3}
+  lineRenderer: {fileID: 5735970370535612600}
+  chainEffect: {fileID: 2437115075846446831}
+  trailStartPoint: {fileID: 4169964959924087431}
+  detectionPoint: {fileID: 2805832123550634695}
+  chainSpeed: 0.2
+  trailVisibleDuration: 0.15
 --- !u!114 &7264798079255932801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4824968969767444947}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17966ddf14f537242bf9ab17ca5b10c8, type: 3}
   m_Name: 
@@ -575,6 +575,46 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 12288
+--- !u!114 &2045234731323910300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4824968969767444947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3488b2cfc7552d642a3867d4b0e3c1d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  radiusUI: {fileID: 0}
+  upgradeCost: 150
+  sellWorth: 175
+  lastUpgrade: 0
+  UIData: {fileID: 11400000, guid: f7e18aa5ac89b7240a0f5ea595912c64, type: 2}
+  towerUpgrade: {fileID: 4824968969767444947}
+  enemyManager: {fileID: 0}
+  activationDelay: 3
+  audioSource: {fileID: 2435030057008753351, guid: bb33fdf3919e90b4cac8492cf1ae5390,
+    type: 3}
+  isActive: 0
+  radius: 15
+  flyingEnemyLayer: 0
+  canTargetFlyingEnemies: 1
+  maxBounces: 3
+  damage: 10
+  chainRange: 10
+  attackWaitTime: 2
+  enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 12288
+  lineRenderer: {fileID: 0}
+  chainEffect: {fileID: 0}
+  trailStartPoint: {fileID: 0}
+  detectionPoint: {fileID: 0}
+  chainSpeed: 0.2
+  trailVisibleDuration: 0.15
 --- !u!4 &5313802371065002857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3451710531189104414, guid: a20ca03c2f4be9d42ae06b9757afc99c,

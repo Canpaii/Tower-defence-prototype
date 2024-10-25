@@ -640,10 +640,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -2308733682062147749}
-    - targetCorrespondingSourceObject: {fileID: 4601165418958055587, guid: e9b9a7f250326c54493ff69adec3cde8,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6530030331632573316}
   m_SourcePrefab: {fileID: 100100000, guid: e9b9a7f250326c54493ff69adec3cde8, type: 3}
 --- !u!4 &7157123036829702817 stripped
 Transform:
@@ -688,12 +684,15 @@ MonoBehaviour:
   damage: 16
   chainRange: 18
   attackWaitTime: 1.75
-  timer: 0
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 12288
-  audioSource: {fileID: 2435030057008753351, guid: 721241f58efa44342b3624355be97e5d,
-    type: 3}
+  lineRenderer: {fileID: 3484098701912047404}
+  chainEffect: {fileID: 8248174360508617834}
+  trailStartPoint: {fileID: 101651167019516544}
+  detectionPoint: {fileID: 5032440286351837497}
+  chainSpeed: 0.05
+  trailVisibleDuration: 0.3
 --- !u!65 &-2308733682062147749
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -715,29 +714,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0983958, y: 2.688748, z: 2.113808}
   m_Center: {x: 0.0009145736, y: 1.3444033, z: -0.0033733246}
---- !u!114 &6530030331632573316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7500997894276612123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17966ddf14f537242bf9ab17ca5b10c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 3484098701912047404}
-  chainRadius: 15
-  maxChains: 5
-  trailStartPoint: {fileID: 101651167019516544}
-  detectionPoint: {fileID: 5565324555134106621}
-  repeatCount: 5
-  delayBetweenChains: 2
-  chainSpeed: 0.05
-  trailVisibleDuration: 0.3
-  chainEffect: {fileID: 2997347215872603762, guid: cbc9ad63972ca2c45babfdc8f5731d26,
-    type: 3}
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 12288
