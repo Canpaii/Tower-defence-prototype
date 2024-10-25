@@ -255,7 +255,8 @@ MonoBehaviour:
     rundown on them
   - The Oil Pump is your passive income and can only be placed on those black oil
     fields.
-  - Tanks will attack your Oil Pumps so place turrets to defend it.
+  - The Oil pump is your most important Tower to reach greatness. Tanks will attack
+    your Oil Pumps so place turrets to defend it.
   - The laser Turret an quick shooting destructive weapon.
   - The arc turret an piercing demolisher of a turret. The only downside of it is
     it doesn't shoot air based enemies
@@ -16128,10 +16129,6 @@ MonoBehaviour:
         type: 3}
       airCraft: 0
       isLeftLane: 1
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
   - enemies:
     - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
@@ -16141,12 +16138,8 @@ MonoBehaviour:
         type: 3}
       airCraft: 0
       isLeftLane: 1
-    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
-        type: 3}
-      airCraft: 0
-      isLeftLane: 1
   - enemies:
-    - enemyPrefab: {fileID: 6380109087420080588, guid: da2c98141e813ae4b8a0d4668a9c4091,
+    - enemyPrefab: {fileID: 3329024612949691996, guid: 67575ae2ae78a584da92ca5c3aa6e36f,
         type: 3}
       airCraft: 0
       isLeftLane: 1
@@ -16180,6 +16173,15 @@ MonoBehaviour:
         type: 3}
       airCraft: 1
       isLeftLane: 1
+  - enemies:
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
     - enemyPrefab: {fileID: 6380109087420080588, guid: da2c98141e813ae4b8a0d4668a9c4091,
         type: 3}
       airCraft: 0
@@ -16190,7 +16192,40 @@ MonoBehaviour:
       isLeftLane: 1
     - enemyPrefab: {fileID: 6380109087420080588, guid: da2c98141e813ae4b8a0d4668a9c4091,
         type: 3}
+      airCraft: 0
+      isLeftLane: 1
+  - enemies:
+    - enemyPrefab: {fileID: 1661166101977170029, guid: 759a719c53fc77149aa95ce7132e7f55,
+        type: 3}
       airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 6380109087420080588, guid: da2c98141e813ae4b8a0d4668a9c4091,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 8096105032763100506, guid: 6ad388c6c07c6ca49bbd4778f0f7f3d0,
+        type: 3}
+      airCraft: 1
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 6380109087420080588, guid: da2c98141e813ae4b8a0d4668a9c4091,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 6380109087420080588, guid: 29bef36074766384eba7526a1e787af7,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 6380109087420080588, guid: da2c98141e813ae4b8a0d4668a9c4091,
+        type: 3}
+      airCraft: 0
+      isLeftLane: 1
+    - enemyPrefab: {fileID: 6380109087420080588, guid: da2c98141e813ae4b8a0d4668a9c4091,
+        type: 3}
+      airCraft: 0
       isLeftLane: 1
   leftLaneSpawnPoint: {fileID: 170189850}
   rightLaneSpawnPoint: {fileID: 751166581}
@@ -33971,7 +34006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96869833852574145beed6e03fe13c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfEnemies: 11
+  amountOfEnemies: 23
   enemiesKilled: 0
   winScreen: {fileID: 935998774}
 --- !u!114 &1866203997
