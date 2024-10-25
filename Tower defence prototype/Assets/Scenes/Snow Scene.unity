@@ -37205,8 +37205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1973424698}
-  targetObject: {fileID: 0}
-  offScreenObject: {fileID: 0}
+  targetObject: {fileID: 336051749}
+  offScreenObject: {fileID: 838042126}
   triggerButton: {fileID: 1973424695}
   flyInSpeed: 5000
   isPanelVisible: 0

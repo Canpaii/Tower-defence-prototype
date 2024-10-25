@@ -16,7 +16,7 @@ public class SettingsFlyIn : MonoBehaviour
     void Start()
     {
         // Zet het paneel onderaan het scherm, buiten zicht (onder het scherm)
-        offScreenPosition = new Vector3(targetPosition.x, -Screen.height * 2.7f, 0f);
+        offScreenPosition = new Vector3(targetPosition.x, -Screen.height * 2.2f, 0f);
         panel.anchoredPosition = offScreenPosition;
 
         // Voeg een listener toe aan de knop
