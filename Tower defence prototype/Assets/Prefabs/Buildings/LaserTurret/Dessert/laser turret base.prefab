@@ -909,7 +909,7 @@ MonoBehaviour:
   towerUpgrade: {fileID: 4954010755942068480, guid: 2fe6d576e6b2745479de058c70a7daff,
     type: 3}
   enemyManager: {fileID: 0}
-  activationDelay: 0
+  activationDelay: 3
   audioSource: {fileID: 2435030057008753351, guid: bb33fdf3919e90b4cac8492cf1ae5390,
     type: 3}
   isActive: 0
