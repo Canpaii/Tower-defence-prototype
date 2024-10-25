@@ -12,7 +12,12 @@ public class BaseHP : BuildingHp
     public Image bloodyOverlay;
     public Image bloodyOverlay2;  // Second overlay
     public float maxOpacity = 0.8f;
-    public float opacityIncreaseRate = 0.1f;
+    public float opacityIncreaseAmount = 0.3f; // Amount of opacity increase
+    public float opacityHoldDuration = 0.5f; // Duration to hold the increased opacity
+    public float fadeDownSpeed = 0.1f; // Speed at which opacity fades down
+
+    private Coroutine fadeCoroutine1;
+    private Coroutine fadeCoroutine2;
 
     public override void TakeDamage(float damage)
     {
@@ -23,12 +28,14 @@ public class BaseHP : BuildingHp
 
         if (bloodyOverlay != null)
         {
-            UpdateOverlayOpacity(bloodyOverlay, damage);
+            if (fadeCoroutine1 != null) StopCoroutine(fadeCoroutine1);
+            fadeCoroutine1 = StartCoroutine(FlashOverlayOpacity(bloodyOverlay));
         }
 
         if (bloodyOverlay2 != null)
         {
-            UpdateOverlayOpacity(bloodyOverlay2, damage);
+            if (fadeCoroutine2 != null) StopCoroutine(fadeCoroutine2);
+            fadeCoroutine2 = StartCoroutine(FlashOverlayOpacity(bloodyOverlay2));
         }
 
         if (currentHealth <= 0)
@@ -37,12 +44,23 @@ public class BaseHP : BuildingHp
         }
     }
 
-    void UpdateOverlayOpacity(Image overlay, float damage)
+    IEnumerator FlashOverlayOpacity(Image overlay)
     {
+        // Increase opacity
         Color overlayColor = overlay.color;
-        overlayColor.a += opacityIncreaseRate * damage;
-        overlayColor.a = Mathf.Clamp(overlayColor.a, 0, maxOpacity);
+        overlayColor.a = Mathf.Clamp(overlayColor.a + opacityIncreaseAmount, 0, maxOpacity);
         overlay.color = overlayColor;
+
+        // Hold increased opacity for set duration
+        yield return new WaitForSeconds(opacityHoldDuration);
+
+        // Fade down opacity
+        while (overlay.color.a > 0)
+        {
+            overlayColor.a -= fadeDownSpeed * Time.deltaTime;
+            overlay.color = overlayColor;
+            yield return null;
+        }
     }
 
     void UpdateHealth(float currentHealth)
