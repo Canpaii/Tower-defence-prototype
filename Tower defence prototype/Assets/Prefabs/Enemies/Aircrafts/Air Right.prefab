@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86246bbd816819a41b9e92795816af78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 21
+  radius: 22
   oilRigLayer: 10
   laserTower: {fileID: 2037444971639167703}
   rotatingGunHolder: {fileID: 2037444971639167703}

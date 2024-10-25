@@ -540,7 +540,6 @@ MonoBehaviour:
     type: 3}
   audioSource: {fileID: 2435030057008753351, guid: 55f64419c448556429daba9ec8d02fb5,
     type: 3}
-  deathSound: {fileID: 8300000, guid: 7a2e119306c073e4ea54ff0aeea2929f, type: 3}
 --- !u!114 &4864975840311921214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,7 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86246bbd816819a41b9e92795816af78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 17
+  radius: 19
   oilRigLayer: 0
   laserTower: {fileID: 8673613782679171231}
   rotatingGunHolder: {fileID: 8564587535416282041}
